@@ -1,0 +1,94 @@
+/*!	文档说明：
+ *	说明：公共样式设置
+ *	作者：刘刚
+ *	版本：1.0
+ *	编写日期：2015年5月22日
+ *	最后修改：
+ */
+
+
+
+/*--------------------------------------------------
+ *	基础设置
+ *--------------------------------------------------*/
+html,body{ font: 12px/1.5 "Microsoft Yahei", "微软雅黑", tahoma, helvetica, clean, sans-serif; }
+
+
+/*--------------------------------------------------
+ *	公共头部样式
+ *--------------------------------------------------*/
+.top{
+	width:100%; 
+	height:40px; 
+	line-height:40px; 
+	border-bottom:1px solid #e4e4e4; 
+	position:fixed; 
+	top:0; 
+	left:0;
+	background:#fff;
+}
+.top_wrap{ width:1024px; height:40px; margin:0 auto;}
+.top_disc{ color:#231815;}
+.top_disc span{ padding-left:15px; background:url(../images/star.jpg) no-repeat center left;}
+.top_disc span a{ color:#e60012;}
+.top_wrap em{ margin:0 5px; font-style: normal; color:#dcdddd;}
+.top_option p{ text-align:right;}
+.top_option p a{ color:#231815;}
+
+.header{ width:100%; margin-top:40px; border-bottom:4px solid #383840;}
+.head{ width:1024px; margin:0 auto;}
+.logo{ width:350px;}
+
+.search{ width:340px; height:40px; border:1px solid #d61719; margin:35px 0 0 35px;}
+.search .search_input{ width:274px; height:40px; background:#fff; text-indent:5px; border:none; display:block;}
+.search .search_btn{ width:66px; height:40px; background:url(../images/search_btn.jpg) no-repeat; border:none; cursor:pointer; display:block;}
+
+.shops_car{ width:146px; height:42px; background:#db1817; margin-top:35px; font-size:14px;}
+.shops_car a{ width:146px; height:42px; line-height:42px; display:block;  color:#f7f8f8; text-indent:60px;}
+
+.nav{ width:800px; margin:20px 0 1px 0; font-family:"宋体";}
+.nav li{ width:100px; height:40px; line-height:40px; font-size:14px;  float:left;}
+.nav li a{ width:100px; height:40px; display:block; text-indent:10px; color:#333;}
+.nav li.nav_classify{ width:160px; background:#37383f;}
+.nav li.nav_classify a{ color:#fff;}
+
+/*--------------------------------------------------
+ *	主体样式
+ *--------------------------------------------------*/
+.main{ width:1024px; margin:0 auto;}
+
+
+
+
+/*--------------------------------------------------
+ *	分页列表
+ *--------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------
+ *	页脚样式
+ *--------------------------------------------------*/
+.footer{ width:1024px; margin:30px auto 0;}
+.footer_top{ width:1024px; margin-bottom:50px;}
+.fore{ width:140px; height:130px; border-right:1px solid #e3e2e2; margin-right:60px;}
+.fore dt{ font-size:18px; color:#515151; font-weight:bold;}
+.fore dd{ font-size:12px; line-height:24px; font-weight:bold;}
+.fore dd a{ color:#7d7c7d;}
+.fore dd a:hover{ text-decoration:underline;}
+.tel{ width:220px;}
+.tel_box{ margin-top:40px;}
+.tel_box img{ float:left; margin-right:10px;}
+.tel_box h3{ font-size:20px; color:#707070;}
+.tel_box p{ font-size:12px; color:#727171;}
+.copyright{ width:900px; margin:0 auto; border-top:1px solid #747373; padding-top:30px;}
+.copyright p{ color:#727171; line-height:20px; text-align:center;}
+.copyright p a{ font-size:14px; color:#231815; margin-bottom:15px;}
+.copyright p em{ margin:0 5px;}
+
+
+
+
+

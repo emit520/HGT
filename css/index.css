@@ -1,0 +1,54 @@
+/*!	文档说明：
+ *	说明：首页样式设置
+ *	作者：刘刚
+ *	版本：1.0
+ *	编写日期：2015年5月23日
+ *	最后修改：
+**/
+ 
+ 
+.model{ width:1024px; margin-bottom:30px;} 
+/*分类导航*/
+ 
+ 
+ 
+ 
+/*推荐商品*/
+.tit{ width:1024px; height:20px; line-height:20px; padding-bottom:2px; border-bottom:4px solid #383840;} 
+.tit p{ width:60%; color:#37383f; font-size:14px;}
+.tit a{ width:64px; height:20px; display:block; text-align:center; color:#fff; background:url(../images/more_bg.jpg) no-repeat;} 
+.goods_push{ width:1023px; height:397px; border-left:1px solid #b3b4b4; border-bottom:1px solid #b3b4b4;}
+.goods_push_item{}
+.goods_push_item a{ width:100%; height:100%; display:block;}
+.goods_push_item img{ width:100%;} 
+.w682{ width:682px;}
+.w341{ width:341px;}
+.w340{ width:340px;}
+.w169{ width:169px;}
+.w170{ width:170px;}
+.h397{ height:397px;}
+.h198{ height:198px;}
+.bdr{ border-right:1px solid #b3b4b4;} 
+.bdb{ border-bottom:1px solid #b3b4b4;} 
+.bdn{ border:none;}
+ 
+/*入驻品牌*/
+.pinpai{ width:1022px; border:1px solid #c8c7c7;}
+.pinpai_tit{ width:1022px; height:40px; border-bottom: 1px solid #c8c7c7; line-height:40px; position:relative;} 
+.pinpai_tit h3{ float:left; display:inline; width:60%; font-size:14px; color:#040000; margin-left:10px;}
+.pinpai-list_control{ float:right; display:inline;} 
+.pinpai-list_control span{ color:#595757;}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
