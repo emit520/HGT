@@ -38,7 +38,7 @@
 .pinpai_tit h3{ float:left; display:inline; width:60%; font-size:14px; color:#040000; margin-left:10px;}
 .pinpai-list_control{ float:right; display:inline;} 
 .pinpai-list_control span{ color:#595757;}
- 
+.pinpai-list_control a{ width:17px; height:17px; display:inline-block; background:url(../images/p_arrow.jpg) no-repeat;} 
  
  
  
