@@ -72,8 +72,15 @@ return false;
                 <a href="###" title="购物车">购物车(<span class="buy_num">0</span>)</a>
             </div>
             <div class="nav fl">
-                <ul class="clearfix">
-                	<li class="nav_classify"><a href="###" title="全部商品分类">全部商品分类</a></li>
+            	<!--分类菜单-->
+            	<div class="classify">
+                	<div class="classify_head"><p>全部商品分类</p><span>&or;</span></div>
+                    <ul class="classify_list">
+                    	<li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <!--导航-->
+                <ul class="nav_list clearfix">
                     <li><a href="###" title="个人购卡">个人购卡</a></li>
                     <li><a href="###" title="企业购卡">企业购卡</a></li>
                     <li><a href="###" title="银行专属特惠">银行专属特惠</a></li>
@@ -87,8 +94,7 @@ return false;
     <div class="main">
     
     	<div class="model clearfix">
-        	<!--分类菜单-->
-            <div class="classify"></div>
+        	
             
             <!--banner-->
             <div class="banner"></div>
@@ -197,54 +203,125 @@ return false;
                 </div>
                 
                 <div class="pinpai-list">
-                    <ul>           
-                        <li>
-                            <a href="#" title=""><img src="images/shop1.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop2.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop3.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop4.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop5.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop6.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop7.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop8.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop9.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop10.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop11.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop12.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop13.jpg" width="145" height="73" /></a>
-                        </li>
-                        <li>
-                            <a href="#" title=""><img src="images/shop14.jpg" width="145" height="73" /></a>
-                        </li>
-                                
-                    </ul>       
+                	<div class="pinpai_box">
+                    	<ul>           
+                            <li>
+                                <a href="#" title=""><img src="images/shop1.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop2.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop3.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop4.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop5.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop6.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop7.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop8.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop9.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop10.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop11.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop12.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop13.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop14.jpg" width="145" height="73" /></a>
+                            </li>
+                                    
+                        </ul>  
+                        <ul>           
+                            <li>
+                                <a href="#" title=""><img src="images/shop1.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop2.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop3.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop4.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop5.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop6.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop7.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop8.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop9.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop10.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop11.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop12.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop13.jpg" width="145" height="73" /></a>
+                            </li>
+                            <li>
+                                <a href="#" title=""><img src="images/shop14.jpg" width="145" height="73" /></a>
+                            </li>       
+                        </ul> 
+                    </div>           
+              	</div>
+            </div>
+			<!--友情链接部分-->
+            <div class="index_bottom clearfix">
+            	<!--友情链接-->
+            	<div class="friend_link fl">
+                	<div class="index_tit clearfix"><p>友情链接</p></div>
+                    <p><a href="#" title="凡客诚品">凡客诚品</a><a href="#" title="凡客诚品">凡客诚品</a><a href="#" title="凡客诚品">凡客诚品</a><a href="#" title="凡客诚品">凡客诚品</a><a href="#" title="凡客诚品">凡客诚品</a><a href="#" title="凡客诚品">凡客诚品</a></p>
                 </div>
-              </div>
-
+                <!--新闻资讯-->
+                <div class="index_news fl">
+                	<div class="index_tit clearfix"><p>新闻中心</p><a href="#">更多</a></div>
+                    <ul>
+                    	<li><a href="#">2014-07-30 仟吉中秋，开启味觉艺是收货就开始哭加快速度</a></li>
+                        <li><a href="#">2014-07-30 仟吉中秋，开启味觉艺是收货就开始哭加快速度</a></li>
+                        <li><a href="#">2014-07-30 仟吉中秋，开启味觉艺是收货就开始哭加快速度</a></li>
+                    </ul>
+                </div>
+                <!--扫扫二维码-->
+                <div class="index_ma fl">
+                	<div class="ma_box">
+                    	<ul class="clearfix">
+                    		<li><img src="images/ma1.jpg" alt=""><p>汉购通商城APP</p></li>
+                            <li><img src="images/ma2.jpg" alt=""><p>汉购通官网微信</p></li>
+                    	</ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--main部分结束->

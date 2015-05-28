@@ -33,22 +33,34 @@
 .bdn{ border:none;}
  
 /*入驻品牌*/
-.pinpai{ width:1022px; border:1px solid #c8c7c7;}
+.pinpai{ width:1022px; border:1px solid #c8c7c7; overflow:hidden; margin-bottom:30px;}
 .pinpai_tit{ width:1022px; height:40px; border-bottom: 1px solid #c8c7c7; line-height:40px; position:relative;} 
 .pinpai_tit h3{ float:left; display:inline; width:60%; font-size:14px; color:#040000; margin-left:10px;}
-.pinpai-list_control{ float:right; display:inline;} 
-.pinpai-list_control span{ color:#595757;}
-.pinpai-list_control a{ width:17px; height:17px; display:inline-block; background:url(../images/p_arrow.jpg) no-repeat;} 
+.pinpai-list_control{ float:right; display:inline; margin-right:10px;} 
+.pinpai-list_control span{ color:#595757; margin-right:5px;}
+.pinpai-list_control span strong{ margin:0 3px;}
+.pinpai-list_control a{ width:17px; height:17px; display:inline-block; background:url(../images/p_arrow.jpg) no-repeat; position:relative; top:3px;} 
+.pinpai-list_control a.list-prev{ background-position:0 0;}
+.pinpai-list_control a.list-next{ background-position:-17px 0;}
+.pinpai-list{ width:1022px; height:148px; overflow:hidden; position:relative;}
+.pinpai_box{ width:9999px; }
+.pinpai-list ul{ width:1022px; height:147px; overflow:hidden; float:left; margin-right:1px; display:inline;}
+.pinpai-list ul li{ width:145px; height:73px; border:1px solid #c8c7c7; border-top:none; border-left:none; float:left; }
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+/*首页底部*/
+.index_bottom{ width:1022px; height:140px; border:1px solid #dbdbdc; margin-bottom:30px;}
+.friend_link{ width:260px; margin:10px 0 0 40px;}
+.index_tit{ width:100%; height:30px; line-height:30px; border-bottom:1px solid #dbdbdc; color:#231815; margin-bottom:10px;}
+.index_tit p{ width:60%; float:left;}
+.index_tit a{ float:right; color:#231815;}
+.index_tit a:hover{ text-decoration:underline;}
+.friend_link a{ display:inline-block; margin-right:5px; line-height:24px;}
+.index_news{ width:260px; margin:10px 0 0 50px;}
+.index_news li{ list-style:square inside; line-height:24px; color:#727171;} 
+.index_news li a{ display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#727171;} 
+.index_ma{ width:310px; margin-left:50px;} 
+.ma_box{ width:310px; height:100px; border:1px solid #dbdbdc; margin-top:20px;}
+.ma_box ul{ width:280px; margin:0 auto;}
+.ma_box li{ width:100px; text-align:center; float:left; margin:10px 20px; display:inline;}
+.ma_box li p{ color:#666px; margin-top:5px;}
+
