@@ -46,12 +46,53 @@ html,body{ font: 12px/1.5 "Microsoft Yahei", "微软雅黑", tahoma, helvetica, 
 .shops_car{ width:146px; height:42px; background:#db1817; margin-top:35px; font-size:14px;}
 .shops_car a{ width:146px; height:42px; line-height:42px; display:block;  color:#f7f8f8; text-indent:60px;}
 
-.nav{ width:800px; margin:20px 0 1px 0; font-family:"宋体";}
-.nav li{ width:100px; height:40px; line-height:40px; font-size:14px;  float:left;}
-.nav li a{ width:100px; height:40px; display:block; text-indent:10px; color:#333;}
-.nav li.nav_classify{ width:160px; background:#37383f;}
-.nav li.nav_classify a{ color:#fff;}
 
+.nav{ width:1024px; margin:20px 0 1px 0;}
+.classify{ width:160px; height:40px; position:relative;}
+.classify_head{ width:160px; height:40px; line-height:40px; background:#3b3b3b; color:#fff;}
+.classify_head a{ width:160px; height:40px; display:block; color:#fff;}
+.classify_head p{ width:120px; text-align:center; font-size:14px;}
+.classify_head span{ width:20px; height:20px; background:url(../images/classify_icon.png) no-repeat 0 0; margin:10px;}
+.classify_head span.up{ background-position:0 0;}
+.classify_head span.down{ background-position:0 -23px;}
+
+.classify_box{ width:158px; height:444px; border:1px solid #adadae; border-top:none; position:absolute; top:45px; left:0; background:#fff; z-index:99; }
+.classify_box ul{ width:158px; height:370px;}
+.classify_box ul li{ width:158px; height:36px; line-height:36px; border-bottom:1px solid #adadae;}
+.classify_box ul li a{ width:158px; height:36px; display:block; color:#333333; position:relative;}
+.classify_box ul li.current > a{background:#db1817; color:#fff;}
+.classify_box ul li img{ margin:0 15px;}
+.classify_box p{ height:37px; line-height:37px; text-align:center; color:#333;}
+.classify_box p.classify_bottom{ background:#686c84; color:#fff;}
+
+.classify_box .r_triangle{ 
+position: absolute;
+right: -3px;
+top: 50%;
+margin-top: -8px;
+border-color:  transparent #fff transparent transparent;
+border-style: solid;
+border-width: 8px 10px 8px 0;
+width: 0;
+height: 0;
+font-size: 0;
+line-height: 0;
+z-index: 111;
+display:none;
+}
+
+.classify_box .classify_child_list{ width:186px; min-height:443px; position:absolute; top:0; left:159px; border:2px solid #383840; border-top:none; background:#fff; z-index:100;}
+.classify_box .classify_item{ width:180px; margin:10px auto;}
+.classify_box .classify_tit{ width:180px; height:30px; line-height:30px; background:#eeeff3; color:#231815; text-indent:10px;}
+.classify_box .classify_item ul{ width:180px; height:auto;}
+.classify_box .classify_item ul li{ width:90px; height:30px; float:left; line-height:30px; text-indent:5px; border:none;}
+.classify_box .classify_item ul li a{ width:auto; height:auto;}
+.classify_box .classify_item ul li a:hover{ background:none; color:#333; text-decoration:underline;}
+
+.nav_list{ width:860px;}
+.nav_list li{ height:40px; line-height:40px; font-size:14px;  float:left; margin-right:10px; display:inline;}
+.nav_list li a{ height:40px; display:block; text-indent:10px; color:#333;}
+.nav_list li a:hover{ text-decoration:underline;}
 /*--------------------------------------------------
  *	主体样式
  *--------------------------------------------------*/

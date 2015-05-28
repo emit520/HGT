@@ -105,13 +105,20 @@ a.btn { display: block; border: 0 none; outline: 0 none; }
 
 .fr{ float:right; display:inline;}
 
+.hide{ display:none;}
+
+.show{ display:block;}
+
 .position_r{ position:relative;}
  
 .position_a{ position:absolute;}
 
 .mgt10{ margin-top:10px;}
+
 .mgl10{ margin-left:10px;}
+
 .mgr10{ margin-right:10px;}
+
 .mgb10{ margin-bottom:10px;}
 
 
