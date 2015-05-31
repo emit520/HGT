@@ -26,6 +26,7 @@ html,body{ font: 12px/1.5 "Microsoft Yahei", "微软雅黑", tahoma, helvetica, 
 	top:0; 
 	left:0;
 	background:#fff;
+	z-index:999;
 }
 .top_wrap{ width:1024px; height:40px; margin:0 auto;}
 .top_disc{ color:#231815;}
@@ -100,16 +101,57 @@ display:none;
  *--------------------------------------------------*/
 .main{ width:1024px; margin:0 auto;}
 
+/*内页左边宽度*/
+.inside_left{ width:178px; float:left; display: inline; margin-bottom:20px;}
 
+/*内页右边宽度*/
+.inside_right{ width:815px; float:right; display:inline; margin-bottom:20px;}
 
 
 /*--------------------------------------------------
  *	分页列表
  *--------------------------------------------------*/
+.pagination{
+	width:100%;
+	text-align:center;
+	margin:20px 0;
+	color:#231815;
+	
+}
+.pagination a{
+	font-size:22px;
+	color:#231815;
+	margin:0 5px;
+}
+.pagination a.page_up,.pagination a.page_down{
+	border:1px solid #c7c6c6;
+	font-family:"宋体";
+	font-size:16px;
+	color:#888888;
+	padding:6px 10px;
+	position:relative;
+	top:-2px;
+}
+.pagination a.page_on{ color:#ea5514;}
 
-
-
-
+/*--------------------------------------------------
+ *	底部样式
+ *--------------------------------------------------*/
+.index_bottom{ width:1022px; height:140px; border:1px solid #dbdbdc;}
+.friend_link{ width:260px; margin:10px 0 0 40px;}
+.index_tit{ width:100%; height:30px; line-height:30px; border-bottom:1px solid #dbdbdc; color:#231815; margin-bottom:10px;}
+.index_tit p{ width:60%; float:left;}
+.index_tit a{ float:right; color:#231815;}
+.index_tit a:hover{ text-decoration:underline;}
+.friend_link a{ display:inline-block; margin-right:5px; line-height:24px;}
+.index_news{ width:260px; margin:10px 0 0 50px;}
+.index_news li{ line-height:24px; color:#727171;} 
+.index_news li a{ display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#727171;} 
+.index_ma{ width:310px; margin-left:50px;} 
+.ma_box{ width:310px; height:100px; border:1px solid #dbdbdc; margin-top:20px;}
+.ma_box ul{ width:280px; margin:0 auto;}
+.ma_box li{ width:100px; text-align:center; float:left; margin:10px 20px; display:inline;}
+.ma_box li p{ color:#666; margin-top:5px;}
 
 /*--------------------------------------------------
  *	页脚样式
