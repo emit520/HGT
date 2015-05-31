@@ -11,6 +11,7 @@
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
 <script>
 window.add_favourite = function()
 {
@@ -69,7 +70,7 @@ return false;
                 </form>
             </div>
             <div class="shops_car fr">
-                <a href="###" title="购物车">购物车(<span class="buy_num">0</span>)</a>
+                <a href="###" title="购物车"><img src="images/shop_car.png" alt="">购物车(<span class="buy_num">0</span>)</a>
             </div>
             <div class="nav fl">
             	<!--分类菜单-->
@@ -275,9 +276,31 @@ return false;
                                     </div>
                                 </div>
                             </li>
+                            <li>
+                                <a href="#"><img src="images/nav_icon7.png" alt=""><span>食品/特产</span><em class="r_triangle"></em></a>
+                                <div class="classify_child_list hide">
+                                    <div class="classify_item">
+                                        <h3 class="classify_tit">服装</h3>
+                                        <ul class=" clearfix">
+                                            <li><a href="#">精选女装衬衫10</a></li>
+                                            <li><a href="#">精选女装衬衫</a></li>
+                                            <li><a href="#">精选女装衬衫</a></li>
+                                            <li><a href="#">精选女装衬衫</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="classify_item">
+                                        <h3 class="classify_tit">服装</h3>
+                                        <ul class=" clearfix">
+                                            <li><a href="#">精选女装衬衫</a></li>
+                                            <li><a href="#">精选女装衬衫</a></li>
+                                            <li><a href="#">精选女装衬衫</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <p>汉购通在线支付平台</p>
-                        <p class="classify_bottom">SALE特价专区</p>
+                        <p><a href="#">汉购通在线支付平台</a></p>
+                        <p class="classify_bottom"><a href="#">SALE特价专区</a></p>
                     </div>
 
                 </div>
@@ -295,12 +318,77 @@ return false;
     <!--main部分开始-->
     <div class="main">
     
-    	<div class="model clearfix">
+    	<div class="model clearfix" style="margin-bottom:0;">
             <!--banner-->
-            <div class="banner fl"><img src="images/banner1.jpg" alt=""></div>
+            <div class="banner fl">
+            	<div id="playBox">
+                    <div class="pre"></div>
+                    <div class="next"></div>
+                    <div class="smalltitle">
+                      <ul>
+                        <li class="thistitle"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </div>
+                    <ul class="oUlplay">
+                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"/></a></li>
+                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"></a></li>
+                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"></a></li>
+                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"></a></li>
+                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"></a></li>
+                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"></a></li>
+                    </ul>
+                  </div>
+            </div>
             
             <!--小导航-->
-            <div class="sub_nav fl"></div>
+            <div class="sub_nav fl">
+            	<div class="sub_banner"><a href="#"><img src="images/ad1.jpg" alt=""></a></div>
+                <div class="sub_nav_list">
+                	<ul>
+                		<li>
+                        	<a href="#">
+                            	<img src="images/icon1.jpg" alt="">
+                                <p>会员卡</p>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/icon2.jpg" alt="">
+                                <p>电影票</p>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/icon3.jpg" alt="">
+                                <p>话费充值</p>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/icon4.jpg" alt="">
+                                <p>中石化加油卡</p>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/icon5.jpg" alt="">
+                                <p>购物卡</p>
+                            </a>
+                        </li>
+                        <li>
+                        	<a href="#">
+                            	<img src="images/icon6.jpg" alt="">
+                                <p>所有消费卡</p>
+                            </a>
+                        </li>
+                	</ul>
+                </div>
+            </div>
         </div>
         
         <div class="model">
