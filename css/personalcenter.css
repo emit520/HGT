@@ -1,0 +1,298 @@
+
+.sava-submit
+{
+    border: none;
+    background: #D61E21;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.main
+{
+    margin-top: 42px;
+}
+
+.personal-menu
+{
+    float: left;
+    height: 447px;
+    width: 176px;
+    border: 1px solid #EFCBC3;
+    font-size: 14px;
+}
+
+.personal-menu-title
+{
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    text-indent: 20px;
+}
+
+.personal-menu-list
+{
+
+    text-indent: 48px;
+}
+
+.personal-menu-list li
+{
+    height: 43px;
+    line-height: 43px;
+    border-top: 1px dashed #EFCBC3;
+}
+
+
+.personal-information
+{
+    float: right;
+    width: 815px;
+    font-size: 14px;
+    margin-bottom: 60px;
+}
+
+.personal-information-menu
+{
+    height: 28px;
+    border-bottom: 2px solid #727272;
+    /*margin-bottom: 40px;*/
+}
+
+.personal-information-menu .menu-select
+{
+    border: 2px solid #727272;
+    border-bottom: 2px solid white;
+}
+
+.personal-information-menu li
+{
+    float: left;
+    padding: 0 12px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.personal-information-data
+{
+    margin-left: 60px;
+    margin-top: 40px;
+}
+
+.personal-information-data li
+{
+    width: 700px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.personal-information-data input[type=text]
+{
+    border: 1px solid #D9D9DA;
+    height: 30px;
+    width: 208px;
+}
+
+.personal-information-data input[type=submit]
+{
+    height: 27px;
+    width: 60px;
+    float: right;
+}
+
+.personal-information-data select
+{
+    width: 67px;
+}
+
+.personal-information-data li span
+{
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+.personal-information-data .meta
+{
+    height: 30px;
+    line-height: 30px;
+    width: 330px;
+    float: left;
+}
+
+.personal-information-data .sex label
+{
+    margin-right: 16px;
+}
+
+.personal-information-data .progress
+{
+    margin-bottom: 30px;
+}
+
+.personal-information-data .progress-bg
+{
+    height: 18px;
+    width: 300px;
+    background: #DCDDDD;
+    display: inline-block;
+    margin-top: 7px;
+    position: absolute;
+}
+
+.personal-information-data .progress-value
+{
+    height: 18px;
+    width: 100px;
+    background: red;
+    display: inline-block;
+    margin-top: 7px;
+    position: relative;
+    left: 0;
+}
+
+.personal-information-data .avatar
+{
+    height: 94px;
+    margin-bottom: 13px;
+}
+
+.personal-information-data .avatar img
+{
+    width: 94px;
+    height: 94px;
+    position: absolute;
+}
+
+.personal-information-data .avatar p
+{
+    position: relative;
+    font-size: 12px;
+    width: 94px;
+    height: 94px;
+    line-height: 94px;
+    text-align: center;
+    color: #898989;
+}
+
+
+/*个人中心-个人信息-收货地址管理*/
+.personal-address
+{
+    height: auto;
+    border-left: 1px dashed #E4E4E5;
+    border-right: 1px dashed #E4E4E5;
+    border-bottom: 1px dashed #E4E4E5;
+    padding-bottom: 36px;
+}
+
+.personal-address-data
+{
+    width: 737px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.personal-address-data tr
+{
+    height: 50px;
+}
+
+.personal-address-data input[type=text]
+{
+    height: 30px;
+    width: 133px;
+    border:1px solid #BFBFBF;
+}
+
+.personal-address-data textarea
+{
+    width: 430px;
+    height: 56px;
+    border-color: #BFBFBF;
+}
+
+.personal-address-data .add-tip
+{
+    color: #CA2424;
+    padding-top: 20px;
+}
+
+.personal-address-data .add-header
+{
+    color: #898989;
+    width: 155px;
+}
+
+.personal-address-data .sava-submit
+{
+    width: 55px;
+    height: 27px;
+}
+
+.personal-address-list
+{
+    width: 737px;
+    margin-top: 25px;
+    font-size: 12px;
+    border: 1px solid #D4D4D4;
+    background: #F7F8F8;
+}
+
+.personal-address-list tr
+{
+    border: 1px solid #D4D4D4;
+    height: 32px;
+}
+
+.personal-address-list th,.personal-address-list td
+{
+    text-align: center;
+}
+
+.personal-address-list .list-tr
+{
+    height: 60px;
+}
+
+.list-tip
+{
+    color: #CA2424;
+    font-size: 16px;
+    margin-left: 38px;
+}
+
+.personal-address-list .list-shr
+{
+    width: 62px;
+}
+
+.personal-address-list .list-szdq
+{
+    width: 150px;
+}
+
+.personal-address-list .list-jddz
+{
+}
+
+.personal-address-list .list-yb
+{
+    width: 65px;
+}
+
+.personal-address-list .list-yb
+{
+    width: 110px;
+}
+
+.personal-address-list .list-null
+{
+    width: 66px;
+}
+
+.personal-address-list .list-action
+{
+    width: 92px;
+}
