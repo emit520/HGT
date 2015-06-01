@@ -1,5 +1,5 @@
 
-.sava-submit
+.save-submit
 {
     border: none;
     background: #D61E21;
@@ -174,11 +174,12 @@
     line-height: 94px;
     text-align: center;
     color: #898989;
+    cursor: pointer;
 }
 
 
 /*个人中心-个人信息-收货地址管理*/
-.personal-address
+.personal-address, .personal-password, .personal-pay-password
 {
     height: auto;
     border-left: 1px dashed #E4E4E5;
@@ -194,7 +195,7 @@
     margin-bottom: 50px;
 }
 
-.personal-address-data tr
+.personal-address-data tr, .personal-password-data tr, .personal-pay-password-data tr
 {
     height: 50px;
 }
@@ -225,7 +226,7 @@
     width: 155px;
 }
 
-.personal-address-data .sava-submit
+.personal-address-data .save-submit, .personal-password-data .save-submit, .personal-pay-password-data .save-submit
 {
     width: 55px;
     height: 27px;
@@ -295,4 +296,53 @@
 .personal-address-list .list-action
 {
     width: 92px;
+}
+
+
+.personal-password-data, .personal-pay-password-data
+{
+    width: 435px;
+    font-size: 16px;
+    margin: 78px 0 30px 130px;
+}
+
+.personal-password-data tr td:nth-of-type(1)
+{
+    width: 110px;
+    color: #898989;
+    text-align: right;
+    font-size: 16px;
+}
+
+.personal-password-data tr td:nth-of-type(2), .personal-pay-password-data tr td:nth-of-type(2)
+{
+    width: 185px;
+    text-align: right;
+}
+
+.personal-password-data tr td:nth-of-type(3), .personal-pay-password-data tr td:nth-of-type(3)
+{
+    width: 110px;
+    text-align: right;
+}
+
+
+.personal-password-data input[type=text], .personal-pay-password-data input[type=text]
+{
+    height: 30px;
+    width: 155px;
+    border:1px solid #BFBFBF;
+}
+
+.personal-pay-password
+{
+    margin-bottom: 60px;
+}
+
+.personal-pay-password-data tr td:nth-of-type(1)
+{
+    width: 140px;
+    color: #898989;
+    text-align: right;
+    font-size: 16px;
 }
