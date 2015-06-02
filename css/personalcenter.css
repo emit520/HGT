@@ -179,6 +179,8 @@
 
 
 /*个人中心-个人信息-收货地址管理*/
+
+
 .personal-address, .personal-password, .personal-pay-password
 {
     height: auto;
@@ -186,6 +188,12 @@
     border-right: 1px dashed #E4E4E5;
     border-bottom: 1px dashed #E4E4E5;
     padding-bottom: 36px;
+    padding-top: 78px;
+}
+
+.personal-address
+{
+    padding-top: 0;
 }
 
 .personal-address-data
@@ -298,12 +306,11 @@
     width: 92px;
 }
 
-
 .personal-password-data, .personal-pay-password-data
 {
     width: 435px;
     font-size: 16px;
-    margin: 78px 0 30px 130px;
+    margin: 0 0 30px 130px;
 }
 
 .personal-password-data tr td:nth-of-type(1)
@@ -345,4 +352,121 @@
     color: #898989;
     text-align: right;
     font-size: 16px;
+}
+
+/*个人中心-我的订单*/
+
+.my-order
+{
+    height: auto;
+}
+
+.my-order .my-order-list
+{
+    width: 100%;
+}
+
+.my-order .my-order-list tr:nth-of-type(1)
+{
+    height: 45px;
+    background: #EFEFEF;
+}
+
+.my-order .my-order-list tr:nth-of-type(1) td
+{
+    text-align: center;
+}
+
+.my-order .my-order-list tr:nth-of-type(1) td:first-of-type
+{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.personal-information .color-select
+{
+    background: #EFEFEF;
+    border-bottom-color: #EFEFEF;
+}
+
+.my-order .my-order-list td:nth-of-type(2)
+{
+    text-align: left;
+    padding-left: 10px;
+}
+
+.my-order .my-order-list td:nth-of-type(3)
+{
+    width: 80px;
+    text-align: center;
+}
+
+.my-order .my-order-list td:nth-of-type(4)
+{
+    width: 100px;
+    text-align: center;
+}
+
+.my-order .my-order-list td:nth-of-type(5)
+{
+    width: 100px;
+    text-align: center;
+}
+
+.my-order .my-order-list td:nth-of-type(6)
+{
+    width: 100px;
+    text-align: center;
+}
+
+.my-order .my-order-list td:nth-of-type(7)
+{
+    width: 85px;
+    text-align: center;
+}
+
+.my-order .inner-order tr:nth-of-type(1)
+{
+    background: #fff;
+}
+
+.my-order .inner-order tr:last-child
+{
+    height: 20px;
+}
+
+.my-order .inner-order
+{
+    border-bottom: 1px dashed #D7D7D7;
+}
+
+.my-order .inner-order td:nth-of-type(2), .my-order .inner-order tr:nth-of-type(1)
+{
+    font-size: 12px;
+}
+
+.page-list
+{
+    height: 40px;
+    margin: 0 auto;
+}
+
+.page-list li
+{
+    display: inline-block;
+    padding: 3px 5px;
+    margin: 0 5px;
+}
+
+.page-list .page-selected
+{
+    color: red;
+}
+
+.page-list li[class=prev], .page-list li[class=next]
+{
+    width: 100px;
+    border: 1px solid #D7D7D7;
+    color: #D7D7D7;
+    text-align: center;
 }
