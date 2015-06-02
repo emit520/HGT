@@ -19,6 +19,17 @@ $(function(){
 		$(this).find(".r_triangle").hide();
 		$(this).find(".classify_child_list").hide()	;
 		$(this).removeClass("current");
-	})
+	});
+	
+	//tab选项卡
+	function Tab(elem1,elem2,elem3){
+		$(elem1).click(function(){
+			var _index = $(this).index();
+			$(this).addClass(elem3).siblings().removeClass(elem3);
+			$(elem2).eq(_index).show().siblings().hide();	
+		});	
+	};
+	//商品详情tab
+	Tab(".product_infor_tab li",".product_infor_disc","tab_select");
 	
 })
