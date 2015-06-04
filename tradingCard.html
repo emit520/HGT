@@ -292,7 +292,7 @@
                 <li><a href="#">购物车</a></li>
                 <li><a href="myOrder.html">我的订单</a></li>
                 <li><a href="#">收藏</a></li>
-                <li><a href="myCard.html">我的汉购通卡</a></li>
+                <li><a href="#">我的汉购通卡</a></li>
                 <li><a href="#">我的消息</a></li>
                 <li><a href="#">账户安全</a></li>
                 <li><a href="#">帮助中心</a></li>
@@ -305,43 +305,48 @@
     <!--个人中心栏目开始-->
     <div class="personal-information">
         <ul class="personal-information-menu">
-            <li><a href="personalinformation.html">个人信息</a></li>
-            <li><a href="personalAdress.html">收货地址管理</a></li>
-            <li><a href="personalLoginPassword.html">修改登录密码</a></li>
-            <li class="menu-select"><a href="personalPayPassword.html">修改支付密码</a></li>
-            <li><a href="#">修改绑定手机</a></li>
+            <li><a href="myCard.html">管理汉购通卡</a></li>
+            <li><a href="activeCard.html">激活汉购通卡</a></li>
+            <li><a href="balanceCard.html">卡余额查询</a></li>
+            <li class="menu-select"><a href="tradingCard.html">卡交易查询</a></li>
+            <li><a href="passwordCard.html">卡密码修改</a></li>
+            <li style="float: right">
+                <a href="">
+                    <span style="border: 1px solid #000;height: 15px;line-height: 14px;width: 15px;border-radius: 3px;display: inline-block;text-align: center">+</span>
+                    添加汉购通卡
+                </a>
+            </li>
         </ul>
-        <div class="personal-pay-password">
+        <div class="card-common">
 
-            <table class="personal-pay-password-data">
+            <table class="card-from">
                 <tr>
-                    <td>输入验证码：</td>
+                    <td>卡号：</td>
                     <td>
                         <input type="text" />
                     </td>
-                    <td>
-                        <input type="button" style="width: 112px;height: 30px;background: #C7C6C6;border: none;border-radius: 3px;margin-left: 13px;color: white;" value="获取短信验证码" />
-                    </td>
+                    <td></td>
                 </tr>
 
                 <tr>
-                    <td>设置新密码：</td>
+                    <td>密码：</td>
                     <td>
                         <input type="text" />
                     </td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>再次输入新密码：</td>
+                    <td>验证码：</td>
                     <td>
-                        <input type="text" />
+                        <input style="width: 100px" type="text" />
+                        <img style="width: 50px;height:30px;" src="" />
                     </td>
-                    <td></td>
+                    <td><a href="" style="font-size:14px">看不清？换一张</a></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input class="save-submit" type="submit" value="保存" />
+                        <input class="save-submit" type="submit" value="确认" />
                     </td>
                     <td></td>
                 </tr>

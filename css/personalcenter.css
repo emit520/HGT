@@ -204,7 +204,7 @@
 /*个人中心-个人信息-收货地址管理*/
 
 
-.personal-address, .personal-password, .personal-pay-password
+.personal-address, .personal-password, .personal-pay-password, .card-common
 {
     height: auto;
     border-left: 1px dashed #E4E4E5;
@@ -226,7 +226,7 @@
     margin-bottom: 50px;
 }
 
-.personal-address-data tr, .personal-password-data tr, .personal-pay-password-data tr
+.personal-address-data tr, .personal-password-data tr, .personal-pay-password-data tr, .card-from tr
 {
     height: 50px;
 }
@@ -257,7 +257,7 @@
     width: 155px;
 }
 
-.personal-address-data .save-submit, .personal-password-data .save-submit, .personal-pay-password-data .save-submit
+.personal-address-data .save-submit, .personal-password-data .save-submit, .personal-pay-password-data .save-submit, .card-from .save-submit
 {
     width: 55px;
     height: 27px;
@@ -329,14 +329,18 @@
     width: 92px;
 }
 
-.personal-password-data, .personal-pay-password-data
+
+
+
+
+.personal-password-data, .personal-pay-password-data, .card-from
 {
     width: 435px;
     font-size: 16px;
     margin: 0 0 30px 130px;
 }
 
-.personal-password-data tr td:nth-of-type(1)
+.personal-password-data tr td:nth-of-type(1), .card-from tr td:nth-of-type(1)
 {
     width: 110px;
     color: #898989;
@@ -344,20 +348,20 @@
     font-size: 16px;
 }
 
-.personal-password-data tr td:nth-of-type(2), .personal-pay-password-data tr td:nth-of-type(2)
+.personal-password-data tr td:nth-of-type(2), .personal-pay-password-data tr td:nth-of-type(2), .card-from tr td:nth-of-type(2)
 {
     width: 185px;
     text-align: right;
 }
 
-.personal-password-data tr td:nth-of-type(3), .personal-pay-password-data tr td:nth-of-type(3)
+.personal-password-data tr td:nth-of-type(3), .personal-pay-password-data tr td:nth-of-type(3), .card-from tr td:nth-of-type(3)
 {
     width: 110px;
     text-align: right;
 }
 
 
-.personal-password-data input[type=text], .personal-pay-password-data input[type=text]
+.personal-password-data input[type=text], .personal-pay-password-data input[type=text], .card-from input[type=text]
 {
     height: 30px;
     width: 155px;
@@ -379,17 +383,17 @@
 
 /*个人中心-我的订单*/
 
-.my-order
+.my-order, .my-card
 {
     height: auto;
 }
 
-.my-order .my-order-list
+.my-order .my-order-list, .my-card .my-card-list
 {
     width: 100%;
 }
 
-.my-order .my-order-list tr:nth-of-type(1)
+.my-order .my-order-list tr:nth-of-type(1), .my-card .my-card-list tr:nth-of-type(1)
 {
     height: 45px;
     background: #EFEFEF;
@@ -506,4 +510,51 @@
     border: 1px solid #D7D7D7;
     color: #D7D7D7;
     text-align: center;
+}
+
+.my-card .my-card-list tr td
+{
+    text-align: center;
+
+}
+
+.my-card .my-card-list tr
+{
+    border-bottom: 1px solid #C8C6C6;
+    height: 43px;
+}
+
+.my-card .my-card-list tr:nth-of-type(1)
+{
+    border: none;
+}
+
+.my-card .my-card-list tr td:nth-of-type(1)
+{
+    width: 186px;
+}
+
+.my-card .my-card-list tr td:nth-of-type(2)
+{
+    width: 148px;
+}
+
+.my-card .my-card-list tr td:nth-of-type(3)
+{
+    width: 80px;
+}
+
+.my-card .my-card-list tr td:nth-of-type(4)
+{
+    width: 95px;
+}
+
+.my-card .my-card-list tr td:nth-of-type(5)
+{
+    width: 95px;
+}
+
+.card-common
+{
+    padding-bottom: 80px;
 }
