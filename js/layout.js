@@ -123,6 +123,24 @@ $(function(){
 		$(this).find("span").html("-").parents("li").siblings().find("span").html("+");	
 	})
 	
-	
+	//选择地区js
+	$(".area .place").click(function(){
+		$(".area_list").fadeIn();	
+	})
+	$(".province li").click(function(){
+		$(this).addClass("province_select").siblings().removeClass("province_select");	
+	});
+	$(".city li").click(function(){
+		$(this).addClass("city_select").siblings().removeClass("city_select");	
+	});
+	$(".area_reset").click(function(){
+		$(".area_list").fadeOut();	
+	});
+	$(".area_submit").click(function(){
+		var txt1 = $(".province li.province_select").html();
+		var txt2 = $(".city li.city_select").html();
+		$(".place em").html(txt1 + txt2);
+		$(".area_list").fadeOut();
+	})
 
 })

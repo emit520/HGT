@@ -11,8 +11,6 @@
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/layout.js"></script>
-<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
-<script type="text/javascript" src="js/product_img.js"></script>
 </head>
 
 <body>
@@ -307,137 +305,179 @@
     
     <!--main部分开始-->
     <div class="main">
-    	<!--商品详情-->
-        <div class="product_detail clearfix">
-        	<div class="product_pic fl">
-            	<div id="preview" class="spec-preview"> 
-                    <span class="jqzoom"><img jqimg="images/img/b1.jpg" src="images/img/s1.jpg" /></span> 
-                </div>
-                <!-- 大图end -->
-                <!-- 缩略图begin -->
-                <div class="spec-scroll clearfix"> 
-                	<a class="prev">&lt;</a> 
-                    <a class="next">&gt;</a>
-                  	<div class="items">
-                        <ul>
-                          <li><img bimg="images/img/b1.jpg" src="images/img/s1.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b2.jpg" src="images/img/s2.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b3.jpg" src="images/img/s3.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b1.jpg" src="images/img/s1.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b3.jpg" src="images/img/s3.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b1.jpg" src="images/img/s1.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b2.jpg" src="images/img/s2.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b1.jpg" src="images/img/s1.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b2.jpg" src="images/img/s2.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b2.jpg" src="images/img/s2.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b1.jpg" src="images/img/s1.jpg" onmousemove="preview(this);"></li>
-                          <li><img bimg="images/img/b2.jpg" src="images/img/s2.jpg" onmousemove="preview(this);"></li>
-                        </ul>
-                  	</div>
-				</div>
+
+        <!--内页左边-->
+        <div class="inside_left">
+        	<!--生活服务-->
+            <div class="life_serve">
+            	<h2>生活服务</h2>
+                <ul class=" clearfix">
+                	<li>
+                        <a href="#">
+                            <img src="images/icon1.jpg" alt="">
+                            <p>会员卡</p>
+                        </a>
+                    </li>
+                    <li style="border-right:none;">
+                        <a href="#">
+                            <img src="images/icon2.jpg" alt="">
+                            <p>中石化</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icon3.jpg" alt="">
+                            <p>话费</p>
+                        </a>
+                    </li>
+                    <li style="border-right:none;">
+                        <a href="#">
+                            <img src="images/icon4.jpg" alt="">
+                            <p>电影票</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icon5.jpg" alt="">
+                            <p>加油卡</p>
+                        </a>
+                    </li>
+                    <li style="border-right:none;">
+                        <a href="#">
+                            <img src="images/icon6.jpg" alt="">
+                            <p>消费卡</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
-			<div class="product_txt fl">
-            	<h2>英国体美雅会 祛疤薰衣草VE淡疤化印露 祛痘印 修复祛疤 去痘印痘印修复 祛除剖腹产疤痕 手术烫烧伤 爽肤水保湿水 男女通用</h2>
-                <h3>99减20 刘涛推荐品牌 货到付款  </h3>
-                <p>价　格：<strong>￥156</strong></p>
-                <p>市场价：<span>￥216　（节省了60元）</span></p>
-                <p>商品编号：182424</p>
-                <br/>
-                <p>商品评价分：<span class="comment_star"><em><i></i><i></i><i></i><i></i><i></i></em>（以有756人评价）</span></p>
-                <dl class="clearfix">
-                	<dt>配送至：
-                		<dd>
-                        	<div class="area">
-                            	<span class="place"><em>武汉光谷</em><i></i></span>
-                                <span>有货</span>
-                                <div class="area_list hide">
-                                    <p>请选择省份：</p>
-                                    <ul class="province clearfix">
-                                        <li>北京</li>
-                                        <li>上海</li>
-                                        <li>天津</li>
-                                        <li>湖北</li>
-                                        <li>湖南</li>
-                                        <li>广东</li>
-                                        <li>北京</li>
-                                        <li>上海</li>
-                                        <li>天津</li>
-                                        <li>湖北</li>
-                                        <li>湖南</li>
-                                        <li>广东</li>
-                                    </ul>
-                                    <p>请选择城市：</p>
-                                    <ul class="city clearfix">
-                                        <li>北京</li>
-                                        <li>上海</li>
-                                        <li>天津</li>
-                                        <li>武汉</li>
-                                        <li>深圳</li>
-                                        <li>广州</li>
-                                    </ul>
-                                    <p><a href="javascript:;" class="area_reset">取消</a> <a href="javascript:;" class="area_submit">确定</a></p>
-                                </div>
-                            </div>
-                            
-                        </dd>
-                	</dt>
-                </dl>
-                <dl class="clearfix">
-                	<dt>选择颜色：
-                		<dd>
-                        	<ul class="choose_color clearfix">
-                        		<li><a href="#">红色</a></li>
-                                <li><a href="#">黄色</a></li>
-                                <li class="choose_select"><a href="#">绿色</a></li>
-                                <li><a href="#">紫色</a></li>
-                                <li><a href="#">蓝色</a></li>
-                        	</ul>
-                        </dd>
-                	</dt>
-                </dl>
-                <dl class="clearfix">
-                	<dt>购买数量：
-                		<dd>
-                        	<div class="count_num"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
-                        </dd>
-                	</dt>
-                </dl>
-                <div class="btn_action">
-                	<div class="shops_car fl">
-                        <a href="###" title="购物车"><img src="images/shop_car.png" alt="">购物车(<span class="buy_num">0</span>)</a>
-                    </div>
-                    <div class="collection_btn fl">
-                    	<a href="#" title="收藏商品"><img src="images/star1.png" alt="">收藏商品</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--商品信息-->
-        <div class="product_infor">
-        	<div class="product_infor_tab">
-            	<ul class="clearfix">
-            		<li class="tab_select">商品详情</li>
-                    <li>规格参数</li>
-                    <li>包装清单</li>
-                    <li>商品评价（已有1235人评价）</li>
+            
+            <!--热销单品-->
+            <div class="sub_hot_sale">
+            	<h2>热销单品</h2>
+            	<ul>
+            		<li>
+                    	<a href="#"><img src="images/pic4.jpg" alt=""></a>
+                        <p><a href="#">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</a></p>
+                        <p>￥119.00</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/pic4.jpg" alt=""></a>
+                        <p><a href="#">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</a></p>
+                        <p>￥119.00</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/pic4.jpg" alt=""></a>
+                        <p><a href="#">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</a></p>
+                        <p>￥119.00</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/pic4.jpg" alt=""></a>
+                        <p><a href="#">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</a></p>
+                        <p>￥119.00</p>
+                    </li>
+                    <li>
+                    	<a href="#"><img src="images/pic4.jpg" alt=""></a>
+                        <p><a href="#">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</a></p>
+                        <p>￥119.00</p>
+                    </li>
             	</ul>
             </div>
-            <div class="product_infor_content">
-            	<div class="product_infor_disc">
-                	<p>品牌：水宝宝 适用肤质：所有肤质 商品质地：霜状 防晒指数：SPF30以上</p>
+        </div>
+        <!--内页右边-->
+        <div class="inside_right">
+        	<div class="page_banner"><a href="#"><img src="images/banner2.jpg" alt=""></a></div>
+            <div class="card_wrap">
+            	<div class="card_tit">购卡简介</div>
+                <div class="card_infor clearfix">
+                	<img src="images/pic5.jpg" alt="">
+                    <div class="card_disc">
+                    	<p>企业购卡适用于企业员工关怀、生日福利、节日慰问、商务馈赠等场合，最大限度满足不同类型客户的需求，提升企业形象，增加公司凝聚力。</p>
+                        <p>该卡集通用便利、尊贵优惠等多项功能优势，并跨越百货超市、家电家居大卖场、餐饮娱乐、生活服务等多行业的通用预付卡。目前汉购通在湖北地区拥有3000多家一线合作商户，10000多个刷卡终端，发卡量超过300万张。</p>
+                        <p>此卡提供两种购买方式供客户选择：<br/>1）拨打400-187-5151客服热线申请购买。<br/>2）登录 www.kbsc.com通过在线支付的方式购买。</p>
+                    </div>
                 </div>
-                <div class="product_infor_disc hide">
-                	<p>规格参数</p>
-                </div>
-                <div class="product_infor_disc hide">
-                	<p>商品一个，说明书一份，包装盒一个</p>
-                </div>
-                <div class="product_infor_disc hide">
-                	评论
+                <div class="card_tit">商品详情</div>
+                <div class="card_list">
+                	<ul>
+                		<li class="clearfix">
+                        	<img src="images/card1.png" class="card_pic" alt="">
+                            <div class="card_box">
+                            	<div class="card_value clearfix">
+                                	<span>面值：</span>
+                                    <p>
+                                    	<a href="javascript:;" class="card_select">100元</a>
+                                   		<a href="javascript:;">200元</a>
+                                        <a href="javascript:;">500元</a>
+                                    	<a href="javascript:;">1000元</a>
+                                    	<a href="javascript:;">其他面值</a>
+                                    </p>
+                                </div>
+                                <dl class="clearfix">
+                                	<dt>数量：</dt>
+                                    <dd>
+                                    	<div class="count_num clearfix"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
+                                    </dd>
+                                </dl>
+                                <p>消费折扣：<span>9折</span></p>
+                                <p>适用范围： 3000家商户</p>
+                                <div class="buy_box"><a href="#">立即抢购</a></div>
+                                <div class="card_option">
+                                	<a href="#"><img src="images/share.jpg" alt="">分享</a>
+                                    <a href="#"><img src="images/collect.jpg" alt="">收藏</a>
+                                    <a href="#"><img src="images/shop_car.jpg" alt="">购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                        	<img src="images/card1.png" class="card_pic" alt="">
+                            <div class="card_box">
+                            	<div class="card_value clearfix">
+                                	<span>面值：</span>
+                                    <p>
+                                    	<a href="javascript:;" class="card_select">100元</a>
+                                   		<a href="javascript:;">200元</a>
+                                        <a href="javascript:;">500元</a>
+                                    	<a href="javascript:;">1000元</a>
+                                    	<a href="javascript:;">其他面值</a>
+                                    </p>
+                                </div>
+                                <dl class="clearfix">
+                                	<dt>数量：</dt>
+                                    <dd>
+                                    	<div class="count_num"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
+                                    </dd>
+                                </dl>
+                                <p>消费折扣：<span>9折</span></p>
+                                <p>适用范围： 3000家商户</p>
+                                <div class="buy_box"><a href="#">立即抢购</a></div>
+                                <div class="card_option">
+                                	<a href="#"><img src="images/share.jpg" alt="">分享</a>
+                                    <a href="#"><img src="images/collect.jpg" alt="">收藏</a>
+                                    <a href="#"><img src="images/shop_car.jpg" alt="">购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                	</ul>
+                    <!--分页-->
+                    <div class="pagination">
+                        <a href="#" title="上一页" class="page_up">&lt; 上一页</a>
+                        <a href="#" class="page_on">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        ...
+                        <a href="#">30</a>
+                        <a href="#" title="下一页" class="page_down">下一页 &gt;</a>
+                    </div>
                 </div>
             </div>
         </div>
-        
+        <div class="clearfix"></div>
         <div class="model">
 			<!--友情链接部分-->
             <div class="index_bottom clearfix">

@@ -32,4 +32,23 @@ $(function(){
 	//商品详情tab
 	Tab(".product_infor_tab li",".product_infor_disc","tab_select");
 	
+	//选择商品数量加减控件
+	function plusAndMinus(){
+		$(".count_num").each(function(index, element) {
+            $(this).find(".minus").click(function(){
+				var val = $(this).parent().find(".choose_num").val();
+				if(val <= 0){
+					$(this).parent().find(".choose_num").val(0)	
+				}else{
+					$(this).parent().find(".choose_num").val(parseInt(val)-1);
+				}
+			});
+			$(this).find(".plus").click(function(){
+				var val = $(this).parent().find(".choose_num").val();
+				$(this).parent().find(".choose_num").val(parseInt(val)+1);
+			})
+        });
+		
+	}
+	plusAndMinus();
 })

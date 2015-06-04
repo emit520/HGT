@@ -493,13 +493,88 @@
 	float:left;
 	display:inline;
 }
-.product_txt .choose_color{}
+.area{
+	position:relative;}
+.area .place{
+	border:1px solid #ccc;
+	margin-right:5px;
+	padding:2px 4px;
+	cursor:pointer;
+}
+.area .place em{
+	font-style:normal;
+}
+.area .place i{
+	width:9px;
+	height:6px;
+	display:inline-block;
+	background:url(../images/down_icon.png) no-repeat;
+	margin-left:5px;
+}
+.area_list{
+	width:320px;
+	min-height:100px;
+	background:#fff;
+	position:absolute;
+	top:20px;
+	left:0;
+	z-index:99;
+	border:1px solid #ccc;
+	padding-top:10px;
+}
+.area_list p{
+	margin-left:10px;
+	font-size:14px;
+	color:#333;
+}
+.area_list p a{
+	width:80px;
+	height:25px;
+	line-height:25px;
+	text-align: center;
+	font-size:14px;
+	color:#666;
+	border:1px solid #ccc;
+	margin-right:10px;
+	display:inline-block;
+	border-radius:5px;
+}
+.area_list p a:hover{
+	color:#db1716;
+	border:1px solid #db1716;
+}
+.area_list ul{
+	margin:10px;
+}
+.area_list ul li{
+	margin-right:10px;
+	line-height:24px;
+	font-size:12px;
+	color:#666;
+	float:left;
+	display:inline;
+	padding:2px 4px;
+	cursor:pointer;
+}
+.area_list ul li:hover{
+	background:#db1716;
+	color:#fff;
+}
+.province .province_select{
+	background:#db1716;
+	color:#fff;
+}
+.city .city_select{
+	background:#db1716;
+	color:#fff;
+}
 
 .product_txt .choose_color li{
 	float:left;
 	display:inline;
 	margin:0 5px;
 }
+
 .product_txt .choose_color li a{
 	display: inline-block;
 	white-space: nowrap;
@@ -549,6 +624,7 @@
 .count_num .choose_num{
 	width:60px;
 	height:22px;
+	line-height:22px;
 	border:1px solid #ccc;
 	margin:0 10px;
 	background:#fff;
@@ -609,12 +685,231 @@
 .product_infor_tab ul li.tab_select{
 	border:2px solid #bababb;
 	border-bottom:none;
+	line-height:32px
 }
 
 .product_infor_content{
 	width:1024px;
 	margin-top:20px;
 }
+
+/***************************个人购卡*************************************/
+
+/*生活服务*/
+.life_serve{
+	width:176px;
+	margin:20px 0 10px 0;
+	border:1px solid #c7c6c6;
+}
+.life_serve h2{
+	text-indent:10px;
+	font-size:14px;
+	color:#333;
+	height:40px;
+	line-height:40px;
+}
+.life_serve li{
+	width:87px;
+	height:60px;
+	border-top:1px dashed #c7c6c6;
+	border-right:1px dashed #c7c6c6;
+	float:left;
+	display:inline;
+	text-align: center;
+}
+.life_serve li img{
+	margin-top:10px;
+}
+.life_serve li a p{
+	font-size:12px;
+	color:#666;
+	margin-top:5px;
+}
+.life_serve li a:hover{
+	text-decoration:underline;
+}
+/*内页banner*/
+.page_banner{
+	width:815px;
+	height:398px;
+	border:1px solid #ccc;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.page_banner a{
+	display:block;
+}
+.page_banner img{
+	width:815px;
+	height:398px;
+	display:block;
+}
+.card_wrap{
+	width:815px;
+}
+.card_tit{
+	width:813px;
+	height:46px;
+	line-height:46px;
+	background:#efefef;
+	text-indent:10px;
+	font-size:16px;
+	color:#666;
+	border:1px solid #ccc;
+}
+.card_infor{
+	width:815px;
+	height:264px;
+}
+.card_infor img{
+	width:347px;
+	height:264px;
+	float:left;
+	display:block;
+}
+.card_infor .card_disc{
+	width:460px;
+	float:right;
+	padding-top:10px;
+}
+.card_infor .card_disc p{
+	font-size:14px;
+	color:#666;
+	line-height:24px;
+	margin-bottom:10px;
+}
+.card_list{
+	width:780px;
+	border:1px solid #ccc;
+	margin:10px auto;
+}
+.card_list li{
+	width:780px;
+	padding-bottom:20px;
+	border-bottom:1px solid #ccc;
+}
+
+.card_list li .card_pic{
+	width:242px;
+	height:153px;
+	float:left;
+	display:inline;
+	margin:20px 0 0 20px;
+}
+.card_list li .card_box{
+	width:500px;
+	float:right;
+	position:relative;
+	margin-top:20px;
+}
+.card_box .card_value{
+	width:300px;
+	margin-bottom:10px;
+}
+.card_value span{
+	width:50px;
+	float:left;
+	display:block;
+	font-size:12px;
+	color:#515151;
+}
+.card_box .card_value p{
+	width:250px;
+	float:left;
+	margin-bottom:0;
+}
+.card_value p a{
+	width:70px;
+	height:25px;
+	text-align:center;
+	line-height:25px;
+	display:inline-block;
+	margin:0 5px 7px 2px ;
+	border:1px solid #ccc;
+	border-radius:3px;
+}
+.card_value p a.card_select{
+	border:1px solid #cd1f1c;
+}
+.card_box dl{
+	margin-bottom:10px;
+	width:300px;
+}
+.card_box dt{
+	width:50px;
+	float:left;
+	font-size:12px;
+	color:#515151;
+}
+.card_box dd{
+	float:left;
+}
+.card_box p{
+	font-size:12px;
+	color:#515151;
+	margin-bottom:5px;
+}
+.card_box p span{
+	color:#cd1f1c;
+	font-size:18px;
+}
+.card_box .buy_box{
+	width:169px;
+	height:37px;
+	position:absolute; 
+	top:0;
+	right:0;
+	background:url(../images/flag_bg.png) no-repeat;
+}
+.buy_box a{
+	width:100px;
+	height:25px;
+	display:block;
+	background:#fff;
+	border-radius:5px;
+	text-align:center;
+	line-height:25px;
+	color:#cd1f1c;
+	font-size:14px;
+	margin:6px 0 0 50px;
+}
+.card_box .card_option{
+	position:absolute;
+	top:138px;
+	right:20px;
+}
+.card_box .card_option a{
+	color:#999px;
+	font-size:12px;
+	margin-right:10px;
+	display:inline-block;
+}
+.card_box .card_option a img{
+	position:relative; 
+	top:-2px;
+	margin-right:2px;
+}
+.card_box .card_option a:hover{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
