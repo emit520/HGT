@@ -95,7 +95,9 @@ display:none;
 .nav_list{ width:860px;}
 .nav_list li{ height:40px; line-height:40px; font-size:14px;  float:left; margin-right:10px; display:inline;}
 .nav_list li a{ height:40px; display:block; text-indent:10px; color:#333;}
-.nav_list li a:hover{ text-decoration:underline;}
+.nav_list li a:hover{ color:#ce1f1c;}
+.nav_list li.nav_select a{ color:#ce1f1c;}
+
 /*--------------------------------------------------
  *	主体样式
  *--------------------------------------------------*/

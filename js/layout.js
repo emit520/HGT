@@ -141,6 +141,56 @@ $(function(){
 		var txt2 = $(".city li.city_select").html();
 		$(".place em").html(txt1 + txt2);
 		$(".area_list").fadeOut();
-	})
+	});
+	
+	//个人购卡，企业购卡面值选择
+	$(".card_value").each(function(index) {
+        $(this).find("a").click(function(){
+			$(this).addClass("card_select").siblings().removeClass("card_select");
+		});
+		$(this).find("input").focus(function(){
+			$(this).parent().find("a").removeClass("card_select");
+			var val = $(this).val();
+			if(val == "其他面值" || val == ""){
+				$(this).val('');
+			}else{
+				$(this).val(val);
+			}	
+		});
+		$(this).find("input").blur(function(){
+			var val = $(this).val();
+			if(val == "其他面值" || val == ""){
+				$(this).val('其他面值');
+			}else{
+				$(this).val(val);
+			}	
+		});
+    });
+	
+	//登陆输入框
+	$(".login_pw").keyup(function(){
+		var val = $(".login_pw").val();
+		var len = val.length;
+		if(len == 0){
+			$(".close1").hide();
+		}else if(len >0){
+			$(".close1").show();
+		}
+		
+	});
+	$(".close1").click(function(){
+			var val = $(".login_pw").val();
+			var len = val.length;
+			if(len==1){
+				$(".close1").hide();
+			}
+			if(val == '' || val == null){
+				$(".login_pw").val('');	
+			}else{
+				var str = val.substring(0,len-1);
+				$(".login_pw").val(str);		
+			}	
+		})	
+	
 
 })

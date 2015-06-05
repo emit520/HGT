@@ -831,6 +831,15 @@
 .card_value p a.card_select{
 	border:1px solid #cd1f1c;
 }
+.card_value .other_value{
+	width:70px;
+	height:25px;
+	border:1px solid #ccc;
+	line-height:25px;
+	border-radius:3px;
+	text-align:center;
+	color:#666;
+}
 .card_box dl{
 	margin-bottom:10px;
 	width:300px;
