@@ -23,6 +23,11 @@
     margin-bottom: 50px;
 }
 
+.personal-menu-select
+{
+    color: #D12021 !important;
+}
+
 .personal-menu .personal-menu-box
 {
     border: 1px solid #EFCBC3;
@@ -204,7 +209,7 @@
 /*个人中心-个人信息-收货地址管理*/
 
 
-.personal-address, .personal-password, .personal-pay-password, .card-common, .card-state, .my-message
+.personal-address, .personal-password, .personal-pay-password, .card-common, .card-state, .my-message, .my-integral
 {
     height: auto;
     border-left: 1px dashed #E4E4E5;
@@ -592,32 +597,55 @@
     padding-bottom: 5px;
 }
 
-.my-message .my-message-data
+.my-message .my-message-data, .my-integral .my-integral-data
 {
     width: 800px;
     margin-left: 13px;
 }
 
-.my-message .my-message-data tr td:nth-of-type(1)
+.my-message .my-message-data tr td:nth-of-type(1), .my-integral .my-integral-data tr td:nth-of-type(1)
 {
     width: 150px;
     text-align: left;
     padding: 30px 0;
 }
 
-.my-message .my-message-data tr td:nth-of-type(2)
+.my-message .my-message-data tr td:nth-of-type(2), .my-integral .my-integral-data tr td:nth-of-type(2)
 {
     width: 100%;
     vertical-align: top;
     padding:30px 0 0 15px;
 }
 
-.my-message .my-message-data tr
+.my-message .my-message-data tr:last-of-type, .my-integral .my-integral-data tr:last-of-type
+{
+    border-bottom: none;
+}
+
+
+.my-message .my-message-data tr, .my-integral .my-integral-data tr
 {
     border-bottom: 1px solid #C9CACB;
 }
 
-.my-message .my-message-data tr:last-of-type
+.my-message .my-message-data tr:first-of-type, .my-integral .my-integral-data tr:first-of-type
 {
-    border-bottom: none;
+    border-bottom: 1px solid #C9CACB;
+}
+
+.my-integral
+{
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.my-integral-title
+{
+    height: 50px;
+    line-height: 50px;
+    text-indent: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #EFEFEF;
+    color: #808285;
 }
