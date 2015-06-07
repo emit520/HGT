@@ -106,15 +106,137 @@
 	text-decoration:underline;
 }
 
+/*注册*/
+.registe{
+	width:1024px;
+	margin:50px auto 20px;
+}
+.registe_box{
+	width:1024px;
+}
+.registe_tab{
+	width:1024px;
+	height:45px;
+	border-bottom:1px solid #d6d5d5;
+	margin-top:20px;
+}
+.registe_tab ul{
+	margin-left:320px;
+}
+.registe_tab li{
+	width:138px;
+	height:44px;
+	border:1px solid #fff;
+	border-bottom:none;
+	background:#fff;
+	float:left;
+	margin-right:10px;
+	display:inline;
+	cursor:pointer;
+	line-height:44px;
+	text-align:center;
+	font-size:16px;
+	color:#515151;
+}
+.registe_tab li.registe_tab_select{
+	border:1px solid #d6d5d5;
+	border-bottom:none;
+	height:45px;
+	color:#d70404;
+}
+.registe_content{
+	width:1024px;
+	border:1px solid #d6d5d5;
+	border-top:none;
+	border-bottom:none;
+}
 
-
-
-
-
-
-
-
-
+.form_model{
+	width:1024px;
+	border-bottom:1px solid #d6d5d5;
+	padding:30px 0 20px;
+}
+.form_model h2{
+	margin-left:30px;
+	margin-bottom:10px;
+	font-size:16px;
+	color:#515151;
+}
+.form_model p{
+	font-size:16px;
+	color:#666;
+	margin-bottom:15px;
+}
+.form_model p a{
+	color:#004489;
+}
+.form_model label{
+	width:200px;
+	display:inline-block;
+	text-align:right;
+	margin-left:100px;
+}
+.form_model input[type=text],.form_model input[type=password]{
+	width:260px;
+	height:46px;
+	border:1px solid #cecece;
+	border-radius:3px;
+	line-height:46px;
+	text-indent:10px;
+}
+.form_model input.yan_text,.form_model .yan_btn{
+	width:120px;
+}
+.form_model .yan_btn{
+	height:48px;
+	border:1px solid #cecece;
+	border-radius:3px;
+	line-height:46px;
+	color:#666;
+	margin-left:15px;
+	cursor:pointer;
+}
+.form_model input[type=checkbox],.form_model input[type=submit]{
+	margin-left:305px;
+}
+.form_model input[type=submit]{
+	width:260px;
+	height:40px;
+	background:#e50000;
+	border-radius:5px;
+	line-height:40px;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+}
+.form_model select{
+	height:46px;
+	border:1px solid #cecece;
+	border-radius:5px;
+	color:#666;
+	padding-left:10px;
+	
+}
+.form_model input[type=radio]{
+	margin-right:5px;
+}
+.form_model .department,.form_model .company_num,.form_model .company_nature{
+	width:120px;
+}
+.form_model .province,.form_model .city,.form_model .region{
+	width:80px;
+	margin-right:5px;
+}
+.upload{
+	margin-left:305px;
+	margin-bottom:10px;
+}
+.upload span{
+	display:block;
+	font-size:14px;
+	color:#666;
+	margin-top:10px;
+}
 
 
 

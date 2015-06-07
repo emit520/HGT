@@ -32,6 +32,9 @@ $(function(){
 	//商品详情tab
 	Tab(".product_infor_tab li",".product_infor_disc","tab_select");
 	
+	//注册tab
+	Tab(".registe_tab li",".registe_item","registe_tab_select");
+	
 	//选择商品数量加减控件
 	function plusAndMinus(){
 		$(".count_num").each(function(index, element) {
