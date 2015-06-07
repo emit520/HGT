@@ -209,7 +209,7 @@
 /*个人中心-个人信息-收货地址管理*/
 
 
-.personal-address, .personal-password, .personal-pay-password, .card-common, .card-state, .my-message, .my-integral
+.personal-address, .personal-password, .personal-pay-password, .card-common, .card-state, .my-message, .my-integral, .help-center
 {
     height: auto;
     border-left: 1px dashed #E4E4E5;
@@ -633,7 +633,7 @@
     border-bottom: 1px solid #C9CACB;
 }
 
-.my-integral
+.my-integral, .help-center
 {
     padding-top: 0;
     padding-bottom: 20px;
@@ -648,4 +648,42 @@
     font-weight: bold;
     background: #EFEFEF;
     color: #808285;
+}
+
+.help-center
+{
+    padding-bottom: 10px;
+}
+
+.help-center .help-center-data
+{
+    margin-left: 25px;
+    width: 790px;
+}
+
+.help-center .help-center-data
+{
+    border-bottom: 1px solid #C9CACB;
+}
+
+.help-center .help-center-data td
+{
+    padding-right: 10px;
+}
+
+.help-center .help-center-data  tr:nth-of-type(1) td
+{
+    height: 40px;
+    padding-top: 20px;
+}
+
+.help-center .help-center-data  tr:nth-of-type(2) td
+{
+    height: auto;
+    padding: 10px 20px 20px 0;
+}
+
+.help-center .help-center-data:last-of-type
+{
+    border: none;
 }
