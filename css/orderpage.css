@@ -1,0 +1,94 @@
+
+
+.main
+{
+    font-size: 14px;
+}
+
+.confirm-order-address
+{
+    padding: 20px 0;
+
+}
+
+.confirm-order-address .confirm-order-address-list
+{
+    width: 180px;
+    height: 86px;
+    border: 1px solid #C7C6C6;
+    padding: 5px;
+    float: left;
+    margin-right: 13px;
+    margin-bottom: 10px;
+}
+
+.confirm-order-address .address-select
+{
+    border: 4px dashed red;
+    height: 78px;
+    width: 172px;
+}
+
+.confirm-order-address .confirm-order-title
+{
+    padding: 10px 0;
+}
+
+.confirm-order-address .address-consignee
+{
+    height: 30px;
+    line-height: 30px;
+}
+
+.confirm-order-address .address-details
+{
+
+}
+
+.confirm-order-data
+{
+    width: 100%;
+    border: 1px solid #C7C6C6;
+    color: #898989;
+}
+
+.confirm-order-data .confirm-order-data-title
+{
+    height: 44px;
+    background: #EFEFEF;
+}
+
+
+.confirm-order-data .confirm-order-data-title td
+{
+    text-align: center;
+}
+
+.confirm-order-data .confirm-order-data-list
+{
+    height: 107px;
+
+
+}
+
+.confirm-order-data .confirm-order-data-list td
+{
+    text-align: center;
+    border-bottom: 1px solid #C7C6C6;
+}
+
+
+.confirm-order-data .confirm-order-data-price
+{
+    height: 142px;
+
+}
+
+.confirm-order-data .confirm-order-data-price td{
+    border-bottom: 1px solid #C7C6C6;
+}
+
+.confirm-order-data .confirm-order-data-commit
+{
+    height: 122px;
+}
