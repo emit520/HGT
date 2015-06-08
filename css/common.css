@@ -26,7 +26,7 @@ html,body{ font: 12px/1.5 "Microsoft Yahei", "微软雅黑", tahoma, helvetica, 
 	top:0; 
 	left:0;
 	background:#fff;
-	z-index:999;
+	z-index:98;
 }
 .top_wrap{ width:1024px; height:40px; margin:0 auto;}
 .top_disc{ color:#231815;}
@@ -174,6 +174,125 @@ display:none;
 .copyright p{ color:#727171; line-height:20px; text-align:center;}
 .copyright p a{ font-size:14px; color:#231815; margin-bottom:15px;}
 .copyright p em{ margin:0 5px;}
+
+/*--------------------------------
+*   弹框表单
+*--------------------------------------*/
+.mark{
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.6;
+	filter: "alpha(opacity=60)"; /* IE 8 */
+ 	filter: alpha(opacity=60);   /* IE 4-7 */
+ 	zoom: 1;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:99; 
+	display:none;      
+}
+.dialog{
+	width:756px;
+	min-height:615px;
+	background:#fff;
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-left:-378px;
+	margin-top:-300px;
+	z-index:100;
+	display:none;
+}
+.dia_close{
+	width:77px;
+	height:76px;
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.dialog_box{
+	width:756px;
+	margin:100px 0 50px;
+}
+.dialog_box p{
+	font-size:14px;
+	color:#666;
+	margin-bottom:20px;
+}
+.dialog_box p label{
+	width:200px;
+	margin-left:50px;
+	text-align:right;
+	font-size:16px;
+	color:#333;
+	display:inline-block;
+}
+.dialog_box p input[type=text],.dialog_box p select{
+	width:300px;
+	height:38px;
+	line-height:38px;
+	border:1px solid #c7c6c6;
+	border-radius:5px;
+	text-indent:10px;
+}
+.dialog_box p input[type=radio]{
+	margin:0 10px 0 20px;}
+.dialog_box p input.yan_input{
+	width:100px;
+}
+.dialog_box p .yanzhengma{
+	width:107px;
+	height:38px;
+	border:1px solid #c7c6c6;
+	margin-left:5px;
+}
+.dialog_box p span{
+	margin-left:5px;
+	font-size:12px;
+}
+.dialog_box p span a{
+	color:#004489;
+}
+.dialog_box p input[type=submit]{
+	width:135px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-radius:5px;
+	background:#da1716;
+	color:#fff;
+	font-size:16px;
+	border:none;
+	margin-left:255px;
+	font-weight:bold;
+}
+.dialog_box h4{
+	font-size:12px;
+	color:#888;
+	margin:20px 0 0 220px;
+	font-weight:normal;
+	line-height:24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

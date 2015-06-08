@@ -7,28 +7,12 @@
 <title>汉购通</title>
 <link rel="stylesheet" type="text/css" href="css/base.css" />
 <link rel="stylesheet" type="text/css" href="css/common.css" />
-<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/layout.css" />
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/banner.js"></script>
-<script>
-window.add_favourite = function()
-{
-try{
-if ( window.sidebar && 'object' == typeof( window.sidebar ) && 'function' == typeof( window.sidebar.addPanel ) ){
-window.sidebar.addPanel("汉购通", window.location.href , '');
-}else if ( document.all && 'object' == typeof( window.external ) ){
-window.external.addFavorite(window.location.href , "汉购通");
-}else {alert('您使用的浏览器不支持此功能，请按“Ctrl + D”键手工加入收藏');
-}
-}catch(e){
-alert('您使用的浏览器不支持此功能，请按“Ctrl + D”键手工加入收藏');
-}
-return false;
-}
-</script>
-
+<script type="text/javascript" src="js/layout.js"></script>
+<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
+<script type="text/javascript" src="js/product_img.js"></script>
 </head>
 
 <body>
@@ -56,6 +40,7 @@ return false;
         </div>
     </div>
     <!--top部分结束-->
+    
 	<!--header部分开始-->
     <div class="header clearfix">
     	<div class="head">
@@ -74,8 +59,8 @@ return false;
             <div class="nav fl">
             	<!--分类菜单-->
             	<div class="classify fl">
-                	<div class="classify_head classify"><a href="javascript:;"><p class="fl">全部商品分类</p><span class="fl up hide"></span></a></div>
-                    <div class="classify_box">
+                	<div class="classify_head classify"><a href="javascript:;"><p class="fl">全部商品分类</p><span class="fl up"></span></a></div>
+                    <div class="classify_box hide">
                     	<ul class="classify_list">
                             <li>
                             	<a href="#"><img src="images/nav_icon1.png" alt=""><span>食品/特产</span><em class="r_triangle"></em></a>
@@ -308,6 +293,12 @@ return false;
                     <li><a href="###" title="个人购卡">个人购卡</a></li>
                     <li><a href="###" title="企业购卡">企业购卡</a></li>
                     <li><a href="###" title="银行专属特惠">银行专属特惠</a></li>
+                    <li><a href="###" title="卡片激活">卡片激活</a></li>
+                    <li><a href="###" title="四季恋会员卡7.5折">四季恋会员卡7.5折</a></li>
+                    <li><a href="###" title="京东商城">京东商城</a></li>
+                    <li><a href="###" title="农商行折上9.8折">农商行折上9.8折</a></li>
+                    <li><a href="###" title="帮助中心">帮助中心</a></li>
+                    <li><a href="###" title="个人中心">个人中心</a></li>
                 </ul>
             </div>
         </div>
@@ -316,273 +307,135 @@ return false;
     
     <!--main部分开始-->
     <div class="main">
-    
-    	<div class="model clearfix" style="margin-bottom:0;">
-            <!--banner-->
-            <div class="banner fl">
-            	<div id="playBox">
-                    <div class="pre"></div>
-                    <div class="next"></div>
-                    <div class="smalltitle">
-                      <ul>
-                        <li class="thistitle"></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                    </div>
-                    <ul class="oUlplay">
-                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"/></a></li>
-                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"></a></li>
-                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"></a></li>
-                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"></a></li>
-                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"></a></li>
-                       <li><a href="#" target="_blank"><img src="images/banner1.jpg"></a></li>
-                    </ul>
-                  </div>
+    	<!--商品详情-->
+        <div class="product_detail clearfix">
+        	<div class="product_pic fl">
+            	<div id="preview" class="spec-preview"> 
+                    <span class="jqzoom"><img jqimg="images/img/b1.jpg" src="images/img/s1.jpg" /></span> 
+                </div>
+                <!-- 大图end -->
+                <!-- 缩略图begin -->
+                <div class="spec-scroll clearfix"> 
+                	<a class="prev">&lt;</a> 
+                    <a class="next">&gt;</a>
+                  	<div class="items">
+                        <ul>
+                          <li><img bimg="images/img/b1.jpg" src="images/img/s1.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b2.jpg" src="images/img/s2.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b3.jpg" src="images/img/s3.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b1.jpg" src="images/img/s1.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b3.jpg" src="images/img/s3.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b1.jpg" src="images/img/s1.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b2.jpg" src="images/img/s2.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b1.jpg" src="images/img/s1.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b2.jpg" src="images/img/s2.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b2.jpg" src="images/img/s2.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b1.jpg" src="images/img/s1.jpg" onmousemove="preview(this);"></li>
+                          <li><img bimg="images/img/b2.jpg" src="images/img/s2.jpg" onmousemove="preview(this);"></li>
+                        </ul>
+                  	</div>
+				</div>
             </div>
-            
-            <!--小导航-->
-            <div class="sub_nav fl">
-            	<div class="sub_banner"><a href="#"><img src="images/ad1.jpg" alt=""></a></div>
-                <div class="sub_nav_list">
-                	<ul>
-                		<li>
-                        	<a href="#">
-                            	<img src="images/icon1.jpg" alt="">
-                                <p>会员卡</p>
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img src="images/icon2.jpg" alt="">
-                                <p>电影票</p>
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="javascript:;" class="phone_bill">
-                            	<img src="images/icon3.jpg" alt="">
-                                <p>话费充值</p>
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="javascript:;" class="oil_car_bill">
-                            	<img src="images/icon4.jpg" alt="">
-                                <p>中石化加油卡</p>
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img src="images/icon5.jpg" alt="">
-                                <p>购物卡</p>
-                            </a>
-                        </li>
-                        <li>
-                        	<a href="#">
-                            	<img src="images/icon6.jpg" alt="">
-                                <p>所有消费卡</p>
-                            </a>
-                        </li>
-                	</ul>
+			<div class="product_txt fl">
+            	<h2>仅售30.6元！价值100元的2D/3D电影票1张，可观看2D/3D。2D一兑一，3D周一至周四需补10元现金/张、周五至周日及端午节（6.20-6.22）需补15元现金/张；此劵仅限天利店、东海店、京基百纳店使用。</h2>
+                <h3>99减20 刘涛推荐品牌 货到付款  </h3>
+                <p>价　格：<strong>￥156</strong></p>
+                <p>市场价：<span>￥216　（节省了60元）</span></p>
+                <p>商品编号：182424</p>
+                <br/>
+                <p>商品评价分：<span class="comment_star"><em><i></i><i></i><i></i><i></i><i></i></em>（以有756人评价）</span></p>
+                <dl class="clearfix">
+                	<dt>配送至：
+                		<dd>
+                        	<div class="area">
+                            	<span class="place"><em>武汉光谷</em><i></i></span>
+                                <span>有货</span>
+                                <div class="area_list hide">
+                                    <p>请选择省份：</p>
+                                    <ul class="province clearfix">
+                                        <li>北京</li>
+                                        <li>上海</li>
+                                        <li>天津</li>
+                                        <li>湖北</li>
+                                        <li>湖南</li>
+                                        <li>广东</li>
+                                        <li>北京</li>
+                                        <li>上海</li>
+                                        <li>天津</li>
+                                        <li>湖北</li>
+                                        <li>湖南</li>
+                                        <li>广东</li>
+                                    </ul>
+                                    <p>请选择城市：</p>
+                                    <ul class="city clearfix">
+                                        <li>北京</li>
+                                        <li>上海</li>
+                                        <li>天津</li>
+                                        <li>武汉</li>
+                                        <li>深圳</li>
+                                        <li>广州</li>
+                                    </ul>
+                                    <p><a href="javascript:;" class="area_reset">取消</a> <a href="javascript:;" class="area_submit">确定</a></p>
+                                </div>
+                            </div>
+                            
+                        </dd>
+                	</dt>
+                </dl>
+                <dl class="clearfix">
+                	<dt>产品规格：
+                		<dd>
+                        	<ul class="choose_color clearfix">
+                        		<li class="choose_select"><a href="#">2D</a></li>
+                                <li><a href="#">3D</a></li>
+                        	</ul>
+                        </dd>
+                	</dt>
+                </dl>
+                <dl class="clearfix">
+                	<dt>购买数量：
+                		<dd>
+                        	<div class="count_num"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
+                        </dd>
+                	</dt>
+                </dl>
+                <div class="btn_action">
+                	<div class="shops_car fl">
+                        <a href="###" title="购物车"><img src="images/shop_car.png" alt="">购物车(<span class="buy_num">0</span>)</a>
+                    </div>
+                    <div class="collection_btn fl">
+                    	<a href="#" title="收藏商品"><img src="images/star1.png" alt="">收藏商品</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--商品信息-->
+        <div class="product_infor">
+        	<div class="product_infor_tab">
+            	<ul class="clearfix">
+            		<li class="tab_select">商品详情</li>
+                    <li>规格参数</li>
+                    <li>包装清单</li>
+                    <li>商品评价（已有1235人评价）</li>
+            	</ul>
+            </div>
+            <div class="product_infor_content">
+            	<div class="product_infor_disc">
+                	<p>品牌：水宝宝 适用肤质：所有肤质 商品质地：霜状 防晒指数：SPF30以上</p>
+                </div>
+                <div class="product_infor_disc hide">
+                	<p>规格参数</p>
+                </div>
+                <div class="product_infor_disc hide">
+                	<p>商品一个，说明书一份，包装盒一个</p>
+                </div>
+                <div class="product_infor_disc hide">
+                	评论
                 </div>
             </div>
         </div>
         
         <div class="model">
-        	<!--美食餐饮折扣卡兑换（电子会员卡）-->
-            <div class="tit clearfix"><p class="fl">美食餐饮折扣卡兑换（电子会员卡）</p><a href="#" class="fr">更多</a></div>
-            <div class="goods_push">
-            	<div class="goods_push_item w340 h397 bdr fl">
-                	<a href="#"><img src="images/ad2.jpg" width="340" height="397" alt=""></a>
-                </div>
-                <div class="goods_push_item w682 h397  fl">
-                	<div class="w340 h198 bdb bdr fl">
-                    	<a href="#"><img src="images/ad3.jpg" width="340" height="198" alt=""></a>
-                    </div>
-                    <div class="w340 h198 bdb bdr fl">
-                    	<a href="#"><img src="images/ad4.jpg" width="340" height="198" alt=""></a>
-                    </div>
-                    <div class="w170 h198 bdr fl">
-                        <a href="#"><img src="images/ad5.jpg" width="170" height="198" alt=""></a>
-                    </div>
-                    <div class="w169 h198 bdr fl">
-                        <a href="#"><img src="images/ad6.jpg" width="169" height="198" alt=""></a>
-                    </div>
-
-                    <div class="w170 h198 bdr fl">
-                        <a href="#"><img src="images/ad7.jpg" width="170" height="198" alt=""></a>
-                    </div>
-                    <div class="w169 h198 bdr fl">
-                        <a href="#"><img src="images/ad8.jpg" width="169" height="198" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="model">
-        	<!--全品类消费卡兑换-->
-            <div class="tit clearfix"><p class="fl">全品类消费卡兑换</p><a href="#" class="fr">更多</a></div>
-            <div class="goods_push">
-            	<div class="goods_push_item w340 h397 bdr fl">
-                	<div class="w340 h198 bdb bdr fl">
-                    	<a href="#"><img src="images/ad9.jpg" width="340" height="198" alt=""></a>
-                    </div>
-                    <div class="w340 h198 bdb bdr fl">
-                    	<a href="#"><img src="images/ad10.jpg" width="340" height="198" alt=""></a>
-                    </div>
-                </div>
-                <div class="goods_push_item w340 h397 bdr fl">
-                	<a href="#"><img src="images/ad11.jpg" width="340" height="397" alt=""></a>
-                </div>
-                <div class="goods_push_item w340 h397 bdr fl">
-                	<div class="w340 h198 bdb bdr fl">
-                    	<a href="#"><img src="images/ad12.jpg" width="340" height="198" alt=""></a>
-                    </div>
-                    <div class="w340 h198 bdb bdr fl">
-                    	<a href="#"><img src="images/ad13.jpg" width="340" height="198" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="model">
-        	<!--商城精选推荐-->
-            <div class="tit clearfix"><p class="fl">商城精选推荐</p><a href="#" class="fr">更多</a></div>
-            <div class="goods_push">
-            	<div class="goods_push_item w340 h397 bdr fl">
-                	<a href="#"><img src="images/ad14.jpg" width="340" height="397" alt=""></a>
-                </div>
-                <div class="goods_push_item w682 h397  fl">
-                    <div class="w170 h198 bdr bdb fl">
-                        <a href="#"><img src="images/ad15.jpg" width="170" height="198" alt=""></a>
-                    </div>
-                    <div class="w169 h198 bdr bdb fl">
-                        <a href="#"><img src="images/ad16.jpg" width="169" height="198" alt=""></a>
-                    </div>
-                    <div class="w170 h198 bdr bdb fl">
-                        <a href="#"><img src="images/ad17.jpg" width="170" height="198" alt=""></a>
-                    </div>
-                    <div class="w169 h198 bdr bdb fl">
-                        <a href="#"><img src="images/ad18.jpg" width="169" height="198" alt=""></a>
-                    </div>
-                    <div class="w340 h198 bdr fl">
-                    	<a href="#"><img src="images/ad19.jpg" width="340" height="198" alt=""></a>
-                    </div>
-                    <div class="w340 h198 bdr fl">
-                    	<a href="#"><img src="images/ad20.jpg" width="340" height="198" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    	
-        <div class="model">
-        	<!--入驻品牌-->
-            <div class="pinpai">
-            	<div class="pinpai_tit">
-                	<h3>入驻品牌</h3>
-                    <div class="pinpai-list_control">
-                    	<span><strong class="page_count">1</strong>/<strong class="num">2</strong></span>
-                        <a href="javascript:;" class="list-prev"></a>
-                        <a href="javascript:;" class="list-next"></a>
-                    </div>
-                </div>
-                
-                <div class="pinpai-list">
-                	<div class="pinpai_box">
-                    	<ul>           
-                            <li>
-                                <a href="#" title=""><img src="images/shop1.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop2.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop3.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop4.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop5.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop6.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop7.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop8.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop9.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop10.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop11.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop12.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop13.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop14.jpg" width="145" height="73" /></a>
-                            </li>
-                                    
-                        </ul>  
-                        <ul>           
-                            <li>
-                                <a href="#" title=""><img src="images/shop1.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop2.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop3.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop4.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop5.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop6.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop7.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop8.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop9.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop10.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop11.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop12.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop13.jpg" width="145" height="73" /></a>
-                            </li>
-                            <li>
-                                <a href="#" title=""><img src="images/shop14.jpg" width="145" height="73" /></a>
-                            </li>       
-                        </ul> 
-                    </div>           
-              	</div>
-            </div>
 			<!--友情链接部分-->
             <div class="index_bottom clearfix">
             	<!--友情链接-->
@@ -659,95 +512,5 @@ return false;
         </div>
     </div>
     <!--footer部分结束-->
-    
-    <!--油卡充值功能-->
-    <div class="mark"></div><!--背景蒙版-->
-    <div class="dialog" id="dialog1">
-    	<div class="dialog_box">
-        	<div class="dia_form oil_card">
-            	<form action="">
-                	<p>
-                        <label for="">选择种类：</label>
-                        <input type="radio" name="classify" value="中国石化">中国石化
-                        <input type="radio" name="classify" value="中国石油">中国石油
-                    </p>
-                    <p>
-                        <label for="">持卡人姓名：</label>
-                        <input type="text" value="" />
-                    </p>
-                    <p>
-                        <label for="">加油卡号：</label>
-                        <input type="text" value="" />
-                    </p>
-                    <p>
-                        <label for="">确认卡号：</label>
-                        <input type="text" value="" />
-                    </p>
-                    <p>
-                        <label for="">手机号：</label>
-                        <input type="text" value="" />
-                    </p>
-                    <p>
-                        <label for="">选择充值金额：</label>
-                        <select name="">
-                            <option value="请选择面值">请选择面值</option>
-                            <option value="100元">100元</option>
-                            <option value="500元">500元</option>
-                            <option value="1000元">1000元</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="">验证码：</label>
-                        <input type="text" value="" class="yan_input" />
-                        <img src="images/yanzhengma.jpg" class="yanzhengma" alt="">
-                        <span>看不清? <a href="javascript:;">换一张</a></span>
-                    </p>
-                    <p>
-                        <input type="submit" name="" class="dia_btn" value="立即充值" />
-                    </p>
-                </form>
-            	
-                <h4>注：1. 油卡充值需加收2%技术服务费。<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 提交订单前请务必确认提交信息均无误，如因此导致的充值失败由客户自行承担。</h4>
-            </div>
-        </div>
-        <a href="javascript:;" class="dia_close"><img src="images/dia_close.jpg" alt=""></a>
-    </div>
-    <div class="dialog" id="dialog2">
-    	<div class="dialog_box">
-        	<div class="dia_form phone_card">
-            	<form action="">
-                	<h2><span><em>1</em>填写手机号码 ></span><span><em>2</em>网上付款 ></span><span><em>3</em>话费自动到帐</span></h2>
-                	
-                    <p>
-                        <label for="">充值号码：</label>
-                        <input type="text" value="" />
-                    </p>
-                    <p>
-                        <label for="">充值面值：</label>
-                        <a href="javascript:;">20元</a>
-                        <a href="javascript:;">30元</a>
-                        <a href="javascript:;">50元</a>
-                        <a href="javascript:;">100元</a>
-                    </p>
-                    <p>
-                        <label for="">确认卡号：</label>
-                        <input type="text" value="" />
-                    </p>
-                    <p>
-                        <input type="submit" name="" class="dia_btn" value="立即充值" />
-                    </p>
-                </form>
-            	
-                <h4>注：<br/>1. 手机话费充值支持全国各省市（澳门、香港、台湾地区除外），移动、联通、电信所有手机号码；<br/>
-2. 下述地区运营商不支持以下面值充值：北京移动不支持20元，河北移动不支持20、30元，上海     移动不支持20元，江苏移动不支持20、30元，江西联通不支持20元充值；<br/>
-3. 本次充值不可参与各运营商营业厅营销活动；<br/>
-4. 周末及节假日不办理充值退款业务，统一顺延至下一个工作日处理；<br/>
-5. 充值成功的订单一律不办理退款，请务必确认输入的充值号码无误，如因输入错误造成的损失由用户自行承担；<br/>
-6. 月初及月末为充值高峰期，因运营商系统繁忙会造成延时到账，请耐心等候。<br/>
-如有疑问，可致电客服热线：400-187-5151</h4>
-            </div>
-        </div>
-        <a href="javascript:;" class="dia_close"><img src="images/dia_close.jpg" alt=""></a>
-    </div>
 </body>
 </html>

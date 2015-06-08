@@ -47,5 +47,22 @@ $(function(){
 
 	});
 	
+	//首页弹出层
+	function Dialog(elem1,elem2){
+		$(elem1).click(function(){
+			$(".mark").fadeIn();
+			$(elem2).fadeIn();
+		});
+		$(".dia_close").click(function(){
+			$(".mark").fadeOut();
+			$(elem2).fadeOut();	
+		})
+	};
+	Dialog(".phone_bill","#dialog2");
+	Dialog(".oil_car_bill","#dialog1");
 	
+	//充话费选择面值
+	$(".phone_card a").click(function(){
+		$(this).addClass("phone_bill_select").siblings().removeClass("phone_bill_select");	
+	})
 })

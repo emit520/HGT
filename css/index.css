@@ -66,5 +66,56 @@
 .pinpai-list ul{ width:1022px; height:147px; overflow:hidden; float:left; margin-right:1px; display:inline;}
 .pinpai-list ul li{ width:145px; height:73px; border:1px solid #c8c7c7; border-top:none; border-left:none; float:left; }
  
+/*手机卡充值*/
+.phone_card h2{
+	margin-left:200px;
+	font-size:12px;
+	color:#515151;
+	margin-bottom:20px;
+}
+.phone_card h2 span{
+	margin-right:30px;
+}
+.phone_card h2 span em{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	text-align:center;
+	line-height:30px;
+	color:#fff;
+	font-style:normal;
+	background:url(../images/yuan.jpg) no-repeat;
+	margin-right:10px;
+}
+.phone_card p a{
+	width:67px;
+	height:38px;
+	border:1px solid #c7c6c6;
+	display:inline-block;
+	text-align:center;
+	line-height:38px;
+	margin-right:5px;
+
+}
+.phone_card p a.phone_bill_select{
+	border:1px solid #da1716;
+	color:#da1716;
+}
+.phone_card h4{
+	margin-left:100px;
+	width:550px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 

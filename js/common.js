@@ -54,4 +54,9 @@ $(function(){
 		
 	}
 	plusAndMinus();
+
+	//产品详情选择商品颜色，规格等js
+	$(".choose_color li").click(function(){
+		$(this).addClass("choose_select").siblings().removeClass("choose_select");	
+	});
 })
