@@ -388,28 +388,36 @@
 
 /*个人中心-我的订单*/
 
-.my-order, .my-card
+.my-order, .my-card, .my-collect, .my-cart
 {
     height: auto;
 }
 
-.my-order .my-order-list, .my-card .my-card-list
+.my-order .my-order-list, .my-card .my-card-list, .my-collect .my-collect-list, .my-cart .my-cart-list
 {
     width: 100%;
 }
 
-.my-order .my-order-list tr:nth-of-type(1), .my-card .my-card-list tr:nth-of-type(1)
+.my-order .my-order-list tr:nth-of-type(1), .my-card .my-card-list tr:nth-of-type(1), .my-collect .my-collect-list tr:nth-of-type(1), .my-cart .my-cart-list tr:nth-of-type(1)
 {
     height: 45px;
     background: #EFEFEF;
+    color: #898989;
 }
 
-.my-order .my-order-list tr:nth-of-type(1) td
+
+.my-order .my-order-list tr:nth-of-type(1) td, .my-collect .my-collect-list tr:nth-of-type(1) td, .my-cart .my-cart-list tr:nth-of-type(1) td
 {
     text-align: center;
 }
 
-.my-order .my-order-list tr:nth-of-type(1) td:first-of-type
+.my-cart .my-cart-list tr:nth-of-type(1) td, .my-cart .my-cart-list tr:nth-of-type(3) td
+{
+    width: 105px;
+}
+
+
+.my-order .my-order-list tr:nth-of-type(1) td:first-of-type, .my-collect .my-collect-list tr:nth-of-type(1) td:first-of-type, .my-cart .my-cart-list tr:nth-of-type(1) td:first-of-type
 {
     text-align: left;
     padding-left: 10px;
@@ -421,10 +429,11 @@
     border-bottom-color: #EFEFEF;
 }
 
-.my-order .my-order-list td:nth-of-type(2)
+.my-order .my-order-list td:nth-of-type(2), .my-collect .my-collect-list td:nth-of-type(2), .my-cart .my-cart-list td:nth-of-type(2)
 {
     text-align: left;
     padding-left: 10px;
+    color: #898989;
 }
 
 .my-order .my-order-list td:nth-of-type(3)
@@ -439,13 +448,33 @@
     text-align: center;
 }
 
+.my-collect .my-collect-list td:nth-of-type(3), .my-cart .my-cart-list td:nth-of-type(3)
+{
+   width: 160px;
+    text-align: center;
+    color: #898989;
+}
+
+.my-cart .my-cart-list td:nth-of-type(3)
+{
+    width: 130px;
+}
+
 .my-order .my-order-list td:nth-of-type(5)
 {
     width: 100px;
     text-align: center;
+    color: black;5
 }
 
-.my-order .my-order-list td:nth-of-type(6)
+.my-collect .my-collect-list td:nth-of-type(4), .my-cart .my-cart-list td:nth-of-type(4)
+{
+    width: 140px;
+    text-align: center;
+    color: #898989;
+}
+
+.my-order .my-order-list td:nth-of-type(6), .my-collect .my-collect-list td:nth-of-type(5), .my-cart .my-cart-list td:nth-of-type(5)
 {
     width: 100px;
     text-align: center;
@@ -457,17 +486,17 @@
     text-align: center;
 }
 
-.my-order .inner-order tr:nth-of-type(1)
+.my-order .inner-order tr:nth-of-type(1), .my-collect .inner-order tr:nth-of-type(1), .my-cart .inner-order tr:nth-of-type(1)
 {
     background: #fff;
 }
 
-.my-order .inner-order tr:last-child
+.my-order .inner-order tr:last-child, .my-collect .inner-order tr:last-child, .my-cart .inner-order tr:last-child
 {
     height: 20px;
 }
 
-.my-order .inner-order
+.my-order .inner-order, .my-collect .inner-order, .my-cart .inner-order
 {
     border-bottom: 1px dashed #D7D7D7;
 }
@@ -477,7 +506,7 @@
     font-size: 12px;
 }
 
-.my-order .commit-order
+.my-order .commit-order, .my-cart .commit-order
 {
     margin-top: 18px;
     width: 100%;
@@ -486,7 +515,7 @@
     font-size: 12px;
 }
 
-.my-order .commit-order td
+.my-order .commit-order td, .my-cart .commit-order td
 {
     text-align: center;
 }
