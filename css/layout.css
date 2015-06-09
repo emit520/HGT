@@ -901,31 +901,295 @@
 .card_box .card_option a:hover{
 	text-decoration:underline;
 }
+/**********************确认订单部分***********************/
 
+/*确认订单详情*/
 
+.crumbs{
+	width:1024px; 
+	margin:50px 0; 
+	background:#e4e4e4; 
+	height:32px; 
+	overflow:hidden; 
+	line-height:32px;
+	position:relative;
+}
+.crumbs li{
+	float:left; 
+	width:200px; 
+	text-align:center; 
+	position:relative; 
+	z-index:2; 
+	font-weight:bold; 
+	font-size:14px;
+}
+.crumbs li em{
+	position:absolute; 
+	right:-24px; 
+	top:-8px; 
+	width:0; 
+	height:0; 
+	line-height:0; 
+	border-width:24px 0 24px 24px; 
+	border-color:transparent  transparent transparent #fff; 
+	border-style:dashed dashed dashed solid;
+}
+.crumbs li i{
+	position:absolute; 
+	right:-16px; 
+	top:0; 
+	width:0; 
+	height:0; 
+	line-height:0; 
+	border-width:16px 0 16px 16px; 
+	border-color:transparent  transparent transparent #e4e4e4; 
+	border-style:dashed dashed dashed solid;
+}
+.crumbs li.current{
+	background:#ce1f1c; 
+	color:#fff; 
+	z-index:1;
+}
+.crumbs li.current i{
+	border-color:transparent  transparent transparent #ce1f1c;
+}
+/*确认收货地址*/
+.addr_true_wrap{
+	width:1024px;
+	margin-bottom:30px;
 
+}
+.addr_true_wrap h3{
+	font-size:16px;
+	color:#231815;
+	margin-bottom:10px;
+	font-weight:normal;
+}
+.addr_list li{
+	height:35px;
+	line-height:35px;
+	font-size:14px;
+	color:#231815;
+	position:relative;
+	margin-bottom:5px;
+	padding-left:100px;
+}
+.addr_list li:hover{
+	background:#9f9fa0;
+	color:#fff;
+}
+.addr_list li .change_addr{ color:#231815;}
+.addr_list li:hover .change_addr{ color:#fff;}
+.addr_list li.addr_select{
+	background:#9f9fa0;
+	color:#fff;
+}
+.addr_list li.addr_select .change_addr{ color:#fff;}
+.addr_list li p{
+	display:inline-block;
+}
+.addr_list li .makePoint{
+	position:relative;
+	top:9px;
+	margin-right:5px;
+	cursor:pointer;
+}
+.addr_list li .use_addr{
+	margin-right:20px;
+}
+.addr_list li .location{
+	position: absolute;
+  	top: 6px;
+  	left: 10px;
+  	width: 12px;
+  	height: 22px;
+  	background:url(../images/location.png) no-repeat;
+}
+.addr_list li .make_tip{
+	position:absolute;
+	top:0;
+	left:30px;
+}
+.addr_list li .change_addr{
+	position:absolute;
+	top:0;
+	right:10px;
+}
+/*确认商品信息*/
+.order_infor_wrap{
+	width:1024px;
+	margin-bottom:50px;
+}
+.order_infor_wrap h3{
+	font-size:16px;
+	font-weight:normal;
+	color:#231815;
+	margin-bottom:10px;
+}
+.order_infor_tit{
+	width:1024px;
+	height:35px;
+	line-height:35px;
+	font-size:14px;
+	color:#231815;
+	border-top:1px solid #e3e2e2;
+	border-bottom:1px solid #e3e2e2;
+}
+.order_infor_tit span{
+	display:block;
+	text-align:center;
+}
+.order_infor_tit .buy_order_tit{
+	width:364px;
+}
+.order_infor_tit .buy_order_price{
+	width:220px;
+}
+.order_infor_tit .buy_order_num{
+	width:220px;
+}
+.order_infor_tit .buy_order_total{
+	width:220px;
+}
+.order_list{
+	width:1024px;
+}
+.order_list li{
+	border-bottom:1px dashed #e3e2e2;
+	height:150px
+}
+.order_list li .order_item_infor{
+	width:364px;
+}
+.order_list li .order_item_price{
+	width:220px;
+}
+.order_list li .order_item_num{
+	width:220px;
+}
+.order_list li .order_item_total{
+	width:220px;
+}
+.order_list li .order_item_infor h4{
+	font-size:14px;
+	color:#231815;
+	margin:15px 0 10px 0;
+	font-weight:normal;
+}
+.order_list li .order_item_infor .order_item_pic{
+	width:80px;
+	height:80px;
+	display:block;
+	border:1px solid #999;
+	text-align:center;
+	outline: 0;
+}
+.order_list li .order_item_infor .order_item_txt{
+	width:250px;
+	margin-left:10px;
+	font-size:12px;
+	
+}
+.order_item_txt a{
+	color:#898989;
+	line-height:24px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.order_list li .order_item_price span,.order_list li .order_item_total span{
+	display:block;
+	text-align:center;
+	line-height:150px;
+	font-size:18px;
+	color:#c82020;
+}
+.order_list li .order_item_num .count_num{
+	margin:65px auto 0;
+	width:140px;
+}
+.brief_box{
+	width:1022px;
+	height:200px;
+	border:1px dashed #e3e2e2;
+	border-top:none;
+}
+.customer_message{
+	width:480px;
+	margin:10px 0 0 20px;
+}
+.customer_message label{
+	font-size:14px;
+	color:#231815;
+}
+.customer_message .customer_message_area{
+	width:360px;
+	height:20px;
+	border:1px dashed #ccc;
+	position:relative;
+	top:10px;
+	line-height:20px;
+}
+.express_infor{
+	width:450px;
+	margin:20px 0 0 20px;
+}
+.express_infor p{
+	font-size:14px;
+	color:#231815;
+	margin-bottom:30px;
+}
+.express_infor p select{
+	width:150px;
+	height:25px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	text-align:center;
+	margin-right:20px;
+}
+.express_infor p span{
+	color:#c82020;
+	font-size:18px;
+}
+.express_infor p.order_total{
+	font-size:18px;
+	text-align:right;
+	margin-top:40px;
+}
+.send_addr{
+	width:400px;
+	height:80px;
+	border:1px dashed #e3e2e2;
+	border-top:none;
+}
+.send_addr dl{
+	width:360px;
+	margin:0 auto;
+	padding-top:20px;
+	font-size:14px;
+}
+.send_addr dl dt{
+	width:60px;
+	float:left;
+	color:#c82020;
+}
+.send_addr dl dd{
+	width:300px;
+	float:left;
+	color:#898989;
+	line-height:20px;
+}
+.order_btn{
+	width:1024px;
+	height:35px;
+	text-align:right;
+	margin-top:10px;
+}
+.order_btn .order_submit{
+	width:140px;
+	height:35px;
+	text-align:center;
+	line-height:35px;
+	font-size:16px;
+	color:#fff;
+	display:inline-block;
+	background:#c82021;
+}
