@@ -113,6 +113,10 @@ a.btn { display: block; border: 0 none; outline: 0 none; }
  
 .position_a{ position:absolute;}
 
+.alignCenter{ text-align:center;}
+
+.alignRight{ text-align: right;}
+
 .mgt10{ margin-top:10px;}
 
 .mgl10{ margin-left:10px;}

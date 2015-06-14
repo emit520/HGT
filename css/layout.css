@@ -1595,14 +1595,197 @@ align-items: center;
 	color:#808285;
 }
 
+/*确认收货*/
+.affirm_pay{
+	width:1024px;
+	margin:20px 0;
+}
+.affirm_pay_crumb{
+	font-size:14px;
+	color:#231815;
+	margin-bottom:10px;
+}
+.affirm_pay_crumb a{
+	color:#515151;
+}
+.affirm_pay_crumb span{
+	color:#c91d1d;
+}
+.flow{
+	width:1000px;
+	height:80px;
+	margin:0 auto 20px;
+	background:url(../images/flow.jpg) no-repeat center center;
+}
+.flow p{
+	font-size:12px;
+	color:#888888;
+	margin-left:10px;
+}
+.flow p.flow_step{
+	margin-bottom:45px;
+	margin-left:40px;
+}
+.flow p span{
+	float:left;
+	display:inline;
+}
+.flow p span.flow_step1{
+	width:300px;
+	
+}
+.flow p span.flow_step2{
+	width:270px;
+}
+.flow p span.flow_step3{
+	width:280px;
+}
+.affirm_pay_infor,.affirm_pay_disc{
+	width:1022px;
+	border:1px solid #c7c6c6;
+	margin-bottom:20px;
+}
+.affirm_pay_infor_left{
+	width:300px;
+	border-right:1px solid #c7c6c6;
+}
+.affirm_pay_infor_left .affirm_pay_infor_left_tit{
+	height:40px;
+	border-bottom:1px solid #c7c6c6;
+	background:#eff0f0;
+	line-height:40px;
+	color:#231815;
+	font-size:14px;
+	text-indent:15px;
+}
+.affirm_pay_infor_left .affirm_pay_addr,.affirm_pay_infor_left .affirm_pay_num{
+	margin-left:20px;
+	border-bottom:1px solid #c7c6c6;
+	padding:15px 0;
+	margin-bottom:15px;
+}
+.affirm_pay_infor_left .affirm_pay_addr p,.affirm_pay_infor_left .affirm_pay_num p{
+	font-size:12px;
+	color:#888;
+	line-height:22px;
+}
+.affirm_pay_infor_left .affirm_pay_num{
+	border:none;
+	padding:0;
+}
 
+.affirm_pay_infor_right{
+	width:720px;
+}
+.affirm_pay_infor_right h3{
+	font-size:16px;
+	color:#231815;
+	margin:20px 0 0 55px;
+}
+.affirm_pay_infor_right h3 img{
+	position:relative;
+	top:0;
+	margin-right:10px;
+}
+.affirm_pay_infor_right dl{
+	margin:10px 0 0 80px;
+}
+.affirm_pay_infor_right dl dt{
+	font-size:12px;
+	color:#231815;
+	line-height:20px;
+}
+.affirm_pay_infor_right dl dt span{
+	color:#cd1f1c;
+}
+.affirm_pay_infor_right dl dd{
+	margin-left:35px;
+	font-size:12px;
+	color:#231815;
+	line-height:20px
+}
+.affirm_pay_infor_right dl dd span{
+	color:#c66701;
+}
+.affirm_pay_infor_right p{
+	margin:10px 0 0 70px;
+	font-size:12px;
+	color:#231815;
+}
+.affirm_pay_infor_right p a{
+	color:#031b83;
+	display:inline-block;
+	margin:0 20px;
+}
+.affirm_pay_infor_right p a.affirm_pay_btn{
+	width:94px;
+	height:23px;
+	background:url(../images/btn2.jpg) no-repeat;
+	line-height:23px;
+	text-align:center;
+	color:#231815;
+}
+.affirm_pay_disc .affirm_pay_disc_tit{
+	width:1022px;
+	height:44px;
+	background:#efeff0;
+	line-height:44px;
+}
+.affirm_pay_disc .affirm_pay_disc_tit li{
+	float:left;
+	font-size:14px;
+	color:#898989;
+	text-align:center;
+}
+.affirm_pay_disc .affirm_pay_disc_tit li.tit_li1{ width:322px;}
+.affirm_pay_disc .affirm_pay_disc_tit li.tit_li2{ width:140px;}
+.affirm_pay_disc .affirm_pay_disc_tit li.tit_li3{ width:140px;}
+.affirm_pay_disc .affirm_pay_disc_tit li.tit_li4{ width:140px;}
+.affirm_pay_disc .affirm_pay_disc_tit li.tit_li5{ width:140px;}
+.affirm_pay_disc .affirm_pay_disc_tit li.tit_li6{ width:140px;}
 
+.affirm_pay_disc .affirm_pay_disc_box{
+	width:1022px;
+	height:105px;
+	line-height:105px;
+}
+.affirm_pay_disc .affirm_pay_disc_box li{
+	font-size:16px;
+	color:#898989;
+	float:left;
+	text-align:center;
+}
+.affirm_pay_disc .affirm_pay_disc_box li.goods_li1{ width:322px; text-align:left; font-size:12px;}
+.affirm_pay_disc .affirm_pay_disc_box li.goods_li2{ width:140px;}
+.affirm_pay_disc .affirm_pay_disc_box li.goods_li3{ width:140px;}
+.affirm_pay_disc .affirm_pay_disc_box li.goods_li4{ width:140px;}
+.affirm_pay_disc .affirm_pay_disc_box li.goods_li5{ width:140px;}
+.affirm_pay_disc .affirm_pay_disc_box li.goods_li6{ width:140px;}
 
-
-
-
-
-
+.affirm_pay_disc .affirm_pay_disc_box li.goods_li1 img{
+	float:left;
+	display: block;
+	margin:14px 10px;
+}
+.affirm_pay_disc .affirm_pay_disc_total{
+	width:1022px;
+	height:60px;
+	background:#efeff0;
+	border-top:1px solid #c7c6c6;
+	padding-top:10px;
+}
+.affirm_pay_disc .affirm_pay_disc_total p{
+	margin:0 30px;
+	text-align:right;
+	font-size:14px;
+	color:#898989;
+	line-height:22px;
+}
+.affirm_pay_disc .affirm_pay_disc_total p strong{
+	font-size:22px;
+	color:#cd1f1c;
+	font-weight:normal;
+}
 
 
 
