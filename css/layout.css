@@ -1193,3 +1193,418 @@
 	display:inline-block;
 	background:#c82021;
 }
+
+/*支付第二步 支付方式*/
+.pay_style{
+	width:1024px;
+	margin-bottom:30px;
+}
+.pay_style h2{
+	font-size:16px;
+	color:#231815;
+	margin-bottom:10px;
+	font-weight:normal;
+}
+.pay_item{
+	width:1022px;
+	border:1px solid #b4b5b6;
+	margin-bottom:30px;
+}
+.pay_item_tit{
+	width:1022px;
+	height:40px;
+	line-height:40px;
+	background:url(../images/tit_bg.jpg) no-repeat;
+}
+.pay_item_tit p{
+	margin-left:20px;
+	font-size:18px;
+	color:#fff;
+}
+.pay_item_list{
+	margin:20px 30px;
+}
+.pay_item_list li{
+	width:220px;
+	float:left;
+	margin:0 20px 10px 0;
+	cursor:pointer;
+	display:inline;
+}
+.pay_item_list li i{
+	width:21px;
+	height:21px;
+	display:inline-block;
+	margin-right:10px;
+	margin-top:5px;
+	float:left;
+	background:url(../images/radio_false.png) no-repeat;
+}
+.pay_item_list li i.radio_select{
+	background:url(../images/radio_true.png) no-repeat;
+}
+.pay_item_list li span{
+	width:125px;
+	height:30px;
+	float:left;
+	display:inline-block;
+	background:url(../images/bank-logo.png) no-repeat;
+}
+.pay_item_list li .hgt{
+	background:url(../images/pic8.jpg) no-repeat;
+	background-size: 108px 100%;
+}
+.pay_item_list li .jians{
+	background-position:0 -335px;
+}
+.pay_item_list li .zhongg{
+	background-position:0 -840px;
+}
+.pay_item_list li .gongs{
+	background-position:0 -140px;
+}
+.pay_item_list li .nongy{
+	background-position:0 -530px;
+}
+.pay_item_list li .jiaot{
+	background-position:0 -390px;
+}
+.pay_item_list li .mings{
+	background-position:0 -448px;
+}
+.pay_item_list li .xingy{
+	background-position:0 -755px;
+}
+.pay_item_list li .zhaos{
+	background-position:0 -782px;
+}
+.pay_item_list li .youz{
+	background-position:0 -868px;
+}
+.pay_item_list li .guangd{
+	background-position:0 -170px;
+}
+.pay_item_list li .huax{
+	background-position:0 -305px;
+}
+.pay_item_list li .zhongx{
+	background-position:0 -895px;
+}
+.pay_item_list li .shenf{
+	background-position:0 -697px;
+}
+.pay_item_list li .puf{
+	background-position:0 -588px;
+}
+
+.pay_item_list li .zfb{
+	background:url(../images/pic9.jpg) no-repeat;
+	background-size: 100% 30px;
+}
+.pay_item_list p{
+	font-size:14px;
+	color:#231815;
+	margin-bottom:10px;
+}
+a.pay_btn{
+	width:110px;
+	height:42px;
+	display:block;
+	text-align:center;
+	line-height:42px;
+	font-size:18px;
+	color:#fff;
+	background:#ce1f1c;
+	border-radius:3px;
+	margin-bottom:20px;
+}
+.pay_style_help{
+	width:1024px;
+	border-top:1px dashed #bbb7b7;
+	padding-top:20px;
+	margin-bottom:30px;
+}
+.pay_style_help h3{
+	font-size:16px;
+	color:#231815;
+	margin-bottom:10px;
+	margin-left:20px;
+}
+.pay_style_help dl{
+	margin:0 20px;
+}
+.pay_style_help dl dt,.pay_style_help dl dd{
+	font-size:14px;
+	color:#727171;
+	line-height:22px;
+}
+.pay_style_help dl dd{
+	margin-bottom:10px;
+}
+
+/*卡片管理*/
+.manage_card{
+	width:815px;
+	margin:20px 0;
+}
+.manage_card_tab{
+	width:815px;
+	height:44px;
+	border-bottom:1px solid #cd1e1c;
+}
+.manage_card_tab li{
+	width:152px;
+	height:43px;
+	border:1px solid #cd1e1c;
+	border-bottom:none;
+	float:left;
+	border-radius:3px 3px 0 0;
+}
+.manage_card_tab li a{
+	width:152px;
+	height:43px;
+	display:block;
+	text-align:center;
+	line-height:43px;
+	font-size:16px;
+	color:#515151;
+	background:url(../images/arrow2.png) no-repeat 85% center;
+}
+.manage_card_tab li a:hover{
+	text-decoration:none;
+	color:#fff;
+	background:#cd1e1c url(../images/arrow1.png) no-repeat 85% center;
+}
+.manage_card_tab li a.manage_card_select{
+	color:#fff;
+	background:#cd1e1c url(../images/arrow1.png) no-repeat 85% center;
+}
+.manage_card_list{
+	width:813px;
+	margin-top:20px;
+	border:1px solid #d8d7d7;
+	border-right:none;
+	border-bottom:none;
+	margin-bottom:30px;
+	
+}
+.manage_card_list li{
+	width:270px;
+	border-right:1px solid #d8d7d7;
+	border-bottom:1px solid #d8d7d7;
+	float:left;
+	position:relative;
+}
+.manage_card_list li h2{
+	margin:10px 10px 5px 10px;
+	font-size:16px;
+	color:#727171;
+}
+.manage_card_list li img{
+	width:270px;
+	height:160px;
+	display:block;
+	margin-bottom:10px;
+}
+.manage_card_list_disc{
+	width:270px;
+	height:45px;
+	background:#54555b;
+	padding:5px 0;
+}
+.manage_card_list_disc p{
+	margin:0 10px;
+	font-size:14px;
+	color:#fff;
+	line-height:20px;
+}
+.manage_card_list_disc p span{
+	font-size:20px;
+	color:#e50402;
+}
+.flag1{
+	width:79px;
+	height:77px;
+	background:url(../images/flag1.png) no-repeat;
+	position:absolute;
+	top:-1px;
+	right:-1px;
+}
+/*卡片详情*/
+.manage_card_disc{
+	width:815px;
+	margin:20px 0;
+}
+.manage_card_disc_crumb{
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#515151;
+	margin-bottom:10px;
+}
+.manage_card_disc_crumb a{
+	color:#515151;
+}
+.manage_card_disc_crumb span{
+	color:#c91d1d;
+}
+.swiper-container {
+	width: 813px;
+	height: 442px;
+	border:1px solid #c7c6c6;
+	border-top:2px solid #cd1e1c;
+}
+.swiper-slide {
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+.swiper-container .swiper-pagination-bullet{
+	width:10px;
+	height:10px;
+	background:#9b9b9f;
+}
+.swiper-container .swiper-pagination-bullet-active{
+	background:#e65d5c;
+}
+.manage_card_infor{
+	width:813px;
+	border:1px solid #c7c6c6;
+	border-top:none;
+}
+.manage_card_value{
+	width:813px;
+	height:50px;
+	line-height:50px;
+	background:#ecdac2;
+}
+.manage_card_value p{
+	font-size:14px;
+	color:#3e3e3e;
+}
+.manage_card_value p span{
+	margin-left:20px;
+	margin-right:20px;
+}
+.manage_card_value p strong{
+	font-size:22px;
+}
+.manage_card_value p a{
+	background:#4a3111;
+	padding:2px 6px;
+	color:#fff;
+	font-size:12px;
+	border-radius:3px;
+	margin-left:10px;
+}
+.manage_card_infor dl{
+	margin:20px;
+	padding-bottom:20px;
+	border-bottom:1px solid #c7c6c6;
+}
+.manage_card_infor dl dt{
+	font-size:14px;
+	color:#3e3e3e;
+	margin-bottom:5px;
+	position:relative;
+}
+.manage_card_infor dl dd{
+	font-size:14px;
+	color:#888888;
+	line-height:22px;
+}
+.manage_card_infor dl dt a{
+	width:104px;
+	height:32px;
+	background:url(../images/btn1.jpg) no-repeat;
+	text-align:center;
+	line-height:32px;
+	font-size:14px;
+	color:#fff;
+	display:block;
+	position:absolute;
+	top:-5px;
+	left:300px;
+}
+
+.manage_card_infor .use_card_help{
+	display:block;
+	font-size:12px;
+	color:#aa7b47;
+	text-align:center;
+	margin-bottom:20px;
+}
+.manage_card_infor .use_card_help:hover{
+	text-decoration:underline;
+}
+/*卡片账单*/
+.card_bill_list{
+	width:815px;
+	margin:20px 0;
+}
+.card_bill_list h3{
+	font-size:14px;
+	color:#db4c2c;
+	border-bottom:1px solid #c7c6c6;
+	margin-bottom:20px;
+	padding-bottom:20px;
+}
+.card_bill_list li{
+	border-bottom:1px solid #c7c6c6;
+	margin-bottom:20px;
+	padding-bottom:20px;
+}
+.card_bill_list li .card_shop{
+	width:70%;
+}
+.card_bill_list li .card_shop p{
+	font-size:14px;
+	color:#aa7b47;
+	margin-bottom:5px;
+}
+.card_bill_list li .card_shop span{
+	font-size:12px;
+	color:#808285;
+}
+.card_bill_list li .bill_num{
+	width:20%;
+	text-align:right;
+	margin-right:15px;
+}
+.card_bill_list li .bill_num p{
+	font-size:18px;
+	margin-bottom:5px;
+}
+.card_bill_list li .bill_num p.bill_plus{
+	color:#e50000;
+}
+.card_bill_list li .bill_num p.bill_minus{
+	color:#515151;
+}
+.card_bill_list li .bill_num span{
+	font-size:12px;
+	color:#808285;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

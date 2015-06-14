@@ -179,18 +179,26 @@ $(function(){
 		
 	});
 	$(".close1").click(function(){
-			var val = $(".login_pw").val();
-			var len = val.length;
-			if(len==1){
-				$(".close1").hide();
-			}
-			if(val == '' || val == null){
-				$(".login_pw").val('');	
-			}else{
-				var str = val.substring(0,len-1);
-				$(".login_pw").val(str);		
-			}	
-		})	
+		var val = $(".login_pw").val();
+		var len = val.length;
+		if(len==1){
+			$(".close1").hide();
+		}
+		if(val == '' || val == null){
+			$(".login_pw").val('');	
+		}else{
+			var str = val.substring(0,len-1);
+			$(".login_pw").val(str);		
+		}	
+	});
+	
+	//支付方式选择
+	$(".pay_item_list li").click(function(){
+		$(this).find("i").addClass("radio_select").parent("li").siblings().find("i").removeClass("radio_select");
+		$(this).parents(".pay_item").siblings().find("i").removeClass("radio_select");	
+	})
+    
+		
 	
 
 })
