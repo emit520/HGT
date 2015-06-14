@@ -18,14 +18,20 @@
     border: 1px solid #C7C6C6;
     padding: 5px;
     float: left;
-    margin-right: 13px;
+    margin-right: 11px;
     margin-bottom: 10px;
+}
+
+.confirm-order-address-list
+
+{
+    cursor: pointer;
 }
 
 .confirm-order-address .address-select
 {
     border: 4px dashed red;
-    height: 78px;
+    height: 80px;
     width: 172px;
 }
 

@@ -2,27 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60f545ba-73cc-404e-bf5a-65efa2ede083" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/arrow-down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/arrow-up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/card-payment-type-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/card-payment-type-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/card-payment-type-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/card-payment-type-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/drawback-type-checked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/green-checked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/payment-nav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/progress-bot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/progress-mid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/progress-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/upload-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cardPayment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cardPayment2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cardPayment3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cardPaymentNext.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/drawback.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/expressage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/orderother.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/orderother.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/validation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activeCard.html" afterPath="$PROJECT_DIR$/activeCard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addCard.html" afterPath="$PROJECT_DIR$/addCard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/balanceCard.html" afterPath="$PROJECT_DIR$/balanceCard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cardPayment3.html" afterPath="$PROJECT_DIR$/cardPayment3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cardPaymentNext.html" afterPath="$PROJECT_DIR$/cardPaymentNext.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/changePasswordCard.html" afterPath="$PROJECT_DIR$/changePasswordCard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/confirmOrder.html" afterPath="$PROJECT_DIR$/confirmOrder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/goodsOrder.html" afterPath="$PROJECT_DIR$/goodsOrder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helpCenter.html" afterPath="$PROJECT_DIR$/helpCenter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myCard.html" afterPath="$PROJECT_DIR$/myCard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myCardState.html" afterPath="$PROJECT_DIR$/myCardState.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myCart.html" afterPath="$PROJECT_DIR$/myCart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myCollect.html" afterPath="$PROJECT_DIR$/myCollect.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myIntegral.html" afterPath="$PROJECT_DIR$/myIntegral.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myMessage.html" afterPath="$PROJECT_DIR$/myMessage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myOrder.html" afterPath="$PROJECT_DIR$/myOrder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/orderother.js" afterPath="$PROJECT_DIR$/js/orderother.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/orderpage.css" afterPath="$PROJECT_DIR$/css/orderpage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/passwordCard.html" afterPath="$PROJECT_DIR$/passwordCard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paymentOrder.html" afterPath="$PROJECT_DIR$/paymentOrder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personalAdress.html" afterPath="$PROJECT_DIR$/personalAdress.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personalLoginPassword.html" afterPath="$PROJECT_DIR$/personalLoginPassword.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personalPayPassword.html" afterPath="$PROJECT_DIR$/personalPayPassword.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/personalinformation.html" afterPath="$PROJECT_DIR$/personalinformation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/toSendOrder.html" afterPath="$PROJECT_DIR$/toSendOrder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tradingCard.html" afterPath="$PROJECT_DIR$/tradingCard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tradingCardList.html" afterPath="$PROJECT_DIR$/tradingCardList.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="www.iws" />
@@ -44,21 +51,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="orderother.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/orderother.css">
+      <file leaf-file-name="drawback.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drawback.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.0">
-              <caret line="263" column="22" selection-start-line="263" selection-start-column="22" selection-end-line="263" selection-end-column="22" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="300" column="35" selection-start-line="300" selection-start-column="35" selection-end-line="300" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="expressage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="expressage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/expressage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63529414">
-              <caret line="336" column="17" selection-start-line="336" selection-start-column="17" selection-end-line="336" selection-end-column="17" />
+            <state vertical-scroll-proportion="-10.875">
+              <caret line="300" column="22" selection-start-line="300" selection-start-column="22" selection-end-line="300" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -70,6 +77,99 @@
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myCard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myCard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="295" column="62" selection-start-line="295" selection-start-column="62" selection-end-line="295" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myCardState.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myCardState.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="299" column="50" selection-start-line="299" selection-start-column="50" selection-end-line="299" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myCart.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myCart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="293" column="55" selection-start-line="293" selection-start-column="55" selection-end-line="293" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="payPart1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/payPart1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="personalAdress.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/personalAdress.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="299" column="50" selection-start-line="299" selection-start-column="50" selection-end-line="299" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toSendOrder.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/toSendOrder.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.011764706">
+              <caret line="289" column="47" selection-start-line="289" selection-start-column="47" selection-end-line="289" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="balanceCard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/balanceCard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.875">
+              <caret line="326" column="26" selection-start-line="326" selection-start-column="26" selection-end-line="326" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cardPayment2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cardPayment2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.875">
+              <caret line="285" column="8" selection-start-line="285" selection-start-column="8" selection-end-line="287" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#1;n#ul#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#0;n#ul#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#0;n#ul#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#5;n#ul#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#li#5;n#ul#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,40 +198,41 @@
         <option value="$PROJECT_DIR$/css/base.css" />
         <option value="$PROJECT_DIR$/personalCenter/personalAdress.html" />
         <option value="$PROJECT_DIR$/personalCenter/personalinformation.html" />
-        <option value="$PROJECT_DIR$/goodsOrder.html" />
-        <option value="$PROJECT_DIR$/paymentOrder.html" />
-        <option value="$PROJECT_DIR$/personalAdress.html" />
-        <option value="$PROJECT_DIR$/personalLoginPassword.html" />
-        <option value="$PROJECT_DIR$/personalPayPassword.html" />
-        <option value="$PROJECT_DIR$/toSendOrder.html" />
-        <option value="$PROJECT_DIR$/passwordCard.html" />
-        <option value="$PROJECT_DIR$/activeCard.html" />
-        <option value="$PROJECT_DIR$/addCard.html" />
-        <option value="$PROJECT_DIR$/balanceCard.html" />
-        <option value="$PROJECT_DIR$/changePasswordCard.html" />
-        <option value="$PROJECT_DIR$/myCardState.html" />
-        <option value="$PROJECT_DIR$/tradingCard.html" />
-        <option value="$PROJECT_DIR$/tradingCardList.html" />
-        <option value="$PROJECT_DIR$/personalinformation.html" />
-        <option value="$PROJECT_DIR$/helpCenter.html" />
-        <option value="$PROJECT_DIR$/css/orderpage.css" />
-        <option value="$PROJECT_DIR$/confirmOrder.html" />
-        <option value="$PROJECT_DIR$/myCard.html" />
-        <option value="$PROJECT_DIR$/myIntegral.html" />
-        <option value="$PROJECT_DIR$/myMessage.html" />
-        <option value="$PROJECT_DIR$/myOrder.html" />
-        <option value="$PROJECT_DIR$/myCart.html" />
         <option value="$PROJECT_DIR$/css/personalcenter.css" />
-        <option value="$PROJECT_DIR$/myCollect.html" />
         <option value="$PROJECT_DIR$/js/otheroder.js" />
         <option value="$PROJECT_DIR$/drawback.html" />
         <option value="$PROJECT_DIR$/cardPayment.html" />
-        <option value="$PROJECT_DIR$/cardPaymentNext.html" />
-        <option value="$PROJECT_DIR$/js/orderother.js" />
         <option value="$PROJECT_DIR$/cardPayment2.html" />
-        <option value="$PROJECT_DIR$/cardPayment3.html" />
         <option value="$PROJECT_DIR$/css/orderother.css" />
         <option value="$PROJECT_DIR$/expressage.html" />
+        <option value="$PROJECT_DIR$/js/orderother.js" />
+        <option value="$PROJECT_DIR$/confirmOrder.html" />
+        <option value="$PROJECT_DIR$/css/orderpage.css" />
+        <option value="$PROJECT_DIR$/goodsOrder.html" />
+        <option value="$PROJECT_DIR$/manage_card_all.html" />
+        <option value="$PROJECT_DIR$/myCard.html" />
+        <option value="$PROJECT_DIR$/myCardState.html" />
+        <option value="$PROJECT_DIR$/paymentOrder.html" />
+        <option value="$PROJECT_DIR$/personalAdress.html" />
+        <option value="$PROJECT_DIR$/personalPayPassword.html" />
+        <option value="$PROJECT_DIR$/myCollect.html" />
+        <option value="$PROJECT_DIR$/personalinformation.html" />
+        <option value="$PROJECT_DIR$/myOrder.html" />
+        <option value="$PROJECT_DIR$/myCart.html" />
+        <option value="$PROJECT_DIR$/myIntegral.html" />
+        <option value="$PROJECT_DIR$/myMessage.html" />
+        <option value="$PROJECT_DIR$/helpCenter.html" />
+        <option value="$PROJECT_DIR$/tradingCardList.html" />
+        <option value="$PROJECT_DIR$/toSendOrder.html" />
+        <option value="$PROJECT_DIR$/personalLoginPassword.html" />
+        <option value="$PROJECT_DIR$/activeCard.html" />
+        <option value="$PROJECT_DIR$/addCard.html" />
+        <option value="$PROJECT_DIR$/balanceCard.html" />
+        <option value="$PROJECT_DIR$/tradingCard.html" />
+        <option value="$PROJECT_DIR$/passwordCard.html" />
+        <option value="$PROJECT_DIR$/changePasswordCard.html" />
+        <option value="$PROJECT_DIR$/cardPayment3.html" />
+        <option value="$PROJECT_DIR$/cardPaymentNext.html" />
       </list>
     </option>
   </component>
@@ -346,31 +447,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/ad11.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/ad12.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/ad14.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/ad15.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/ad16.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/ad19.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -416,34 +492,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goodsOrder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="294" column="44" selection-start-line="294" selection-start-column="44" selection-end-line="294" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personalAdress.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="294" column="44" selection-start-line="294" selection-start-column="44" selection-end-line="294" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personalLoginPassword.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="294" column="40" selection-start-line="294" selection-start-column="40" selection-end-line="294" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personalPayPassword.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="294" column="40" selection-start-line="294" selection-start-column="40" selection-end-line="294" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product_content.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -451,51 +499,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toSendOrder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="350" column="18" selection-start-line="350" selection-start-column="18" selection-end-line="350" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/active-card-success.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activeCard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.0">
-          <caret line="313" column="37" selection-start-line="313" selection-start-column="37" selection-end-line="313" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addCard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
-          <caret line="313" column="39" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/balanceCard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.333334">
-          <caret line="313" column="39" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/changePasswordCard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.125">
-          <caret line="313" column="37" selection-start-line="313" selection-start-column="37" selection-end-line="313" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myCardState.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.833334">
-          <caret line="313" column="41" selection-start-line="313" selection-start-column="41" selection-end-line="313" selection-end-column="41" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/person_card.html">
@@ -505,164 +511,253 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/passwordCard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.291666">
-          <caret line="314" column="168" selection-start-line="314" selection-start-column="168" selection-end-line="314" selection-end-column="168" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tradingCard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.875">
-          <caret line="313" column="39" selection-start-line="313" selection-start-column="39" selection-end-line="313" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tradingCardList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30636293">
-          <caret line="285" column="23" selection-start-line="285" selection-start-column="23" selection-end-line="285" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/personalinformation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25882354">
-          <caret line="308" column="48" selection-start-line="308" selection-start-column="48" selection-end-line="308" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/icon-q.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpCenter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32941177">
-          <caret line="452" column="36" selection-start-line="452" selection-start-column="36" selection-end-line="452" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myCard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.208333">
-          <caret line="293" column="47" selection-start-line="293" selection-start-column="47" selection-end-line="293" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myMessage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.458334">
-          <caret line="316" column="61" selection-start-line="316" selection-start-column="61" selection-end-line="316" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myOrder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="283" column="22" selection-start-line="283" selection-start-column="22" selection-end-line="283" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myIntegral.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0854902">
-          <caret line="293" column="47" selection-start-line="293" selection-start-column="47" selection-end-line="293" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myCollect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3299293">
-          <caret line="530" column="22" selection-start-line="530" selection-start-column="22" selection-end-line="530" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/paymentOrder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.011783189">
-          <caret line="527" column="16" selection-start-line="527" selection-start-column="16" selection-end-line="539" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/confirmOrder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.128044">
-          <caret line="389" column="24" selection-start-line="389" selection-start-column="24" selection-end-line="391" selection-end-column="176" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/personalcenter.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023130301">
           <caret line="515" column="1" selection-start-line="515" selection-start-column="1" selection-end-line="515" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myCart.html">
+    <entry file="file://$PROJECT_DIR$/css/orderother.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.916667">
-          <caret line="397" column="53" selection-start-line="0" selection-start-column="0" selection-end-line="577" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.36041835">
+          <caret line="263" column="22" selection-start-line="263" selection-start-column="22" selection-end-line="263" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/orderpage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87278336">
-          <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drawback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4164706">
-          <caret line="300" column="35" selection-start-line="300" selection-start-column="35" selection-end-line="300" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.23250201">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/orderother.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.50808316">
+          <caret line="46" column="11" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/card_bill.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="281.875">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/card_integral.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="126.875">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company_card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="253.75">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/confirmOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="90.625">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
           <folding>
-            <element signature="e#0#42#0" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goodsOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.5">
+          <caret line="299" column="50" selection-start-line="299" selection-start-column="50" selection-end-line="299" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage_card_all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.0">
+          <caret line="298" column="64" selection-start-line="298" selection-start-column="64" selection-end-line="298" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paymentOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.166668">
+          <caret line="299" column="50" selection-start-line="299" selection-start-column="50" selection-end-line="299" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personalPayPassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75">
+          <caret line="299" column="46" selection-start-line="299" selection-start-column="46" selection-end-line="299" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myCollect.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-38.125">
+          <caret line="291" column="55" selection-start-line="291" selection-start-column="55" selection-end-line="291" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personalinformation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.416667">
+          <caret line="300" column="55" selection-start-line="300" selection-start-column="55" selection-end-line="300" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="293" column="57" selection-start-line="293" selection-start-column="57" selection-end-line="293" selection-end-column="57" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myMessage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-25.0">
+          <caret line="297" column="49" selection-start-line="297" selection-start-column="49" selection-end-line="297" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myIntegral.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-35.625">
+          <caret line="297" column="49" selection-start-line="297" selection-start-column="49" selection-end-line="297" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.0">
+          <caret line="299" column="50" selection-start-line="299" selection-start-column="50" selection-end-line="299" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tradingCardList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5">
+          <caret line="318" column="21" selection-start-line="318" selection-start-column="21" selection-end-line="318" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personalLoginPassword.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25">
+          <caret line="332" column="20" selection-start-line="332" selection-start-column="20" selection-end-line="332" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tradingCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.375">
+          <caret line="342" column="94" selection-start-line="342" selection-start-column="94" selection-end-line="342" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/passwordCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.875">
+          <caret line="342" column="94" selection-start-line="342" selection-start-column="94" selection-end-line="342" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changePasswordCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.25">
+          <caret line="349" column="94" selection-start-line="349" selection-start-column="94" selection-end-line="349" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cardPayment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.011764706">
+        <state vertical-scroll-proportion="-0.041666668">
           <caret line="305" column="68" selection-start-line="305" selection-start-column="68" selection-end-line="305" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cardPaymentNext.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="283" column="15" selection-start-line="283" selection-start-column="15" selection-end-line="283" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cardPayment3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48318294">
-          <caret line="288" column="14" selection-start-line="288" selection-start-column="14" selection-end-line="288" selection-end-column="14" />
+        <state vertical-scroll-proportion="-28.75">
+          <caret line="304" column="107" selection-start-line="304" selection-start-column="107" selection-end-line="304" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cardPaymentNext.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="302" column="107" selection-start-line="302" selection-start-column="107" selection-end-line="302" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activeCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.875">
+          <caret line="342" column="94" selection-start-line="342" selection-start-column="94" selection-end-line="342" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.5">
+          <caret line="331" column="24" selection-start-line="331" selection-start-column="24" selection-end-line="331" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/balanceCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="326" column="26" selection-start-line="326" selection-start-column="26" selection-end-line="326" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cardPayment2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34117648">
+        <state vertical-scroll-proportion="-17.875">
           <caret line="285" column="8" selection-start-line="285" selection-start-column="8" selection-end-line="287" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -681,18 +776,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/orderother.css">
+    <entry file="file://$PROJECT_DIR$/drawback.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0">
-          <caret line="263" column="22" selection-start-line="263" selection-start-column="22" selection-end-line="263" selection-end-column="22" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="300" column="35" selection-start-line="300" selection-start-column="35" selection-end-line="300" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/expressage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63529414">
-          <caret line="336" column="17" selection-start-line="336" selection-start-column="17" selection-end-line="336" selection-end-column="17" />
+        <state vertical-scroll-proportion="-10.875">
+          <caret line="300" column="22" selection-start-line="300" selection-start-column="22" selection-end-line="300" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -705,6 +800,54 @@
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="295" column="62" selection-start-line="295" selection-start-column="62" selection-end-line="295" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myCardState.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="299" column="50" selection-start-line="299" selection-start-column="50" selection-end-line="299" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myCart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="293" column="55" selection-start-line="293" selection-start-column="55" selection-end-line="293" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payPart1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personalAdress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="299" column="50" selection-start-line="299" selection-start-column="50" selection-end-line="299" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toSendOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.011764706">
+          <caret line="289" column="47" selection-start-line="289" selection-start-column="47" selection-end-line="289" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>

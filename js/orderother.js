@@ -41,4 +41,11 @@ $(function(){
         }
     });
 
+    $(".confirm-order-address-list").click(function(){
+        $(".confirm-order-address-list").each(function(){
+            $(this).removeClass("address-select");
+        });
+        $(this).addClass("address-select");
+    });
+
 });
