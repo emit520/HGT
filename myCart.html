@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/personalcenter.css" />
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/layout.js"></script>
 </head>
@@ -24,13 +24,13 @@
             </div>
             <div class="top_option fr">
                 <p>
-                    <a href="###" title="注册">【注册】</a>
+                    <a href="registe.html" title="注册">【注册】</a>
                     <em>|</em>
-                    <a href="###" title="登录">【登录】</a>
+                    <a href="login.html" title="登录">【登录】</a>
                     <em>|</em>
-                    <a href="###" title="我的订单">我的订单</a>
+                    <a href="myOrder.html" title="我的订单">我的订单</a>
                     <em>|</em>
-                    <a href="###" title="帮助中心">帮助中心</a>
+                    <a href="helpCenter.html" title="帮助中心">帮助中心</a>
                     <em>|</em>
                     <a href="###" title="汉购通官方网站">汉购通官方网站</a>
                 </p>
@@ -51,7 +51,7 @@
                 </form>
             </div>
             <div class="shops_car fr">
-                <a href="###" title="购物车">购物车(<span class="buy_num">0</span>)</a>
+                <a href="###" title="购物车"><img src="images/shop_car.png" alt="">购物车(<span class="buy_num">0</span>)</a>
             </div>
             <div class="nav fl">
                 <!--分类菜单-->
@@ -258,8 +258,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <p>汉购通在线支付平台</p>
-                        <p class="classify_bottom">SALE特价专区</p>
+                        <p class="classify_bottom"><a href="#">SALE特价专区</a></p>
                     </div>
 
                 </div>
@@ -289,9 +288,9 @@
                 <p class="personal-menu-title">个人中心</p>
                 <ul class="personal-menu-list">
                     <li><a href="personalinformation.html">个人信息</a></li>
-                    <li><a href="myCollect.html">购物车</a></li>
+                    <li><a class="personal-menu-select" href="myCart.html">购物车</a></li>
                     <li><a href="myOrder.html">我的订单</a></li>
-                    <li><a class="personal-menu-select" href="myCart.html">收藏</a></li>
+                    <li><a href="myCollect.html">收藏</a></li>
                     <li><a href="myCard.html">我的汉购通卡</a></li>
                     <li><a href="myMessage.html">我的消息</a></li>
                     <li><a href="myIntegral.html">我的积分</a></li>
@@ -300,200 +299,175 @@
                     <li><a href="#">意见与反馈</a></li>
                 </ul>
             </div>
-            <div class="sell-hot">
-                <p class="sell-hot-title">热销单品</p>
-                <ul class="sell-hot-product">
-                    <li>
-                        <a href="">
-                            <div style="text-align: center;">
-                                <img style="width: 160px;" src="./images/pic4.jpg" />
-                            </div>
-                            <p style="padding: 5px">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</p>
-                            <p style="padding-bottom: 5px">￥119.00</p>
-                        </a>
+            <!--热销单品-->
+            <div class="sub_hot_sale">
+            	<h2>热销单品</h2>
+            	<ul>
+            		<li>
+                    	<a href="#"><img src="images/pic4.jpg" alt=""></a>
+                        <p><a href="#">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</a></p>
+                        <p>￥119.00</p>
                     </li>
                     <li>
-                        <a href="">
-                            <div style="text-align: center;">
-                                <img style="width: 160px;" src="./images/pic4.jpg" />
-                            </div>
-                            <p style="padding: 5px">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</p>
-                            <p style="padding-bottom: 5px">￥119.00</p>
-                        </a>
+                    	<a href="#"><img src="images/pic4.jpg" alt=""></a>
+                        <p><a href="#">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</a></p>
+                        <p>￥119.00</p>
                     </li>
-                    <li>
-                        <a href="">
-                            <div style="text-align: center;">
-                                <img style="width: 160px;" src="./images/pic4.jpg" />
-                            </div>
-                            <p style="padding: 5px">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</p>
-                            <p style="padding-bottom: 5px">￥119.00</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div style="text-align: center;">
-                                <img style="width: 160px;" src="./images/pic4.jpg" />
-                            </div>
-                            <p style="padding: 5px">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</p>
-                            <p style="padding-bottom: 5px">￥119.00</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <div style="text-align: center;">
-                                <img style="width: 160px;" src="./images/pic4.jpg" />
-                            </div>
-                            <p style="padding: 5px">丝芙兰(SEPHORA)女士润唇晶闪亮泽唇膏 N29 LATIN 3.9G</p>
-                            <p style="padding-bottom: 5px">￥119.00</p>
-                        </a>
-                    </li>
-                </ul>
+            	</ul>
             </div>
         </div>
         <!--个人中心菜单结束-->
 
         <!--个人中心栏目开始-->
         <div class="personal-information">
-            <div style="height: 32px;line-height: 32px;border-bottom: 1px solid #C94142">
-                <label style="margin-left: 10px">
-                    <input type="checkbox" />全选
-                </label>
-                <a href="" style="margin-left: 70px">删除</a>
+            <div class="my_cart_tit">
+                全部商品
             </div>
-            <div class="my-collect">
-                <table class="my-collect-list">
-                    <tr>
-                        <td style="padding-left: 35px">
-                            商品
-                        </td>
-                        <td></td>
-                        <td>价格</td>
-                        <td>商品操作</td>
-                        <td>商品操作</td>
-                    </tr>
-                    <tr>
-                        <table class="my-collect-list inner-order">
-                            <tr>
-                                <td colspan="7" style="height: 65px">
-                                    <label><input type="checkbox"/> 2014-07-01  订单号：715618971620591</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding-left: 10px">
-                                    <img src="" alt="" style="width: 80px;height: 80px;background: gray;" />
-                                </td>
-                                <td style="vertical-align: top">
-                                    以诺 防盗苹果双肩电脑包 13寸14寸15.6寸男女笔记本电脑包背包潮
-                                </td>
-                                <td>¥325</td>
-                                <td>
-                                    <a href="">取消收藏</a>
-                                </td>
-                                <td>
-                                    <a href="" style="padding: 5px;background: #EFEFEF;border-radius: 3px">加入购物车</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="7"></td>
-                            </tr>
-                        </table>
-                    </tr>
-                    <tr>
-                        <table class="my-collect-list inner-order">
-                            <tr>
-                                <td colspan="7" style="height: 65px">
-                                    <label><input type="checkbox"/> 2014-07-01  订单号：715618971620591</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding-left: 10px">
-                                    <img src="" alt="" style="width: 80px;height: 80px;background: gray;" />
-                                </td>
-                                <td style="vertical-align: top">
-                                    以诺 防盗苹果双肩电脑包 13寸14寸15.6寸男女笔记本电脑包背包潮
-                                </td>
-                                <td>¥325</td>
-                                <td>
-                                    <a href="">取消收藏</a>
-                                </td>
-                                <td>
-                                    <a href="" style="padding: 5px;background: #EFEFEF;border-radius: 3px">加入购物车</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="7"></td>
-                            </tr>
-                        </table>
-                    </tr>
-                    <tr>
-                        <table class="my-collect-list inner-order">
-                            <tr>
-                                <td colspan="7" style="height: 65px">
-                                    <label><input type="checkbox"/> 2014-07-01  订单号：715618971620591</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding-left: 10px">
-                                    <img src="" alt="" style="width: 80px;height: 80px;background: gray;" />
-                                </td>
-                                <td style="vertical-align: top">
-                                    以诺 防盗苹果双肩电脑包 13寸14寸15.6寸男女笔记本电脑包背包潮
-                                </td>
-                                <td>¥325</td>
-                                <td>
-                                    <a href="">取消收藏</a>
-                                </td>
-                                <td>
-                                    <a href="" style="padding: 5px;background: #EFEFEF;border-radius: 3px">加入购物车</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="7"></td>
-                            </tr>
-                        </table>
-                    </tr>
-                    <tr>
-                        <table class="my-collect-list inner-order">
-                            <tr>
-                                <td colspan="7" style="height: 65px">
-                                    <label><input type="checkbox"/> 2014-07-01  订单号：715618971620591</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding-left: 10px">
-                                    <img src="" alt="" style="width: 80px;height: 80px;background: gray;" />
-                                </td>
-                                <td style="vertical-align: top">
-                                    以诺 防盗苹果双肩电脑包 13寸14寸15.6寸男女笔记本电脑包背包潮
-                                </td>
-                                <td>¥325</td>
-                                <td>
-                                    <a href="">取消收藏</a>
-                                </td>
-                                <td>
-                                    <a href="" style="padding: 5px;background: #EFEFEF;border-radius: 3px">加入购物车</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="7"></td>
-                            </tr>
-                        </table>
-                    </tr>
-
-                </table>
-                <div style="text-align: center;margin: 50px 0;">
-                    <ul class="page-list">
-                        <li class="prev"><a href="">上一页</a></li>
-                        <li><a class="page-selected" href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">4</a></li>
-                        <li><a href="">...</a></li>
-                        <li><a href="">10</a></li>
-                        <li class="next"><a href="">下一页</a></li>
-                    </ul>
+            <div class="my-cart">
+            	<div class="my_order_tit">
+                	<ul class="clearfix">
+                		<li class="my_cart_tit_w1"><input type="checkbox"/>全选</li>
+                        <li class="my_cart_tit_w2">商品</li>
+                        <li class="my_cart_tit_w3">价格</li>
+                        <li class="my_cart_tit_w4">数量</li>
+                        <li class="my_cart_tit_w5">金额</li>
+                        <li class="my_cart_tit_w6">交易操作</li>
+                	</ul>
                 </div>
+                <div class="my_order_list">
+                	<div class="my_order_list_model">
+                    	<h3><input type="checkbox"/>2014-07-01  订单号：715618971620591</h3>
+                        <ul class="clearfix">
+                        	<li class="my_cart_list_w1 clearfix">
+                            	<a href="#" class="order_pic"><img src="images/pic4.jpg" alt=""></a>
+                                <p><a href="#">以诺 防盗苹果双肩电脑包 13寸14寸15.6寸男女笔记本电脑包背包潮</a></p>
+                            </li>
+                            <li class="my_cart_list_w2"><span style="color:#db1817;">¥325</span></li>
+                            <li class="my_cart_list_w3">
+                            	<div class="count_num clearfix" style="margin:30px auto 0;"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
+                            </li>
+                            <li class="my_cart_list_w4">
+                            	<span style="color:#db1817;">¥325</span>
+                            </li>
+                            <li class="my_cart_list_w5">
+                            	<em class="gays_there">
+                                	<a href="#">付款</a>
+                                    <a href="#">移除收藏</a>
+                                    <a href="#">删除</a>
+                                </em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my_order_list_model">
+                    	<h3><input type="checkbox"/>2014-07-01  订单号：715618971620591</h3>
+                        <ul class="clearfix">
+                        	<li class="my_cart_list_w1 clearfix">
+                            	<a href="#" class="order_pic"><img src="images/pic4.jpg" alt=""></a>
+                                <p><a href="#">以诺 防盗苹果双肩电脑包 13寸14寸15.6寸男女笔记本电脑包背包潮</a></p>
+                            </li>
+                            <li class="my_cart_list_w2"><span style="color:#db1817;">¥325</span></li>
+                            <li class="my_cart_list_w3">
+                            	<div class="count_num clearfix" style="margin:30px auto 0;"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
+                            </li>
+                            <li class="my_cart_list_w4">
+                            	<span style="color:#db1817;">¥325</span>
+                            </li>
+                            <li class="my_cart_list_w5">
+                            	<em class="gays_there">
+                                	<a href="#">付款</a>
+                                    <a href="#">移除收藏</a>
+                                    <a href="#">删除</a>
+                                </em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my_order_list_model">
+                    	<h3><input type="checkbox"/>2014-07-01  订单号：715618971620591</h3>
+                        <ul class="clearfix">
+                        	<li class="my_cart_list_w1 clearfix">
+                            	<a href="#" class="order_pic"><img src="images/pic4.jpg" alt=""></a>
+                                <p><a href="#">以诺 防盗苹果双肩电脑包 13寸14寸15.6寸男女笔记本电脑包背包潮</a></p>
+                            </li>
+                            <li class="my_cart_list_w2"><span style="color:#db1817;">¥325</span></li>
+                            <li class="my_cart_list_w3">
+                            	<div class="count_num clearfix" style="margin:30px auto 0;"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
+                            </li>
+                            <li class="my_cart_list_w4">
+                            	<span style="color:#db1817;">¥325</span>
+                            </li>
+                            <li class="my_cart_list_w5">
+                            	<em class="gays_there">
+                                	<a href="#">付款</a>
+                                    <a href="#">移除收藏</a>
+                                    <a href="#">删除</a>
+                                </em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my_order_list_model">
+                    	<h3><input type="checkbox"/>2014-07-01  订单号：715618971620591</h3>
+                        <ul class="clearfix">
+                        	<li class="my_cart_list_w1 clearfix">
+                            	<a href="#" class="order_pic"><img src="images/pic4.jpg" alt=""></a>
+                                <p><a href="#">以诺 防盗苹果双肩电脑包 13寸14寸15.6寸男女笔记本电脑包背包潮</a></p>
+                            </li>
+                            <li class="my_cart_list_w2"><span style="color:#db1817;">¥325</span></li>
+                            <li class="my_cart_list_w3">
+                            	<div class="count_num clearfix" style="margin:30px auto 0;"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
+                            </li>
+                            <li class="my_cart_list_w4">
+                            	<span style="color:#db1817;">¥325</span>
+                            </li>
+                            <li class="my_cart_list_w5">
+                            	<em class="gays_there">
+                                	<a href="#">付款</a>
+                                    <a href="#">移除收藏</a>
+                                    <a href="#">删除</a>
+                                </em>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my_order_list_model">
+                    	<h3><input type="checkbox"/>2014-07-01  订单号：715618971620591</h3>
+                        <ul class="clearfix">
+                        	<li class="my_cart_list_w1 clearfix">
+                            	<a href="#" class="order_pic"><img src="images/pic4.jpg" alt=""></a>
+                                <p><a href="#">以诺 防盗苹果双肩电脑包 13寸14寸15.6寸男女笔记本电脑包背包潮</a></p>
+                            </li>
+                            <li class="my_cart_list_w2"><span style="color:#db1817;">¥325</span></li>
+                            <li class="my_cart_list_w3">
+                            	<div class="count_num clearfix" style="margin:30px auto 0;"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
+                            </li>
+                            <li class="my_cart_list_w4">
+                            	<span style="color:#db1817;">¥325</span>
+                            </li>
+                            <li class="my_cart_list_w5">
+                            	<em class="gays_there">
+                                	<a href="#">付款</a>
+                                    <a href="#">移除收藏</a>
+                                    <a href="#">删除</a>
+                                </em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--分页-->
+                <div class="pagination">
+                    <a href="#" title="上一页" class="page_up">&lt; 上一页</a>
+                    <a href="#" class="page_on">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    ...
+                    <a href="#">30</a>
+                    <a href="#" title="下一页" class="page_down">下一页 &gt;</a>
+                </div>
+                
             </div>
         </div>
         <!--个人中心栏目结束-->

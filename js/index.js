@@ -60,9 +60,81 @@ $(function(){
 	};
 	Dialog(".phone_bill","#dialog2");
 	Dialog(".oil_car_bill","#dialog1");
+	Dialog(".water_bill","#dialog3");
 	
 	//充话费选择面值
 	$(".phone_card a").click(function(){
 		$(this).addClass("phone_bill_select").siblings().removeClass("phone_bill_select");	
+	});
+	
+	//充话费号码选择
+	$(".phone_input").focus(function(){
+		$(".phone_list").fadeIn();	
+		
+	});
+	$(".phone_input").click(function(e){
+		stopEventBubble(e);
+	})
+	$(".phone_list li").click(function(e){
+		var val = $(this).html();
+		$(".phone_input").val(val);	
+		$(".phone_list").fadeOut();
+		stopEventBubble(e);
+	});
+	
+	$(".phone_card").click(function(){
+		$(".phone_list").fadeOut();	
+		
+	})
+	//选择金额选项卡
+	$(".select_face_value").click(function(e){
+		$(".face_value_list").fadeIn();	
+		stopEventBubble(e);
+	})
+	$(".face_value_list li").click(function(e){
+		var val = $(this).find("input").val();
+		$(".select_face_value").html(val);
+		$(".face_value_list").fadeOut();	
+		stopEventBubble(e);
+	})
+	$(".oil_card").click(function(){
+		$(".face_value_list").fadeOut();	
+	})
+	//阻止事件冒泡
+    function stopEventBubble(event){
+        var e=event || window.event;
+        if (e && e.stopPropagation){
+            e.stopPropagation();    
+        }
+        else{
+            e.cancelBubble=true;
+        }
+    }
+	
+	//缴水电费
+	$(".public_institution").click(function(e){
+		$(".public_institution_list").fadeIn();	
+		stopEventBubble(e);
+	})
+	$(".public_institution_list li").click(function(e){
+		var val = $(this).html();
+		$(".public_institution").html(val);
+		$(".public_institution_list").fadeOut();	
+		stopEventBubble(e);
+	})
+	$(".water_electricity_bill").click(function(){
+		$(".public_institution_list").fadeOut();	
+	})
+	
+	//查询与内容切换
+	$(".electricity_btn").click(function(){
+		$(".inquire").hide();
+		$(".bill_disc").show();	
+		stopEventBubble(e);
+	})
+	$(".back_change").click(function(){
+		$(".inquire").show();
+		$(".bill_disc").hide();	
+		stopEventBubble(e);
 	})
 })

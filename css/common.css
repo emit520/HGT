@@ -11,7 +11,7 @@
 /*--------------------------------------------------
  *	基础设置
  *--------------------------------------------------*/
-html,body{ font: 12px/1.5 "Microsoft Yahei", "微软雅黑", tahoma, helvetica, clean, sans-serif; }
+html,body{ font: 12px/1.5  '\5FAE\8F6F\96C5\9ED1', tahoma, helvetica, clean, sans-serif; }
 
 
 /*--------------------------------------------------
@@ -38,15 +38,19 @@ html,body{ font: 12px/1.5 "Microsoft Yahei", "微软雅黑", tahoma, helvetica, 
 
 .header{ width:100%; padding-top:40px; border-bottom:4px solid #383840;}
 .head{ width:1024px; margin:0 auto;}
-.logo{ width:350px;}
+.logo{ width:350px; margin-top:10px;}
 
 .search{ width:340px; height:40px; border:1px solid #d61719; margin:35px 0 0 35px;}
 .search .search_input{width:272px; height:38px; line-height:38px;  background:#fff; text-indent:5px; border:0; display:block;}
 .search .search_btn{ width:66px; height:40px; background:url(../images/search_btn.jpg) no-repeat; border:none; cursor:pointer; display:block;}
 
-.shops_car{ width:146px; height:42px; background:#db1817; margin-top:35px; font-size:14px; position:relative;}
-.shops_car a{ width:146px; height:42px; line-height:42px; display:block;  color:#f7f8f8; text-indent:60px;}
-.shops_car img{ position:absolute; top:12px; left:30px;}
+.shops_car,.out_store{ width:146px; height:42px; background:#db1817; margin-top:35px; font-size:14px; position:relative;}
+.shops_car a,.out_store a{ width:146px; height:42px; line-height:42px; display:block;  color:#f7f8f8; text-indent:60px;}
+.shops_car img,.out_store img{ position:absolute; top:12px; left:30px;}
+/*无货*/
+.out_store{ background:#c9c9c9; margin-top:0;}
+
+
 
 .nav{ width:1024px; margin:20px 0 1px 0;}
 .classify{ width:160px; height:40px; position:relative;}
@@ -58,7 +62,7 @@ html,body{ font: 12px/1.5 "Microsoft Yahei", "微软雅黑", tahoma, helvetica, 
 .classify_head span.down{ background-position:0 -23px;}
 
 .classify_box{ width:158px; height:444px; border:1px solid #adadae; border-top:none; position:absolute; top:45px; left:0; background:#fff; z-index:99; }
-.classify_box ul{ width:158px; height:370px;}
+.classify_box ul{ width:158px; height:407px;}
 .classify_box ul li{ width:158px; height:36px; line-height:36px; border-bottom:1px solid #adadae;}
 .classify_box ul li a{ width:158px; height:36px; display:block; color:#333333; position:relative;}
 .classify_box ul li.current > a{background:#db1817; color:#fff;}
@@ -118,23 +122,24 @@ display:none;
 	text-align:center;
 	margin:20px 0;
 	color:#231815;
-	
 }
 .pagination a{
-	font-size:22px;
 	color:#231815;
 	margin:0 5px;
-}
-.pagination a.page_up,.pagination a.page_down{
 	border:1px solid #c7c6c6;
-	font-family:"宋体";
+	padding:3px 10px;
 	font-size:16px;
+}
+.pagination a:hover{
+	border:1px solid #ea5514;
+	color:#ea5514;
+	}
+.pagination .page_first a,.pagination .page_up a,.pagination .page_down a,.pagination .page_last a{
+	font-family:"宋体";
 	color:#888888;
 	padding:6px 10px;
-	position:relative;
-	top:-2px;
 }
-.pagination a.page_on{ color:#ea5514;}
+.pagination span.current{ color:#ea5514; font-size:16px;}
 
 /*--------------------------------------------------
  *	底部样式
@@ -200,7 +205,7 @@ display:none;
 	top:50%;
 	left:50%;
 	margin-left:-378px;
-	margin-top:-300px;
+	margin-top:-350px;
 	z-index:100;
 	display:none;
 }
@@ -248,14 +253,11 @@ display:none;
 	border:1px solid #c7c6c6;
 	margin-left:5px;
 }
-.dialog_box p span{
-	margin-left:5px;
-	font-size:12px;
-}
+
 .dialog_box p span a{
 	color:#004489;
 }
-.dialog_box p input[type=submit]{
+.dialog_box p input[type=submit],.dialog_box p input[type=button]{
 	width:135px;
 	height:40px;
 	line-height:40px;
@@ -267,6 +269,7 @@ display:none;
 	border:none;
 	margin-left:255px;
 	font-weight:bold;
+	cursor:pointer;
 }
 .dialog_box h4{
 	font-size:12px;
@@ -275,25 +278,159 @@ display:none;
 	font-weight:normal;
 	line-height:24px;
 }
+.phone_list{
+	width:300px;
+	border:1px solid #c7c6c6;
+	position:absolute;
+	top:90px;
+	left:254px;
+	background:#fff;
+	border-radius:5px;
+	display:none;
+}
+.phone_list li{
+	height:40px;
+	line-height:40px;
+	text-indent:10px;
+	color:#666;
+	cursor:pointer;
+}
+.phone_list li:hover{
+	background:#72ccff;
+	color:#fff;
+}
 
+.dialog_box p .pay_money{
+	font-size:18px;
+	color:#333;
+	font-weight:bold;
+}
+.dialog_box p span{ font-size:14px;}
 
+.select_face_value{
+	width: 300px;
+  	height: 38px;
+  	line-height: 38px;
+  	border: 1px solid #c7c6c6;
+  	border-radius: 5px;
+  	text-indent: 10px;
+	display:inline-block;
+	background:url(../images/arrow2.png) no-repeat 95% center;
+	cursor:pointer;
+}
+.face_value_list{
+	width:300px;
+	border: 1px solid #c7c6c6;
+	position:absolute;
+	top:324px;
+	left:259px;
+	background:#fff;
+	border-radius:5px;
+	box-shadow:0 0 10px #999;
+	display:none;
+}
+.face_value_list li{
+	height:40px;
+	border-bottom:1px solid #c7c6c6;
+}
+.face_value_list li:last-child{
+	border:none;
+}
+.face_value_list li:hover{
+	background:#72ccff;
+	color:#fff;
+}
+.face_value_list li label{
+	width:300px;
+	height:40px;
+	display:block;
+	line-height:40px;
+	text-indent:10px;
+	cursor:pointer;
+}
+.face_value_list li input[type=radio]{
+	float:right;
+	margin:15px 5px 0 0;
+}
 
+/*商品数量选择加减控件样式*/
+.count_num{ width: 140px;}
 
+.count_num .minus,.count_num .plus{
+	width:25px;
+	height:24px;
+	text-align:center;
+	line-height:22px;
+	font-size:18px;
+	border-radius:3px;
+}
+.count_num .minus{
+	background:#ccc;
+	color:#231815;
+}
+.count_num .minus:hover{ color:#231815;}
+.count_num .plus{
+	background:#db1716;
+	color:#fff;
+}
+.count_num .plus:hover{ color:#fff;}
+.count_num .choose_num{
+	width:60px;
+	height:22px;
+	line-height:22px;
+	border:1px solid #ccc;
+	margin:0 10px;
+	background:#fff;
+	text-align:center;
+}
 
+/*侧边热销单品*/
+.sub_hot_sale{
+	width:178px;
+}
+.sub_hot_sale h2{
+	font-size:14px;
+	color:#231815;
+	margin-left:10px;
+	height:30px;
+	line-height:30px;
+}
+.sub_hot_sale ul{
+	width:176px;
+	border:1px solid #c7c6c6;
+	padding-top:10px;
+}
+.sub_hot_sale ul li{
+	width:158px;
+	margin:0 9px 10px;
+}
+.sub_hot_sale li img{
+	width:158px;
+	height:158px;
+	display:block;
+}
+.sub_hot_sale li p{
+	font-size:14px;
+	color:#c82020;
+	margin-top:5px;
+}
+.sub_hot_sale li p a{
+	font-size:12px;
+	color:#727171;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*验证倒计时按钮*/
+input.yanzheng{
+	width: 112px;
+	height: 34px;
+	background: #C7C6C6;
+	border: none;
+	border-radius: 3px;
+	margin-left: 13px;
+	color: #fff;
+	margin-left:10px;
+	cursor:pointer;
+}
 
 
 

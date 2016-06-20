@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/base.css" />
 <link rel="stylesheet" type="text/css" href="css/common.css" />
 <link rel="stylesheet" type="text/css" href="css/layout.css" />
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/layout.js"></script>
 </head>
@@ -24,13 +24,13 @@
             </div>
             <div class="top_option fr">
                 <p>
-                    <a href="###" title="注册">【注册】</a>
+                    <a href="registe.html" title="注册">【注册】</a>
                     <em>|</em>
-                    <a href="###" title="登录">【登录】</a>
+                    <a href="login.html" title="登录">【登录】</a>
                     <em>|</em>
-                    <a href="###" title="我的订单">我的订单</a>
+                    <a href="myOrder.html" title="我的订单">我的订单</a>
                     <em>|</em>
-                    <a href="###" title="帮助中心">帮助中心</a>
+                    <a href="helpCenter.html" title="帮助中心">帮助中心</a>
                     <em>|</em>
                     <a href="###" title="汉购通官方网站">汉购通官方网站</a>
                 </p>
@@ -586,19 +586,14 @@
             </div>
             <!--分页-->
             <div class="pagination">
-            	<a href="#" title="上一页" class="page_up">&lt; 上一页</a>
-                <a href="#" class="page_on">1</a>
+            	<span  class="page_first"><a href="#" title="第一页">&lt; 第一页</a></span>
+                <span  class="page_up"><a href="#" title="上一页">&lt; 上一页</a></span>
+                <a href="#">1</a>
                 <a href="#">2</a>
-                <a href="#">3</a>
+                <span class="current">3</span>
                 <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                ...
-                <a href="#">30</a>
-                <a href="#" title="下一页" class="page_down">下一页 &gt;</a>
+                <span  class="page_down"><a href="#" title="下一页">下一页 &gt;</a></span>
+                <span  class="page_last"><a href="#" title="最后一页">最后一页 &gt;</a></span>
             </div>
         </div>
         <div style="clear:both;"></div>

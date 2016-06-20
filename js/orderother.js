@@ -22,14 +22,14 @@ $(function(){
         $(".drawback-cause-list").hide();
     });
 
-    $(".card-payment-li").click(function(){
-        $(".card-payment-li").each(function(){
-            $(this).removeClass("card-payment-checked");
-        });
-        $(this).addClass("card-payment-checked");
+    
+	//选择支付方式
+	$(".card-payment-li").click(function(){
+        $(this).addClass("card-payment-checked").siblings(".card-payment-li").removeClass("card-payment-checked");
     });
 
-    $(".arrow-cursor").click(function(){
+	//选择可伴卡支付
+    $(".arrow-cursor").click(function(e){
         if($(".arrow-cursor-list").css("display")=="none"){
             $(".arrow-cursor-list").show();
             $(this).removeClass("arrow-down");
@@ -39,7 +39,21 @@ $(function(){
             $(this).removeClass("arrow-up");
             $(this).addClass("arrow-down");
         }
+		stopEventBubble(e);
     });
+	$(document).click(function(){
+		$(".arrow-cursor-list").hide();
+	})
+	//阻止事件冒泡
+    function stopEventBubble(event){
+        var e=event || window.event;
+        if (e && e.stopPropagation){
+            e.stopPropagation();    
+        }
+        else{
+            e.cancelBubble=true;
+        }
+    }
 
     $(".confirm-order-address-list").click(function(){
         $(".confirm-order-address-list").each(function(){

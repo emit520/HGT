@@ -230,40 +230,7 @@
 .sub_classify_list li a:hover{
 	text-decoration:underline;
 }
-/*侧边热销单品*/
-.sub_hot_sale{
-	width:178px;
-}
-.sub_hot_sale h2{
-	font-size:14px;
-	color:#231815;
-	margin-left:10px;
-	height:30px;
-	line-height:30px;
-}
-.sub_hot_sale ul{
-	width:176px;
-	border:1px solid #c7c6c6;
-	padding-top:10px;
-}
-.sub_hot_sale ul li{
-	width:158px;
-	margin:0 9px 10px;
-}
-.sub_hot_sale li img{
-	width:158px;
-	height:158px;
-	display:block;
-}
-.sub_hot_sale li p{
-	font-size:14px;
-	color:#c82020;
-	margin-top:5px;
-}
-.sub_hot_sale li p a{
-	font-size:12px;
-	color:#727171;
-}
+
 
 /************************************* 内页右侧样式 *****************************************/
 
@@ -325,7 +292,15 @@
 	line-height:20px;
 	margin-top:5px;
 }
-.product_list li p a{ color:#727171; font-size:12px; }
+.product_list li p a{ 
+	color:#727171; 
+	font-size:12px;
+	width:262px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	display:block;
+}
 .product_list li a:hover{
 	text-decoration:underline;
 }
@@ -338,9 +313,11 @@
 	margin-top:20px;
 }
 .product_pic{
-	width:352px;
+	width:352px; 
+	height:auto; 
+	margin:0 auto; 
+	overflow:hidden;
 }
-
 .jqzoom{
 	float:left;
 	border:none;
@@ -350,9 +327,7 @@
 	margin:0px;
 	display:block;
 }
-.jqzoom img{ 
-	background:url(../images/img/loading.gif) no-repeat center center;
-}
+.jqzoom img{ background:url(../images/img/loading.gif) no-repeat center center;}
 .zoomdiv{
 	z-index:100;
 	position:absolute;
@@ -361,6 +336,7 @@
 	width:350px;
 	height:350px;
 	background:#ffffff;
+	border:1px solid #CCCCCC;
 	display:none;
 	text-align:center;
 	overflow:hidden;
@@ -380,6 +356,7 @@
 	-khtml-opacity: 0.5;
 	filter: alpha(Opacity=50);
 }
+
 /*图片小图预览列表*/
 .spec-preview{
 	width:350px;
@@ -512,7 +489,7 @@
 	margin-left:5px;
 }
 .area_list{
-	width:320px;
+	width:400px;
 	min-height:100px;
 	background:#fff;
 	position:absolute;
@@ -553,18 +530,14 @@
 	color:#666;
 	float:left;
 	display:inline;
-	padding:2px 4px;
+	padding:2px 10px;
 	cursor:pointer;
 }
 .area_list ul li:hover{
 	background:#db1716;
 	color:#fff;
 }
-.province .province_select{
-	background:#db1716;
-	color:#fff;
-}
-.city .city_select{
+.province .province_select,.city .city_select,.region .region_select{
 	background:#db1716;
 	color:#fff;
 }
@@ -603,33 +576,7 @@
     border: 2px solid #db1716;
 }
 
-.count_num{ width:200px;}
 
-.count_num .minus,.count_num .plus{
-	width:25px;
-	height:24px;
-	text-align:center;
-	line-height:22px;
-	font-size:18px;
-	border-radius:3px;
-}
-.count_num .minus{
-	background:#ccc;
-	color:#231815;
-}
-.count_num .plus{
-	background:#db1716;
-	color:#fff;
-}
-.count_num .choose_num{
-	width:60px;
-	height:22px;
-	line-height:22px;
-	border:1px solid #ccc;
-	margin:0 10px;
-	background:#fff;
-	text-align:center;
-}
 .btn_action{ margin-top:10px;}
 
 .btn_action .shops_car{ margin-top:0;}
@@ -691,6 +638,40 @@
 .product_infor_content{
 	width:1024px;
 	margin-top:20px;
+}
+
+.Ptable{
+	width:1022px;
+	border: 1px solid #e5e5e5;
+	border-top:none;
+	margin-bottom:30px;
+}
+.Ptable thead{
+	text-align: left;
+	color: #404040;
+	background-color: #f7f7f7;
+	font-weight: 700;
+	border-top: 1px solid #e5e5e5;
+}
+.Ptable thead th{
+	height:30px;
+	text-indent:20px;
+	font-size:14px;
+}
+.Ptable tbody th{
+	height:35px;
+	border-right: 1px solid #e5e5e5;
+	border-top: 1px solid #e5e5e5;
+	color: #333;
+	font-weight: 400;
+	text-align: right;
+	font-size:14px;
+	padding-right:10px;
+}
+.Ptable tbody td{
+	border-top: 1px solid #e5e5e5;
+	text-indent:10px;
+	font-size:14px;
 }
 
 /***************************个人购卡*************************************/
@@ -828,7 +809,7 @@
 	border:1px solid #ccc;
 	border-radius:3px;
 }
-.card_value p a.card_select{
+.card_value p .card_select{
 	border:1px solid #cd1f1c;
 }
 .card_value .other_value{
@@ -839,6 +820,7 @@
 	border-radius:3px;
 	text-align:center;
 	color:#666;
+	margin-left:2px;
 }
 .card_box dl{
 	margin-bottom:10px;
@@ -980,11 +962,7 @@
 }
 .addr_list li .change_addr{ color:#231815;}
 .addr_list li:hover .change_addr{ color:#fff;}
-.addr_list li.addr_select{
-	background:#9f9fa0;
-	color:#fff;
-}
-.addr_list li.addr_select .change_addr{ color:#fff;}
+
 .addr_list li p{
 	display:inline-block;
 }
@@ -1004,17 +982,28 @@
   	width: 12px;
   	height: 22px;
   	background:url(../images/location.png) no-repeat;
+	display:none;
 }
 .addr_list li .make_tip{
 	position:absolute;
 	top:0;
 	left:30px;
+	display:none;
 }
 .addr_list li .change_addr{
 	position:absolute;
 	top:0;
 	right:10px;
+	display:none;
 }
+.addr_list li.addr_select{
+	background:#9f9fa0;
+	color:#fff;
+}
+.addr_list li.addr_select .change_addr{ color:#fff;}
+.addr_list li.addr_select .location{ display:block;}
+.addr_list li.addr_select .make_tip{ display:block;}
+.addr_list li.addr_select .change_addr{ display:block;}
 /*确认商品信息*/
 .order_infor_wrap{
 	width:1024px;
@@ -1352,15 +1341,16 @@ a.pay_btn{
 	height:44px;
 	border-bottom:1px solid #cd1e1c;
 }
-.manage_card_tab li{
+.card_tab_list1 li{
 	width:152px;
 	height:43px;
 	border:1px solid #cd1e1c;
 	border-bottom:none;
 	float:left;
 	border-radius:3px 3px 0 0;
+	position:relative;
 }
-.manage_card_tab li a{
+.card_tab_list1 li a{
 	width:152px;
 	height:43px;
 	display:block;
@@ -1370,29 +1360,123 @@ a.pay_btn{
 	color:#515151;
 	background:url(../images/arrow2.png) no-repeat 85% center;
 }
-.manage_card_tab li a:hover{
-	text-decoration:none;
+
+.card_tab_list1 li a.manage_card_select{
 	color:#fff;
 	background:#cd1e1c url(../images/arrow1.png) no-repeat 85% center;
 }
-.manage_card_tab li a.manage_card_select{
-	color:#fff;
-	background:#cd1e1c url(../images/arrow1.png) no-repeat 85% center;
+.card_tab_list1 li .card_tab_list2{
+	width:380px;
+	background: rgba(255,255,255,0.8);
+	background:#eee \9;
+	box-shadow:0 0 5px #999;
+	position:absolute;
+	top:43px;
+	left:0;
+	z-index:99;
+	display:none;
 }
+.card_tab_list2 em{
+	font-style:normal;
+}
+.card_tab_list1 li .card_tab_list2 li{
+	width:380px;
+	height:54px;
+	line-height:54px;
+	border:none;
+	border-radius:none;
+	float:none;
+	position:static;
+}
+.card_tab_list1 li .card_tab_list2 li.card_tab_list2_select a{
+	background:rgba(153,153,153,0.8) url(../images/arrow3.png) no-repeat 95% center;
+	background:#999 url(../images/arrow3.png) no-repeat 95% center \9;
+	color:#e50000;
+}
+.card_tab_list1 li .card_tab_list2 li a{
+	width:380px;
+	height:54px;
+	text-align:left;
+	line-height:54px;
+	font-size:14px;
+	text-indent:30px;
+	background:url(../images/arrow3.png) no-repeat 95% center;
+}
+.card_tab_list1 li .card_tab_list2 li a:hover{
+	background:rgba(153,153,153,0.8) url(../images/arrow3.png) no-repeat 95% center;
+	background:#999 url(../images/arrow3.png) no-repeat 95% center \9;
+	color:#e50000;
+}
+.card_tab_list1 li .card_tab_list2 li a span{
+	float:right;
+	margin-right:40px;
+}
+.card_tab_list1 li .card_tab_list2 li .card_tab_list3{
+	position:absolute;
+	left:380px;
+	top:0;
+	background:rgba(153,153,153,0.8);
+	background:#999 \9;
+	box-shadow:0 0 5px #ccc;
+	display:none;
+}
+.card_tab_list1 li .card_tab_list2 li.card_tab_list2_select  .card_tab_list3 li a{
+	color:#515151;
+	}
+.card_tab_list1 li .card_tab_list2 li .card_tab_list3 li a:hover{
+	background:#fff url(../images/arrow3.png) no-repeat 95% center;
+	color:#e50000;
+}
+
+.card_tab_list1 li .card_tab_list5{
+	width:155px;
+	background: rgba(255,255,255,0.8);
+	background:#eee \9;
+	box-shadow:0 0 5px #999;
+	position:absolute;
+	top:43px;
+	left:0;
+	z-index:99;
+	display:none;
+}
+.card_tab_list1 li .card_tab_list5 em{
+	font-style:normal;
+}
+.card_tab_list1 li .card_tab_list5 li{
+	width:155px;
+	height:54px;
+	line-height:54px;
+	border:none;
+	border-radius:none;
+	float:none;
+	position:static;
+}
+.card_tab_list1 li .card_tab_list5 li a{
+	width:155px;
+	height:54px;
+	text-align:left;
+	line-height:54px;
+	font-size:14px;
+	text-align:center;
+	background:none;
+}
+.card_tab_list1 li .card_tab_list5 li a:hover{
+	color:#e50000;
+	background:rgba(153,153,153,0.8);
+	background:#999 \9;
+}
+
 .manage_card_list{
-	width:813px;
+	width:815px;
 	margin-top:20px;
-	border:1px solid #d8d7d7;
-	border-right:none;
-	border-bottom:none;
 	margin-bottom:30px;
 	
 }
 .manage_card_list li{
-	width:270px;
-	border-right:1px solid #d8d7d7;
-	border-bottom:1px solid #d8d7d7;
+	width:259px;
+	border:1px solid #d8d7d7;
 	float:left;
+	margin:0 16px 16px 0;
 	position:relative;
 }
 .manage_card_list li h2{
@@ -1401,13 +1485,13 @@ a.pay_btn{
 	color:#727171;
 }
 .manage_card_list li img{
-	width:270px;
+	width:259px;
 	height:160px;
 	display:block;
 	margin-bottom:10px;
 }
 .manage_card_list_disc{
-	width:270px;
+	width:259px;
 	height:45px;
 	background:#54555b;
 	padding:5px 0;
@@ -1420,7 +1504,7 @@ a.pay_btn{
 }
 .manage_card_list_disc p span{
 	font-size:20px;
-	color:#e50402;
+	color:#ea5514;
 }
 .flag1{
 	width:79px;
@@ -1448,34 +1532,62 @@ a.pay_btn{
 .manage_card_disc_crumb span{
 	color:#c91d1d;
 }
-.swiper-container {
-	width: 813px;
+
+#imgPlay {
+	overflow: hidden; 
+	width: 813px; z
+	oom: 1; 
+	position: relative; 
 	height: 442px;
 	border:1px solid #c7c6c6;
 	border-top:2px solid #cd1e1c;
 }
-.swiper-slide {
-display: -webkit-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-box-pack: center;
--ms-flex-pack: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-box-align: center;
--ms-flex-align: center;
--webkit-align-items: center;
-align-items: center;
+#imgPlay .imgs img {
+	 width: 813px; 
 }
-.swiper-container .swiper-pagination-bullet{
-	width:10px;
-	height:10px;
-	background:#9b9b9f;
+#imgPlay .imgs li {
+	float: left; 
+	position: relative;
 }
-.swiper-container .swiper-pagination-bullet-active{
-	background:#e65d5c;
+#imgPlay .imgs {
+	width: 9999px;
 }
+#imgPlay .prev,#imgPlay .next {
+	background: url(../images/imgPlayer.png) no-repeat 0px 0px; 
+	left: 0; 
+	width: 46px; 
+	cursor: pointer; 
+	text-indent: -9999px; 
+	position: absolute; 
+	top: 190px; 
+	height: 81px;
+}
+
+#imgPlay .next {
+	background-position: right 0px; right: 0; left: auto
+}
+#imgPlay .num {
+	display: inline; 
+	position: absolute; 
+	bottom: 10px; 
+	height: 19px;
+	width:50%;
+}
+#imgPlay .num span {
+	display: inline-block; 
+	background: url(../images/imgPlayer.png) no-repeat -19px -83px; 
+	margin: 0px 2px; 
+	overflow: hidden; 
+	width: 14px; 
+	cursor: pointer; 
+	line-height: 0; 
+	height: 13px
+}
+#imgPlay .num span.on {
+	background-position: 1px -83px
+}
+
+
 .manage_card_infor{
 	width:813px;
 	border:1px solid #c7c6c6;

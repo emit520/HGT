@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/base.css" />
 <link rel="stylesheet" type="text/css" href="css/common.css" />
 <link rel="stylesheet" type="text/css" href="css/layout.css" />
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/layout.js"></script>
 <script type="text/javascript" src="js/jquery.jqzoom.js"></script>
@@ -26,13 +26,13 @@
             </div>
             <div class="top_option fr">
                 <p>
-                    <a href="###" title="注册">【注册】</a>
+                    <a href="registe.html" title="注册">【注册】</a>
                     <em>|</em>
-                    <a href="###" title="登录">【登录】</a>
+                    <a href="login.html" title="登录">【登录】</a>
                     <em>|</em>
-                    <a href="###" title="我的订单">我的订单</a>
+                    <a href="myOrder.html" title="我的订单">我的订单</a>
                     <em>|</em>
-                    <a href="###" title="帮助中心">帮助中心</a>
+                    <a href="helpCenter.html" title="帮助中心">帮助中心</a>
                     <em>|</em>
                     <a href="###" title="汉购通官方网站">汉购通官方网站</a>
                 </p>
@@ -375,6 +375,15 @@
                                         <li>深圳</li>
                                         <li>广州</li>
                                     </ul>
+                                    <p>请选择地区：</p>
+                                    <ul class="region clearfix">
+                                        <li>洪山区</li>
+                                        <li>武昌区</li>
+                                        <li>硚口区</li>
+                                        <li>东西湖区</li>
+                                        <li>青山区</li>
+                                        <li>沌口区</li>
+                                    </ul>
                                     <p><a href="javascript:;" class="area_reset">取消</a> <a href="javascript:;" class="area_submit">确定</a></p>
                                 </div>
                             </div>
@@ -386,11 +395,11 @@
                 	<dt>选择颜色：
                 		<dd>
                         	<ul class="choose_color clearfix">
-                        		<li><a href="#">红色</a></li>
-                                <li><a href="#">黄色</a></li>
-                                <li class="choose_select"><a href="#">绿色</a></li>
-                                <li><a href="#">紫色</a></li>
-                                <li><a href="#">蓝色</a></li>
+                        		<li><a href="javascript:;">红色</a></li>
+                                <li><a href="javascript:;">黄色</a></li>
+                                <li class="choose_select"><a href="javascript:;">绿色</a></li>
+                                <li><a href="javascript:;">紫色</a></li>
+                                <li><a href="javascript:;">蓝色</a></li>
                         	</ul>
                         </dd>
                 	</dt>
@@ -398,13 +407,16 @@
                 <dl class="clearfix">
                 	<dt>购买数量：
                 		<dd>
-                        	<div class="count_num"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
+                        	<div class="count_num clearfix"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
                         </dd>
                 	</dt>
                 </dl>
-                <div class="btn_action">
+                <div class="btn_action clearfix">
                 	<div class="shops_car fl">
                         <a href="###" title="购物车"><img src="images/shop_car.png" alt="">购物车(<span class="buy_num">0</span>)</a>
+                    </div>
+                    <div class="out_store fl">
+                        <a  title="购物车"><img src="images/shop_car.png" alt="">购物车</a>
                     </div>
                     <div class="collection_btn fl">
                     	<a href="#" title="收藏商品"><img src="images/star1.png" alt="">收藏商品</a>
@@ -427,7 +439,92 @@
                 	<p>品牌：水宝宝 适用肤质：所有肤质 商品质地：霜状 防晒指数：SPF30以上</p>
                 </div>
                 <div class="product_infor_disc hide">
-                	<p>规格参数</p>
+                	<table width="100%" border="1" cellpadding="0" cellspacing="0" class="Ptable">
+                    	<thead>
+                            <tr>
+                                <th colspan="2">主体</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                                <th width="200">品牌</th>
+                                <td>九阳</td>
+                            </tr>
+                            <tr>
+                                <th>颜色</th>
+                                <td>不锈钢色</td>
+                            </tr>
+                            <tr>
+                                <th>类型</th>
+                                <td>普通电水壶</td>
+                            </tr>
+                            <tr>
+                                <th>材质</th>
+                                <td>不锈钢</td>
+                            </tr>
+                            <tr>
+                                <th>容量L</th>
+                                <td>1.7L</td>
+                            </tr>
+                            <tr>
+                                <th>温控器类型</th>
+                                <td>优质温控器</td>
+                            </tr>
+                        </tbody>
+                      	<thead>
+                            <tr>
+                                <th colspan="2" scope="col">规格参数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                                <th>加热方式</th>
+                                <td>底盘加热</td>
+                            </tr>
+                            <tr>
+                                <th>360度底座</th>
+                                <td>支持</td>
+                            </tr>
+                            <tr>
+                                <th>滤网材质</th>
+                                <td>不锈钢</td>
+                            </tr>
+                            <tr>
+                                <th>适用人数</th>
+                                <td>3-5人</td>
+                            </tr>
+                        </tbody>
+						<thead>
+                            <tr>
+                                <th colspan="2" scope="col">技术参数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                                <th>额定电压v</th>
+                                <td>220v</td>
+                            </tr>
+                            <tr>
+                                <th>额定频率hz</th>
+                                <td>50hz</td>
+                            </tr>
+                            <tr>
+                                <th>额定功率w</th>
+                                <td>1800W</td>
+                            </tr>
+                        </tbody>
+                      	<thead>
+                            <tr>
+                                <th colspan="2" scope="col">特性</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                                <th>特性</th>
+                                <td>全钢机身、优质温控器、急速烧水</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="product_infor_disc hide">
                 	<p>商品一个，说明书一份，包装盒一个</p>

@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBliC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -7,12 +7,12 @@
 <title>汉购通</title>
 <link rel="stylesheet" type="text/css" href="css/base.css" />
 <link rel="stylesheet" type="text/css" href="css/common.css" />
-<link rel="stylesheet" type="text/css" href="css/layout.css" />
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/layout.css" />>
+<script src="js/jquery-1.4.2.min.js" type=text/javascript></script>
+<script type="text/javascript" src="js/sideBanner.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/layout.js"></script>
-<script type="text/javascript" src="js/swiper/swiper.min.js"></script>
-<link rel="stylesheet" type="text/css" href="js/swiper/swiper.min.css" />
+
 </head>
 
 <body>
@@ -26,13 +26,13 @@
             </div>
             <div class="top_option fr">
                 <p>
-                    <a href="###" title="注册">【注册】</a>
+                    <a href="registe.html" title="注册">【注册】</a>
                     <em>|</em>
-                    <a href="###" title="登录">【登录】</a>
+                    <a href="login.html" title="登录">【登录】</a>
                     <em>|</em>
-                    <a href="###" title="我的订单">我的订单</a>
+                    <a href="myOrder.html" title="我的订单">我的订单</a>
                     <em>|</em>
-                    <a href="###" title="帮助中心">帮助中心</a>
+                    <a href="helpCenter.html" title="帮助中心">帮助中心</a>
                     <em>|</em>
                     <a href="###" title="汉购通官方网站">汉购通官方网站</a>
                 </p>
@@ -389,14 +389,16 @@
         <div class="inside_right">
         	<div class="manage_card_disc">
             	<div class="manage_card_disc_crumb"><a href="#">首页</a> > <a href="#">卡包管理</a> > <span>秀玉红茶坊电子会员卡</span></div>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/banner4.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="images/banner4.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="images/banner4.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="images/banner4.jpg" alt=""></div>
+                <div class="sideBanner">
+                	<div id=imgPlay>
+                        <ul class=imgs id=actor>
+                          <li><img src="images/banner4.jpg" alt="" /></li>
+                          <li><img src="images/banner4.jpg" alt="" /></li>
+                        </ul>
+                        <div class=num id=numInner></div>
+                        <div class=prev>上一张</div>
+                        <div class=next>下一张</div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
                 <div class="manage_card_infor">
                 	<div class="manage_card_value">
@@ -497,13 +499,6 @@
         </div>
     </div>
     <!--footer部分结束-->
-    <!--banner-->
-    <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-		autoplay : 5000
-    });
-    </script>
+   
 </body>
 </html>

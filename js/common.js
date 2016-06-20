@@ -35,13 +35,16 @@ $(function(){
 	//注册tab
 	Tab(".registe_tab li",".registe_item","registe_tab_select");
 	
+	//缴水电费tab
+	Tab(".water_electricity_tab ul li",".water_electricity_form","water_electricity_tab_current");
+	
 	//选择商品数量加减控件
 	function plusAndMinus(){
 		$(".count_num").each(function(index, element) {
             $(this).find(".minus").click(function(){
 				var val = $(this).parent().find(".choose_num").val();
-				if(val <= 0){
-					$(this).parent().find(".choose_num").val(0)	
+				if(val <= 1){
+					$(this).parent().find(".choose_num").val(1)	
 				}else{
 					$(this).parent().find(".choose_num").val(parseInt(val)-1);
 				}
@@ -58,5 +61,44 @@ $(function(){
 	//产品详情选择商品颜色，规格等js
 	$(".choose_color li").click(function(){
 		$(this).addClass("choose_select").siblings().removeClass("choose_select");	
+	});
+	
+	//我的订单全选
+	$(function(){
+		$(".my_order_tit input[type=checkbox] , .commit_order input[type=checkbox] , my_order_tit input[type=checkbox] ,.check_all input[type=checkbox]").click(function(){
+			if($(this).attr("checked") == true){
+				$(".my-order input[type=checkbox],.my-cart input[type=checkbox],.personal-information input[type=checkbox]").attr("checked",true);
+				
+			}else{
+				$(".my-order input[type=checkbox],.my-cart input[type=checkbox],.personal-information input[type=checkbox]").removeAttr("checked");
+				 
+			}
+		});
+	});
+	
+	//验证码js
+	$(".yan_btn").each(function() {
+		var index=$(this);
+		var status="true";	
+        $(this).click(function(){
+			if(status=="true"){ //设置点击状态，避免2次点击
+				status="false";
+				$(this).css("cursor","default");
+				$(this).html("下次发送<span>30</span>秒");
+				var num = 30;			
+				var timer=function(){						
+					if(num>0){
+						num--;
+						index.find('span').html(num)
+					}else{
+						index.css("cursor","pointer");
+						index.html("获取短信验证码");	
+						clearInterval(lg);
+						status="true";
+					}
+				};
+				var lg=setInterval(timer,1000);
+			}
+    	});
 	});
 })

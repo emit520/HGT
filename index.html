@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/base.css" />
 <link rel="stylesheet" type="text/css" href="css/common.css" />
 <link rel="stylesheet" type="text/css" href="css/index.css" />
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/banner.js"></script>
@@ -42,13 +42,13 @@ return false;
             </div>
             <div class="top_option fr">
                 <p>
-                    <a href="###" title="注册">【注册】</a>
+                    <a href="registe.html" title="注册">【注册】</a>
                     <em>|</em>
-                    <a href="###" title="登录">【登录】</a>
+                    <a href="login.html" title="登录">【登录】</a>
                     <em>|</em>
-                    <a href="###" title="我的订单">我的订单</a>
+                    <a href="myOrder.html" title="我的订单">我的订单</a>
                     <em>|</em>
-                    <a href="###" title="帮助中心">帮助中心</a>
+                    <a href="helpCenter.html" title="帮助中心">帮助中心</a>
                     <em>|</em>
                     <a href="###" title="汉购通官方网站">汉购通官方网站</a>
                 </p>
@@ -298,7 +298,7 @@ return false;
                                 </div>
                             </li>
                         </ul>
-                        <p><a href="#">汉购通在线支付平台</a></p>
+
                         <p class="classify_bottom"><a href="#">SALE特价专区</a></p>
                     </div>
 
@@ -356,9 +356,9 @@ return false;
                             </a>
                         </li>
                         <li>
-                        	<a href="#">
+                        	<a href="javascript:;" class="water_bill">
                             	<img src="images/icon2.jpg" alt="">
-                                <p>电影票</p>
+                                <p>水/电费</p>
                             </a>
                         </li>
                         <li>
@@ -381,7 +381,7 @@ return false;
                         </li>
                         <li>
                         	<a href="#">
-                            	<img src="images/icon6.jpg" alt="">
+                            	<img src="images/icon2.jpg" alt="">
                                 <p>所有消费卡</p>
                             </a>
                         </li>
@@ -689,13 +689,15 @@ return false;
                     </p>
                     <p>
                         <label for="">选择充值金额：</label>
-                        <select name="">
-                            <option value="请选择面值">请选择面值</option>
-                            <option value="100元">100元</option>
-                            <option value="500元">500元</option>
-                            <option value="1000元">1000元</option>
-                        </select>
+                        <span class="select_face_value">请选择面值</span>
                     </p>
+                    <ul class="face_value_list">
+                    	<li><label for="face_value1">100元（售价85元）<input type="radio" name="face_value" value="100元（售价85元）" id="face_value1"></label></li>
+                        <li><label for="face_value2">200元（售价150元）<input type="radio" name="face_value" value="200元（售价150元）" id="face_value2"></label></li>
+                        <li><label for="face_value3">300元（售价220元）<input type="radio" name="face_value" value="300元（售价220元）" id="face_value3"></label></li>
+                        <li><label for="face_value4">500元（售价350元）<input type="radio" name="face_value" value="500元（售价350元）" id="face_value4"></label></li>
+                        <li><label for="face_value5">1000元（售价600元）<input type="radio" name="face_value" value="1000元（售价600元）" id="face_value5"></label></li>
+                    </ul>
                     <p>
                         <label for="">验证码：</label>
                         <input type="text" value="" class="yan_input" />
@@ -720,8 +722,14 @@ return false;
                 	
                     <p>
                         <label for="">充值号码：</label>
-                        <input type="text" value="" />
+                        <input type="text" value="" class="phone_input" />
                     </p>
+                    <ul class="phone_list">
+                        <li>13101572544</li>
+                        <li>13101572545</li>
+                        <li>13101572546</li>
+                        <li>13101572547</li>
+                    </ul> 
                     <p>
                         <label for="">充值面值：</label>
                         <a href="javascript:;">20元</a>
@@ -730,8 +738,9 @@ return false;
                         <a href="javascript:;">100元</a>
                     </p>
                     <p>
-                        <label for="">确认卡号：</label>
-                        <input type="text" value="" />
+                        <label for="">支付金额：</label>
+                        <span class="pay_money">￥135</span>
+                        <span>(按照充值金额收取3%技术服务费)</span>
                     </p>
                     <p>
                         <input type="submit" name="" class="dia_btn" value="立即充值" />
@@ -745,6 +754,134 @@ return false;
 5. 充值成功的订单一律不办理退款，请务必确认输入的充值号码无误，如因输入错误造成的损失由用户自行承担；<br/>
 6. 月初及月末为充值高峰期，因运营商系统繁忙会造成延时到账，请耐心等候。<br/>
 如有疑问，可致电客服热线：400-187-5151</h4>
+            </div>
+        </div>
+        <a href="javascript:;" class="dia_close"><img src="images/dia_close.jpg" alt=""></a>
+    </div>
+    <!--交水电费-->
+    <div class="dialog" id="dialog3">
+    	<div class="dialog_box">
+        	<div class="dia_form water_electricity_bill">
+            	<div class="water_electricity_tab">
+                	<ul class="clearfix">
+                		<li class="water_electricity_tab_current">电费缴费</li>
+                        <li>水费缴费</li>
+                	</ul>
+                </div>
+                <div class="water_electricity_content">
+                	<div class="water_electricity_form">
+                    	<!--电费-->
+                        <form action="">
+                        	<div class="inquire">
+                            	<p>
+                                    <label for="">公用事业单位：</label>
+                                    <span class="public_institution">请选择</span>
+                                </p>
+                                <ul class="public_institution_list">
+                                    <li>武汉供电公司</li>
+                                    <li>武汉供电公司（银行代收）</li>
+                                </ul> 
+                                <p>
+                                    <label for="">缴费账号：</label>
+                                    <input type="text" value="" class="bill_num" />
+                                </p>
+                                <p>
+                                    <label for="">验证码：</label>
+                                    <input type="text" value="" class="yanzheng_num" />
+                                    <img src="images/yanzhengma.jpg" alt="">
+                                    <span>看不清？<a href="javascript:;">换一张</a></span>
+                                </p>
+                                <p>
+                                    <input type="button" name="" class="electricity_btn" value="查询" />
+                                </p>
+                            </div>
+                            <div class="bill_disc">
+                            	<dl class="clearfix">
+                            		<dt>缴费地区：</dt>
+                                    <dd>湖北武汉</dd>
+                                    <dt>缴费单位：</dt>
+                                    <dd>武汉供电公司</dd>
+                                    <dt>缴费号码：</dt>
+                                    <dd>6682031468</dd>
+                                    <dt>户名：</dt>
+                                    <dd>武汉市青山区仁和路123号</dd>
+                                    <dt>地址：</dt>
+                                    <dd>武汉市青山区仁和路欧洲花园小区5栋2单元 1501</dd>
+                                    <dt>欠费账单：</dt>
+                                    <dd>2015年6月   <span>56.6</span>元</dd>
+                                    <dt>余额：</dt>
+                                    <dd><span>0.54</span>元</dd>
+                                    <dt>缴费金额：</dt>
+                                    <dd><input type="text" placeholder="100" name="" value="" /></dd>
+                                    <dt>缴费金额：</dt>
+                                    <dd><strong>102.00</span>元 </strong>(按照充值金额收取2%技术服务费)</em></dd>
+                                    <dt>&nbsp;</dt>
+                                    <dd><input type="submit" name="" class="electricity_btn" value="去缴费" /> <a href="javascript:;" class="back_change">返回修改</a></dd>
+                            	</dl>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div class="water_electricity_form hide">
+                    	<!--水费-->
+                        <form action="">
+                        	<div class="inquire">
+                            	<p>
+                                    <label for="">公用事业单位：</label>
+                                    <span class="public_institution">请选择</span>
+                                </p>
+                                <ul class="public_institution_list">
+                                    <li>武汉市水务局</li>
+                                    <li>武汉东西湖自来水公司</li>
+                                </ul> 
+                                <p>
+                                    <label for="">缴费账号：</label>
+                                    <input type="text" value="" class="bill_num" />
+                                </p>
+                                <p>
+                                    <label for="">验证码：</label>
+                                    <input type="text" value="" class="yanzheng_num" />
+                                    <img src="images/yanzhengma.jpg" alt="">
+                                    <span>看不清？<a href="javascript:;">换一张</a></span>
+                                </p>
+                                <p>
+                                    <input type="button" name="" class="electricity_btn" value="查询" />
+                                </p>
+                            </div>
+                            <div class="bill_disc">
+                            	<dl class="clearfix">
+                            		<dt>缴费地区：</dt>
+                                    <dd>湖北武汉</dd>
+                                    <dt>缴费单位：</dt>
+                                    <dd>武汉市水务局</dd>
+                                    <dt>缴费号码：</dt>
+                                    <dd>6682031468</dd>
+                                    <dt>户名：</dt>
+                                    <dd>武汉市青山区仁和路123号</dd>
+                                    <dt>地址：</dt>
+                                    <dd>武汉市青山区仁和路欧洲花园小区5栋2单元 1501</dd>
+                                    <dt>欠费账单：</dt>
+                                    <dd>2015年6月   <span>56.6</span>元</dd>
+                                    <dt>余额：</dt>
+                                    <dd><span>0.54</span>元</dd>
+                                    <dt>缴费金额：</dt>
+                                    <dd><input type="text" placeholder="100" name="" value="" /></dd>
+                                    <dt>缴费金额：</dt>
+                                    <dd><strong>102.00</span>元 </strong>(按照充值金额收取2%技术服务费)</em></dd>
+                                    <dt>&nbsp;</dt>
+                                    <dd><input type="submit" name="" class="electricity_btn" value="去缴费" /> <a href="javascript:;" class="back_change">返回修改</a></dd>
+                            	</dl>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            	
+            	
+                <h4>温馨提示：<br/>
+1.水费缴费需加收2%技术服务费。<br/>
+2.提交订单前请务必确认提交信息均无误，如因此导致的<br/>
+充值失败由客户自行承担。</h4>
             </div>
         </div>
         <a href="javascript:;" class="dia_close"><img src="images/dia_close.jpg" alt=""></a>

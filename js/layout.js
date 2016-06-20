@@ -127,19 +127,25 @@ $(function(){
 	$(".area .place").click(function(){
 		$(".area_list").fadeIn();	
 	})
-	$(".province li").click(function(){
+	$(".province li").bind("click",function(){
 		$(this).addClass("province_select").siblings().removeClass("province_select");	
-	});
-	$(".city li").click(function(){
+	})
+	
+	$(".city li").bind("click",function(){
 		$(this).addClass("city_select").siblings().removeClass("city_select");	
+	});
+	$(".region li").bind("click",function(){
+		$(this).addClass("region_select").siblings().removeClass("region_select");	
 	});
 	$(".area_reset").click(function(){
 		$(".area_list").fadeOut();	
 	});
+	//这里是模拟提交，请后台程序员自行修改
 	$(".area_submit").click(function(){
 		var txt1 = $(".province li.province_select").html();
 		var txt2 = $(".city li.city_select").html();
-		$(".place em").html(txt1 + txt2);
+		var txt3 = $(".region li.region_select").html();console.log(txt3)
+		$(".place em").html(txt1 + ' ' + txt2+ ' ' + txt3);
 		$(".area_list").fadeOut();
 	});
 	
@@ -149,7 +155,7 @@ $(function(){
 			$(this).addClass("card_select").siblings().removeClass("card_select");
 		});
 		$(this).find("input").focus(function(){
-			$(this).parent().find("a").removeClass("card_select");
+			$(this).addClass("card_select").parent().find("a").removeClass("card_select");
 			var val = $(this).val();
 			if(val == "其他面值" || val == ""){
 				$(this).val('');
@@ -198,7 +204,45 @@ $(function(){
 		$(this).parents(".pay_item").siblings().find("i").removeClass("radio_select");	
 	})
     
+	//卡片管理的分类选择
+	$(".card_tab_list1 li").hover(function(){
+		$(this).find(".card_tab_list2").show();
+		$(this).find(".card_tab_list5").show();
+		$(".card_tab_list2 li").hover(function(){
+			$(this).addClass("card_tab_list2_select").siblings().removeClass("card_tab_list2_select");
+			$(this).find(".card_tab_list3").show().parent().siblings().find(".card_tab_list3").hide();
+		})
+	},function(){
+		$(this).find(".card_tab_list2").fadeOut();
+		$(this).find(".card_tab_list5").fadeOut();
+		$(this).find(".card_tab_list2 li").removeClass("card_tab_list2_select");
+		$(this).find(".card_tab_list3").hide();
+	});
 		
 	
-
+	$(".card_tab_list3 li,.card_tab_list4 li").click(function(){
+		var txt = $(this).find("em").html();
+		var _index = $(this).parents(".card_tab_list_li").index();
+		$(".card_tab_list1>li").eq(_index).find("a:eq(0)").html(txt);
+		$(".card_tab_list1>li").eq(_index).find("a:eq(0)").addClass("manage_card_select").parent().siblings().find("a").removeClass("manage_card_select");
+		$(".card_tab_list5").fadeOut();
+		$(".card_tab_list2").fadeOut();
+		$(".card_tab_list2 li").removeClass("card_tab_list2_select");
+		$(".card_tab_list3").hide();
+	})
+	
+	$(function(){
+		$(".manage_card_list li").each(function(index) {
+            var num = (index+1)%3;
+			if(num == 0){
+				$(".manage_card_list li").eq(index).css("margin-right",0);
+			}
+        });
+	})
+	
+	//收货地址
+	$(".addr_list li input").click(function(){console.log('s')
+		$(this).parents('li').addClass("addr_select").siblings().removeClass("addr_select");	
+	})
+	
 })

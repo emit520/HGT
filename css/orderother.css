@@ -27,20 +27,20 @@
     border-bottom: 1px solid #C7C6C6;;
 }
 
-.drawback-list li:last-of-type
+.drawback-list li:last-child
 {
     border-bottom: none;
 }
 
 .drawback-list .drawback-checked
 {
-    background: url("../images/drawback-type-checked.png") no-repeat center right 1%;
+    background: url("../images/drawback-type-checked.png") no-repeat 99% center;
 
 }
 
 .drawback-cause-position .arrow-up
 {
-    background: url("../images/arrow2.png") no-repeat center right 1%;
+    background: url("../images/arrow2.png") no-repeat 99% center;
 }
 
 .drawback-cause
@@ -92,10 +92,11 @@
 }
 
 
-.drawback-input
+input.drawback-input
 {
     width: 100%;
     height: 60px;
+	line-height:60px;
     text-indent: 14px;
     font-size: 14px;
 }
@@ -127,6 +128,8 @@
     color: white;
     font-size: 19px;
     border: none;
+	cursor:pointer;
+	font-family:'\5FAE\8F6F\96C5\9ED1';
 }
 
 .mian-card-payment
@@ -143,6 +146,9 @@
     margin-top: 5px;
     color: #515151;
 }
+.card-payment-nav a{ color:#515151;}
+
+.card-payment-nav span{ color:#c91d1d;}
 
 .card-payment-pay
 {
@@ -157,14 +163,21 @@
 {
     width: 183px;
     height: 35px;
+	line-height:35px;
     border: 1px solid #C7C6C6;
     border-radius: 3px;
     text-indent: 10px;
+	margin-top:10px;
 }
 
 .card-payment-list
 {
     border: 1px solid #C7C6C6;
+}
+
+.card-payment-list label{
+	display:block;
+	cursor:pointer;
 }
 
 .card-payment-li, .card-payment-li-title
@@ -174,6 +187,7 @@
     text-indent: 28px;
     border-bottom: 1px solid #C7C6C6;
 }
+.card-payment-li{ cursor:pointer;}
 
 .card-payment-input-box
 {
@@ -188,6 +202,7 @@
     line-height: 80px;
     text-indent: 28px;
     padding-bottom: 20px;
+	
 }
 
 .card-payment-submit
@@ -200,27 +215,27 @@
     font-size: 20px;
     text-align: center;
     border-radius: 3px;
-
+	cursor:pointer;
 }
 
 .card-payment-checked
 {
-    background: url("../images/drawback-type-checked.png") no-repeat center right 3%;
+    background: #fde5d7;
 }
 
 .mian-card-payment .arrow-up
 {
-    background: url("../images/arrow-up.png") no-repeat center right 3%;
+    background: url("../images/arrow-up.png") no-repeat 96% center;
 }
 
 .mian-card-payment .arrow-down
 {
-    background: url("../images/arrow-down.png") no-repeat center right 3%;
+    background: url("../images/arrow-down.png") no-repeat 96% center;
 }
 
 .green-checked
 {
-    background: url("../images/green-checked.png") no-repeat center right 3%;
+   background: #fde5d7;
 }
 
 .arrow-cursor
@@ -281,17 +296,17 @@
 
 .expressage-list .progress-top
 {
-    background: url("../images/progress-top.png") no-repeat left  2%  center;
+    background: url("../images/progress-top.png") no-repeat  2%  center;
 }
 
 .expressage-list .progress-mid
 {
-    background: url("../images/progress-mid.png") no-repeat left 2% center;
+    background: url("../images/progress-mid.png") no-repeat 2% center;
 }
 
 .expressage-list .progress-bot
 {
-    background: url("../images/progress-bot.png") no-repeat left 2% center;
+    background: url("../images/progress-bot.png") no-repeat 2% center;
 }
 
 .expressage-list .progress-bot .expressage-details

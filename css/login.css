@@ -61,10 +61,14 @@
 	display:inline-block;
 	border:none;
 	height:50px;
+	height:48px \9;
+	line-height:50px;
+	line-height:48px \9;
 	outline:none;
 	width:200px;
 	float:left;
 	color:#666;
+	background:#fff
 }
 .login_form ul li img{
 	float:left;
@@ -92,6 +96,7 @@
 	display:block;
 	cursor:pointer;
 	border-radius:5px;
+	font-family:'\5FAE\8F6F\96C5\9ED1';
 }
 .login_form p{
 	width:320px;
@@ -195,6 +200,9 @@
 	color:#666;
 	margin-left:15px;
 	cursor:pointer;
+	display: inline-block;
+	text-align:center;
+	background:#ddd;
 }
 .form_model input[type=checkbox],.form_model input[type=submit]{
 	margin-left:305px;
@@ -214,7 +222,9 @@
 	border:1px solid #cecece;
 	border-radius:5px;
 	color:#666;
-	padding-left:10px;
+	padding-bottom:12px\9;
+	padding-top:8px\9;
+	text-indent:10px;
 	
 }
 .form_model input[type=radio]{

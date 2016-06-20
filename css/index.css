@@ -105,6 +105,148 @@
 	margin-left:100px;
 	width:550px;
 }
+/*水电缴费*/
+.water_electricity_bill .water_electricity_tab{
+	width:320px;
+	margin:0 auto 30px;
+}
+.water_electricity_tab li{
+	width:124px;
+	height:35px;
+	float:left;
+	margin-left:20px;
+	display:block;
+	background:url(../images/water_bg.png) no-repeat 0 -35px;
+	line-height:37px;
+	font-size:14px;
+	color:#fff;
+	text-indent:50px;
+	cursor:pointer;
+}
+.water_electricity_tab li.water_electricity_tab_current{
+	background-position:0 0;
+}
+
+.inquire{
+	position:relative;
+	width:700px;
+}
+.public_institution{
+	width: 250px;
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #c7c6c6;
+	border-radius: 5px;
+	text-indent: 10px;
+	display: inline-block;
+	background: url(../images/arrow2.png) no-repeat 95% center;
+	cursor: pointer;
+}
+.public_institution_list{
+	width: 250px;
+	border: 1px solid #c7c6c6;
+	position: absolute;
+	top: 43px;
+	left: 259px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #999;
+	display:none;
+}
+.public_institution_list li{
+	height: 40px;
+	line-height:40px;
+	text-indent:5px;
+    border-bottom: 1px solid #c7c6c6;
+}
+.public_institution_list li:hover{
+	background:#72ccff;
+	color:#fff;
+}
+.dialog_box p input.bill_num{
+	width:250px;
+}
+.dialog_box p input.yanzheng_num{
+	width:180px;
+}
+.inquire img{
+	width:60px;
+	height:38px;
+	border:1px solid #ccc;
+	margin-left:5px;
+	border-radius:5px;
+}
+.inquire  a{
+	color:#004489;
+}
+
+.bill_disc{
+	width:700px;
+	display:none;
+}
+.bill_disc dt{
+	width:200px;
+	margin-left:50px;
+	float:left;
+	display:inline;
+	text-align:right;
+	font-size: 16px;
+    color: #333;
+	line-height:30px;
+	margin-bottom:10px;
+}
+.bill_disc dd{
+	width:440px;
+	float:left;
+	margin-left:10px;
+	display:inline;
+	line-height:30px;
+	margin-bottom:10px;
+	font-size:14px;
+	color:#666;
+}
+.bill_disc dd input[type=text]{
+	width:100px;
+	height:28px;
+	line-height:28px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	text-indent:5px;
+}
+.bill_disc dd input[type=submit]{
+	width: 135px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	background: #da1716;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	font-weight: bold;
+}
+.bill_disc dd em{
+	font-style:normal;
+}
+.bill_disc dd span{
+	color:#e50000;
+}
+.bill_disc dd strong{
+	color:#e50000;
+	font-size:16px;
+	margin-right:5px;
+}
+.bill_disc dd a{
+	color:#013c9d;
+	margin-left:10px;
+}
+
+
+
+
+
+
+
 
 
 

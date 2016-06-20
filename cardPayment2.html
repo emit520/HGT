@@ -8,9 +8,17 @@
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/orderother.css" />
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/layout.js"></script>
+    <script>
+		$(function(){
+			//选择支付方式
+			$(".card-payment-li").click(function(){
+				$(this).addClass("green-checked").siblings(".card-payment-li").removeClass("green-checked");
+			});
+		})	
+    </script>
 </head>
 <body>
 
@@ -24,13 +32,13 @@
         </div>
         <div class="top_option fr">
             <p>
-                <a href="###" title="注册">【注册】</a>
+                <a href="registe.html" title="注册">【注册】</a>
                 <em>|</em>
-                <a href="###" title="登录">【登录】</a>
+                <a href="login.html" title="登录">【登录】</a>
                 <em>|</em>
-                <a href="###" title="我的订单">我的订单</a>
+                <a href="myOrder.html" title="我的订单">我的订单</a>
                 <em>|</em>
-                <a href="###" title="帮助中心">帮助中心</a>
+                <a href="helpCenter.html" title="帮助中心">帮助中心</a>
                 <em>|</em>
                 <a href="###" title="汉购通官方网站">汉购通官方网站</a>
             </p>
@@ -51,7 +59,7 @@
             </form>
         </div>
         <div class="shops_car fr">
-            <a href="###" title="购物车">购物车(<span class="buy_num">0</span>)</a>
+            <a href="###" title="购物车"><img src="images/shop_car.png" alt="">购物车(<span class="buy_num">0</span>)</a>
         </div>
         <div class="nav fl">
             <!--分类菜单-->
@@ -258,8 +266,7 @@
                             </div>
                         </li>
                     </ul>
-                    <p>汉购通在线支付平台</p>
-                    <p class="classify_bottom">SALE特价专区</p>
+                    <p class="classify_bottom"><a href="#">SALE特价专区</a></p>
                 </div>
 
             </div>
@@ -287,17 +294,29 @@
             <img src="./images/payment-nav.png" alt=""/>
         </div>
         <ul style="border: 1px solid #C7C6C6;padding-left: 20px;margin-bottom: 24px">
-            <li style="height: 50px;line-height: 50px;border-bottom: 1px solid #C7C6C6"><span style="color: #888888">订单名称：</span> 电饭煲</li>
+            <li style="height: 50px;line-height: 50px;border-bottom: 1px solid #C7C6C6"><span style="color: #888888">&nbsp; 订 单 号：</span> 电饭煲</li>
             <li style="height: 50px;line-height: 50px;border-bottom:  none"><span style="color: #888888">订单总价：</span> 510元</li>
         </ul>
-        <ul style="border: 1px solid #C7C6C6;padding-left: 20px;margin-bottom: 24px">
-            <li class="green-checked" style="height: 50px;line-height: 50px;border-bottom:  none">
-                <span style="color: #888888">账户余额：</span> 300元
+        <ul style="border: 1px solid #C7C6C6;margin-bottom: 24px">
+            <li class="green-checked" style="height: 50px;line-height: 50px;border-bottom:  none;padding-left: 20px;">
+                <span style="color: #888888">&nbsp; 已 支 付：</span> 300元
             </li>
         </ul>
-        <ul class="card-payment-list">
+        <ul class="card-payment-list card-payment-list1">
             <li class="card-payment-li-title"><span style="color: #888888">还需支付：</span> 210元</li>
-            <li class="card-payment-li  green-checked">
+            <li class="card-payment-li">
+                <label><input type="radio" name="recharge" value="可伴卡支付"><img src="./images/card-payment-type-1.png" alt=""/> 可伴卡支付</label>
+            </li>
+            <li class="card-payment-li">
+                <label><input type="radio" name="recharge" value="汉购通支付"><img src="./images/card-payment-type-2.png" alt=""/> 汉购通支付</label>
+            </li>
+            <li class="card-payment-li">
+                <label><input type="radio" name="recharge" value="网银支付"><img src="./images/card-payment-type-3.png" alt=""/> 网银支付</label>
+            </li>
+            <li class="card-payment-li">
+                <label><input type="radio" name="recharge" value="支付宝支付"><img src="./images/card-payment-type-4.png" alt=""/> 支付宝支付</label>
+            </li>
+            <!--<li class="card-payment-li  green-checked">
                 <img src="./images/card-payment-type-1.png" alt=""/> 可伴卡支付
             </li>
             <li class="card-payment-li">
@@ -308,7 +327,7 @@
             </li>
             <li class="card-payment-li">
                 <img src="./images/card-payment-type-4.png" alt=""/> 支付宝支付
-            </li>
+            </li>-->
             <li class="card-payment-submit-box" style="padding: 20px 0">
                 <input class="card-payment-submit" style="background: #C92324" type="submit" value="确认支付"/>
             </li>

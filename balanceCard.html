@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/base.css" />
     <link rel="stylesheet" type="text/css" href="./css/common.css" />
     <link rel="stylesheet" type="text/css" href="./css/personalcenter.css" />
-    <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
     <script type="text/javascript" src="./js/layout.js"></script>
 </head>
@@ -24,13 +24,13 @@
         </div>
         <div class="top_option fr">
             <p>
-                <a href="###" title="注册">【注册】</a>
+                <a href="registe.html" title="注册">【注册】</a>
                 <em>|</em>
-                <a href="###" title="登录">【登录】</a>
+                <a href="login.html" title="登录">【登录】</a>
                 <em>|</em>
-                <a href="###" title="我的订单">我的订单</a>
+                <a href="myOrder.html" title="我的订单">我的订单</a>
                 <em>|</em>
-                <a href="###" title="帮助中心">帮助中心</a>
+                <a href="helpCenter.html" title="帮助中心">帮助中心</a>
                 <em>|</em>
                 <a href="###" title="汉购通官方网站">汉购通官方网站</a>
             </p>
@@ -51,7 +51,7 @@
             </form>
         </div>
         <div class="shops_car fr">
-            <a href="###" title="购物车">购物车(<span class="buy_num">0</span>)</a>
+            <a href="###" title="购物车"><img src="images/shop_car.png" alt="">购物车(<span class="buy_num">0</span>)</a>
         </div>
         <div class="nav fl">
             <!--分类菜单-->
@@ -258,8 +258,7 @@
                             </div>
                         </li>
                     </ul>
-                    <p>汉购通在线支付平台</p>
-                    <p class="classify_bottom">SALE特价专区</p>
+                    <p class="classify_bottom"><a href="#">SALE特价专区</a></p>
                 </div>
 
             </div>
@@ -289,9 +288,9 @@
             <p class="personal-menu-title">个人中心</p>
             <ul class="personal-menu-list">
                 <li><a href="personalinformation.html">个人信息</a></li>
-                <li><a href="myCollect.html">购物车</a></li>
+                <li><a href="myCart.html">购物车</a></li>
                 <li><a href="myOrder.html">我的订单</a></li>
-                <li><a href="myCart.html">收藏</a></li>
+                <li><a href="myCollect.html">收藏</a></li>
                 <li><a class="personal-menu-select" href="myCard.html">我的汉购通卡</a></li>
                 <li><a href="myMessage.html">我的消息</a></li>
                 <li><a href="myIntegral.html">我的积分</a></li>
@@ -313,45 +312,18 @@
             <li><a href="passwordCard.html">卡密码修改</a></li>
             <li style="float: right">
                 <a href="addCard.html">
-                    <span style="border: 1px solid #000;height: 15px;line-height: 14px;width: 15px;border-radius: 3px;display: inline-block;text-align: center">+</span>
+                    <span class="add">+</span>
                     添加汉购通卡
                 </a>
             </li>
         </ul>
         <div class="card-common">
-
-            <table class="card-from">
-                <tr>
-                    <td>卡号：</td>
-                    <td>
-                        <input type="text" />
-                    </td>
-                    <td></td>
-                </tr>
-
-                <tr>
-                    <td>密码：</td>
-                    <td>
-                        <input type="text" />
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>验证码：</td>
-                    <td>
-                        <input style="width: 100px" type="text" />
-                        <img style="width: 50px;height:30px;" src="./images/validation.png" />
-                    </td>
-                    <td><a href="" style="font-size:14px">看不清？换一张</a></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input class="save-submit" type="submit" value="查询" />
-                    </td>
-                    <td></td>
-                </tr>
-            </table>
+			<div class="card-from">
+                <p><label>卡号：</label><input type="text" name="" value="" /></p>
+                <p><label>密码：</label><input type="password" name="" value="" /></p>
+                <p><label>验证码：</label><input type="text" name="" value="" /><img src="images/yanzhengma.jpg" alt=""><span><a href="" >看不清？</a>换一张</span></p>
+                <p><label>&nbsp;</label><input class="save-submit" type="submit" value="确认" /></p>
+            </div>
             <div style="color: #898989;font-size: 16px;padding-left: 165px">
                 <p style="margin-bottom: 10px;">当前状态: 　正常</p>
                 <p>当前余额:　￥280.00</p>

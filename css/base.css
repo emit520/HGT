@@ -59,7 +59,9 @@ form { display: inline; }
 
 input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button ,input:not([type]), input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"]{
 padding: 0;
-margin:0
+margin:0;
+outline:none;
+hide-focus: expression(this.hideFocus=true);
 }
 /*--------------------------------------------------
  *	设置基本样式
@@ -124,7 +126,6 @@ a.btn { display: block; border: 0 none; outline: 0 none; }
 .mgr10{ margin-right:10px;}
 
 .mgb10{ margin-bottom:10px;}
-
 
 
 

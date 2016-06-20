@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/orderpage.css" />
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/layout.js"></script>
     <script type="text/javascript" src="js/orderother.js"></script>
@@ -25,13 +25,13 @@
             </div>
             <div class="top_option fr">
                 <p>
-                    <a href="###" title="注册">【注册】</a>
+                    <a href="registe.html" title="注册">【注册】</a>
                     <em>|</em>
-                    <a href="###" title="登录">【登录】</a>
+                    <a href="login.html" title="登录">【登录】</a>
                     <em>|</em>
-                    <a href="###" title="我的订单">我的订单</a>
+                    <a href="myOrder.html" title="我的订单">我的订单</a>
                     <em>|</em>
-                    <a href="###" title="帮助中心">帮助中心</a>
+                    <a href="helpCenter.html" title="帮助中心">帮助中心</a>
                     <em>|</em>
                     <a href="###" title="汉购通官方网站">汉购通官方网站</a>
                 </p>
@@ -52,7 +52,7 @@
                 </form>
             </div>
             <div class="shops_car fr">
-                <a href="###" title="购物车">购物车(<span class="buy_num">0</span>)</a>
+                <a href="###" title="购物车"><img src="images/shop_car.png" alt="">购物车(<span class="buy_num">0</span>)</a>
             </div>
             <div class="nav fl">
                 <!--分类菜单-->
@@ -259,8 +259,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <p>汉购通在线支付平台</p>
-                        <p class="classify_bottom">SALE特价专区</p>
+                        <p class="classify_bottom"><a href="#">SALE特价专区</a></p>
                     </div>
 
                 </div>
@@ -316,12 +315,12 @@
                 </li>
             </ul>
             <p>
-                <input type="button" style="width:95px;height:24px;font-size:14px;" value="使用新地址" />
-                <a style="float: right;color: purple" href="">管理收货地址</a>
+                <input type="button" class="new_addr_btn" value="使用新地址" />
+                <input type="button" class="new_addr_btn" value="管理收货地址" />
             </p>
         </div>
         <div>
-            <p class="confirm-order-title">选择收货地址</p>
+            <p class="confirm-order-title">确认订单详情</p>
             <table class="confirm-order-data">
                 <tr class="confirm-order-data-title">
                     <td style="width: 10px"></td>
@@ -340,9 +339,7 @@
                     </td>
                     <td>¥200</td>
                     <td>
-                        <input type="button" style="border: none;background: #EEEFEF;height: 25px;width: 25px;border-radius: 3px;" value="-"/>
-                        <input style="width: 52px;text-align: center;border-radius: 3px;border: none;background: #EEEFEF;height: 24px" type="text" value="1" />
-                        <input type="button" style="border: none;background: #EEEFEF;height: 25px;width: 25px;color: white;background: #C92424;border-radius: 3px;" value="+" />
+                        <div class="count_num clearfix" style="margin:0 auto;"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
                     </td>
                     <td>无</td>
                     <td>¥200</td>
@@ -356,9 +353,7 @@
                     </td>
                     <td>¥200</td>
                     <td>
-                        <input type="button" style="border: none;background: #EEEFEF;height: 25px;width: 25px;border-radius: 3px;" value="-"/>
-                        <input style="width: 52px;text-align: center;border-radius: 3px;border: none;background: #EEEFEF;height: 24px" type="text" value="1" />
-                        <input type="button" style="border: none;background: #EEEFEF;height: 25px;width: 25px;color: white;background: #C92424;border-radius: 3px;" value="+" />
+                        <div class="count_num clearfix" style="margin:0 auto;"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
                     </td>
                     <td>无</td>
                     <td>¥200</td>
@@ -372,9 +367,7 @@
                     </td>
                     <td>¥200</td>
                     <td>
-                        <input type="button" style="border: none;background: #EEEFEF;height: 25px;width: 25px;border-radius: 3px;" value="-"/>
-                        <input style="width: 52px;text-align: center;border-radius: 3px;border: none;background: #EEEFEF;height: 24px" type="text" value="1" />
-                        <input type="button" style="border: none;background: #EEEFEF;height: 25px;width: 25px;color: white;background: #C92424;border-radius: 3px;" value="+" />
+                        <div class="count_num clearfix" style="margin:0 auto;"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
                     </td>
                     <td>无</td>
                     <td>¥200</td>
@@ -388,9 +381,7 @@
                     </td>
                     <td>¥200</td>
                     <td>
-                        <input type="button" style="border: none;background: #EEEFEF;height: 25px;width: 25px;border-radius: 3px;" value="-"/>
-                        <input style="width: 52px;text-align: center;border-radius: 3px;border: none;background: #EEEFEF;height: 24px" type="text" value="1" />
-                        <input type="button" style="border: none;background: #EEEFEF;height: 25px;width: 25px;color: white;background: #C92424;border-radius: 3px;" value="+" />
+                        <div class="count_num clearfix" style="margin:0 auto;"><a href="javascript:;" class="minus fl">-</a><input type="text" value="1" class="choose_num fl" maxlength="8" title="请输入商品数量"><a href="javascript:;" class="plus fl">+</a></div>
                     </td>
                     <td>无</td>
                     <td>¥200</td>
@@ -399,7 +390,7 @@
                 <tr class="confirm-order-data-price">
                     <td style="border-bottom: white"></td>
                     <td colspan="6" style="text-align: right;padding-right: 20px">
-                        <p>实付款：<span  style="font-size: 30px;color: #C92424;font-weight: bold">￥200.00</span></p>
+                        <p>实付款：<span  style="font-size: 30px;color: #C92424;">￥200.00</span></p>
                         <p>可获积分：12分</p>
                     </td>
                 </tr>
